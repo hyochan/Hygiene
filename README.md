@@ -1,16 +1,26 @@
 # Hygiene
 
-> Hygiene is an app built in univeral [expo](https://expo.io) app that supports `ios`, `android` and `web`.
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
+
+> Hygiene is an app built in univeral [expo](https://expo.io) app that supports `ios`, `android` and `web`. Hygiene aims to lead people the right behaviors to fight such virus like Covid19 when we are in trouble like today. This is a concept application to provide ideas for all organizations.
 
 ![ScreenShot](https://cdn-images-1.medium.com/max/1440/1*U8gvjmBk0j8QI5dyiDtxKQ.png)
 
-> Specification
+### Universl app
+
+* App
+  <a href=""><img src="https://user-images.githubusercontent.com/27461460/77502559-8c8a8d80-6e9e-11ea-9f8e-0f58c704eed6.png" width="200"/></a> <a href=""><img src="https://user-images.githubusercontent.com/27461460/77502571-90b6ab00-6e9e-11ea-9e93-235a319ebb41.png" width="200"/></a>
+
+* Web
+  [https://hygiene.dooboolab.com](https://hygiene.dooboolab.com)
+
+### Project spectification 
 
 - [react-native](https://github.com/facebook/react-native)
 - [expo](https://github.com/expo/expo)
 - [react-navigation](https://github.com/react-navigation/react-navigation)
 - [typescript](https://github.com/Microsoft/TypeScript)
-- [localization](https://github.com/stefalda/ReactNativeLocalization)
+- [expo-localizatian](https://docs.expo.io/versions/latest/sdk/localization)
 - [styled-components](https://github.com/styled-components/styled-components)
 - [ts-jest](https://github.com/kulshekhar/ts-jest)
 - [@testing-library/react-native](https://github.com/testing-library/native-testing-library)
@@ -83,7 +93,7 @@ yarn start
 This runs the `start` script specified in our `package.json`, and will spawn off a server which reloads the page as we save our files.
 Typically the server runs at `http://localhost:8080`, but should be automatically opened for you.
 
-## Testing the project
+### Testing the project
 
 Testing is also just a command away:
 
