@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Interaction should simulate onClick 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <SafeAreaView
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#ffffff",
+              "flexBasis": 0,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "flexShrink": 1,
+            },
+          ]
+        }
+      >
+        <ScrollView
+          data={Array []}
+          disableVirtualization={false}
+          horizontal={false}
+          initialNumToRender={10}
+          maxToRenderPerBatch={10}
+          numColumns={1}
+          onEndReachedThreshold={0.1}
+          refreshControl={
+            <RefreshControl
+              onRefresh={[Function]}
+              refreshing={true}
+            />
+          }
+          refreshing={true}
+          removeClippedSubviews={false}
+          scrollEventThrottle={30}
+          stickyHeaderIndices={Array []}
+          updateCellsBatchingPeriod={50}
+          viewabilityConfigCallbackPairs={Array []}
+          windowSize={21}
+        />
+      </SafeAreaView>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Rendering renders without crashing 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <SafeAreaView
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#ffffff",
+              "flexBasis": 0,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "flexShrink": 1,
+            },
+          ]
+        }
+      >
+        <ScrollView
+          data={Array []}
+          disableVirtualization={false}
+          horizontal={false}
+          initialNumToRender={10}
+          maxToRenderPerBatch={10}
+          numColumns={1}
+          onEndReachedThreshold={0.1}
+          refreshControl={
+            <RefreshControl
+              onRefresh={[Function]}
+              refreshing={true}
+            />
+          }
+          refreshing={true}
+          removeClippedSubviews={false}
+          scrollEventThrottle={30}
+          stickyHeaderIndices={Array []}
+          updateCellsBatchingPeriod={50}
+          viewabilityConfigCallbackPairs={Array []}
+          windowSize={21}
+        />
+      </SafeAreaView>
+    </View>
+  </View>
+</View>
+`;

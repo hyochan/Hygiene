@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Interaction should simulate onClick 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-start",
+              "paddingBottom": 0,
+              "paddingLeft": 8,
+              "paddingRight": 8,
+              "paddingTop": 0,
+            },
+          ]
+        }
+      >
+        <TouchableOpacity
+          activeOpacity={0.7}
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "borderColor": "#E6E6E6",
+                "borderRadius": 10,
+                "borderWidth": 1,
+                "height": 80,
+                "justifyContent": "center",
+                "width": 80,
+              }
+            }
+          >
+            <SvgMock
+              stroke="#444444"
+            />
+          </View>
+        </TouchableOpacity>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Rendering renders without crashing 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-start",
+              "paddingBottom": 0,
+              "paddingLeft": 8,
+              "paddingRight": 8,
+              "paddingTop": 0,
+            },
+          ]
+        }
+      >
+        <TouchableOpacity
+          activeOpacity={0.7}
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "borderColor": "#E6E6E6",
+                "borderRadius": 10,
+                "borderWidth": 1,
+                "height": 80,
+                "justifyContent": "center",
+                "width": 80,
+              }
+            }
+          >
+            <SvgMock
+              stroke="#444444"
+            />
+          </View>
+        </TouchableOpacity>
+      </View>
+    </View>
+  </View>
+</View>
+`;

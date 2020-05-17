@@ -1,0 +1,243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Interaction should simulate onClick 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "backgroundColor": "#ffffff",
+              "flexBasis": 0,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "justifyContent": "center",
+            },
+          ]
+        }
+      >
+        <ScrollView
+          ListHeaderComponent={
+            <Styled(View)>
+              <Styled(Text)>
+                Rank
+              </Styled(Text)>
+              <Styled(Text)>
+                Accumulate your score and challenge 1st place
+              </Styled(Text)>
+            </Styled(View)>
+          }
+          data={Array []}
+          disableVirtualization={false}
+          horizontal={false}
+          initialNumToRender={10}
+          maxToRenderPerBatch={10}
+          numColumns={1}
+          onEndReachedThreshold={2}
+          removeClippedSubviews={false}
+          scrollEventThrottle={50}
+          stickyHeaderIndices={Array []}
+          style={
+            Object {
+              "width": "100%",
+            }
+          }
+          updateCellsBatchingPeriod={50}
+          viewabilityConfigCallbackPairs={Array []}
+          windowSize={21}
+        >
+          <View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "flex-end",
+                    "flexDirection": "row",
+                    "marginBottom": 22,
+                    "marginLeft": 22,
+                    "marginRight": 22,
+                    "marginTop": 22,
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "black",
+                      "fontSize": 24,
+                      "fontWeight": "bold",
+                    },
+                  ]
+                }
+              >
+                Rank
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#444444",
+                      "fontSize": 12,
+                      "marginBottom": 2,
+                      "marginLeft": 8,
+                    },
+                  ]
+                }
+              >
+                Accumulate your score and challenge 1st place
+              </Text>
+            </View>
+          </View>
+        </ScrollView>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Rendering renders without crashing 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "backgroundColor": "#ffffff",
+              "flexBasis": 0,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "justifyContent": "center",
+            },
+          ]
+        }
+      >
+        <ScrollView
+          ListHeaderComponent={
+            <Styled(View)>
+              <Styled(Text)>
+                Rank
+              </Styled(Text)>
+              <Styled(Text)>
+                Accumulate your score and challenge 1st place
+              </Styled(Text)>
+            </Styled(View)>
+          }
+          data={Array []}
+          disableVirtualization={false}
+          horizontal={false}
+          initialNumToRender={10}
+          maxToRenderPerBatch={10}
+          numColumns={1}
+          onEndReachedThreshold={2}
+          removeClippedSubviews={false}
+          scrollEventThrottle={50}
+          stickyHeaderIndices={Array []}
+          style={
+            Object {
+              "width": "100%",
+            }
+          }
+          updateCellsBatchingPeriod={50}
+          viewabilityConfigCallbackPairs={Array []}
+          windowSize={21}
+        >
+          <View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "flex-end",
+                    "flexDirection": "row",
+                    "marginBottom": 22,
+                    "marginLeft": 22,
+                    "marginRight": 22,
+                    "marginTop": 22,
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "black",
+                      "fontSize": 24,
+                      "fontWeight": "bold",
+                    },
+                  ]
+                }
+              >
+                Rank
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#444444",
+                      "fontSize": 12,
+                      "marginBottom": 2,
+                      "marginLeft": 8,
+                    },
+                  ]
+                }
+              >
+                Accumulate your score and challenge 1st place
+              </Text>
+            </View>
+          </View>
+        </ScrollView>
+      </View>
+    </View>
+  </View>
+</View>
+`;

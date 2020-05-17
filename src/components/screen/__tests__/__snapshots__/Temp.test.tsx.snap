@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Temp] render renders without crashing 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#ffffff",
+              "flexBasis": 0,
+              "flexDirection": "row",
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "justifyContent": "center",
+            },
+          ]
+        }
+      >
+        <TouchableOpacity
+          activeOpacity={0.2}
+          delayPressIn={30}
+          testID="btn-back"
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "alignSelf": "center",
+                  "borderColor": "blue",
+                  "flexDirection": "row",
+                  "height": 52,
+                  "justifyContent": "center",
+                },
+                Object {
+                  "backgroundColor": "#333333",
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#069ccd",
+                    "fontSize": 16,
+                  },
+                ]
+              }
+            >
+              GO BACK
+            </Text>
+          </View>
+        </TouchableOpacity>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`[Temp] render should render [Dark] theme 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#191919",
+              "flexBasis": 0,
+              "flexDirection": "row",
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "justifyContent": "center",
+            },
+          ]
+        }
+      >
+        <TouchableOpacity
+          activeOpacity={0.2}
+          delayPressIn={30}
+          testID="btn-back"
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "alignSelf": "center",
+                  "borderColor": "blue",
+                  "flexDirection": "row",
+                  "height": 52,
+                  "justifyContent": "center",
+                },
+                Object {
+                  "backgroundColor": "#333333",
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#069ccd",
+                    "fontSize": 16,
+                  },
+                ]
+              }
+            >
+              GO BACK
+            </Text>
+          </View>
+        </TouchableOpacity>
+      </View>
+    </View>
+  </View>
+</View>
+`;

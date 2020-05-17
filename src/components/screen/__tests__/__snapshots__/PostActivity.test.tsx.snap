@@ -1,0 +1,407 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Interaction should simulate onClick 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "backgroundColor": "#ffffff",
+              "flexBasis": 0,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "justifyContent": "flex-start",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "flex-start",
+                "marginTop": 16,
+                "paddingBottom": 0,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "black",
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "marginBottom": 8,
+              }
+            }
+          >
+            Washing hands
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignSelf": "stretch",
+                "flexDirection": "column",
+              },
+              Object {
+                "height": 187,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#b9b9c4",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "marginBottom": 5,
+                },
+                undefined,
+                null,
+              ]
+            }
+          />
+          <TextInput
+            allowFontScaling={true}
+            autoCapitalize="none"
+            multiline={true}
+            placeholder="Please leave what you want to say."
+            placeholderTextColor="#808080"
+            rejectResponderTermination={true}
+            style={
+              Array [
+                Object {
+                  "fontSize": 15,
+                  "fontWeight": "500",
+                  "paddingBottom": 15,
+                  "paddingTop": 15,
+                },
+                Object {
+                  "backgroundColor": "#f7f7f7",
+                  "color": "black",
+                  "fontSize": 14,
+                  "height": 187,
+                  "padding": 12,
+                },
+              ]
+            }
+            underlineColorAndroid="transparent"
+            value=""
+          />
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#E6E6E6",
+                "height": 1,
+                "marginBottom": 10,
+                "marginTop": 20,
+                "width": "100%",
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Object {
+              "marginTop": 12,
+              "paddingHorizontal": 22,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-start",
+                  "paddingBottom": 0,
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                  "paddingTop": 0,
+                },
+              ]
+            }
+          >
+            <TouchableOpacity
+              activeOpacity={0.7}
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "borderColor": "#E6E6E6",
+                    "borderRadius": 10,
+                    "borderWidth": 1,
+                    "height": 80,
+                    "justifyContent": "center",
+                    "width": 80,
+                  }
+                }
+              >
+                <SvgMock
+                  stroke="#444444"
+                />
+              </View>
+            </TouchableOpacity>
+          </View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "black",
+                  "fontSize": 14,
+                  "marginTop": 18,
+                },
+              ]
+            }
+          >
+            Inappropriate content, such as irrelevant activities or repetition of the same character, may be deleted without prior warning.
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Rendering renders without crashing 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "backgroundColor": "#ffffff",
+              "flexBasis": 0,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "justifyContent": "flex-start",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "flex-start",
+                "marginTop": 16,
+                "paddingBottom": 0,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "black",
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "marginBottom": 8,
+              }
+            }
+          >
+            Washing hands
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignSelf": "stretch",
+                "flexDirection": "column",
+              },
+              Object {
+                "height": 187,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#b9b9c4",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "marginBottom": 5,
+                },
+                undefined,
+                null,
+              ]
+            }
+          />
+          <TextInput
+            allowFontScaling={true}
+            autoCapitalize="none"
+            multiline={true}
+            placeholder="Please leave what you want to say."
+            placeholderTextColor="#808080"
+            rejectResponderTermination={true}
+            style={
+              Array [
+                Object {
+                  "fontSize": 15,
+                  "fontWeight": "500",
+                  "paddingBottom": 15,
+                  "paddingTop": 15,
+                },
+                Object {
+                  "backgroundColor": "#f7f7f7",
+                  "color": "black",
+                  "fontSize": 14,
+                  "height": 187,
+                  "padding": 12,
+                },
+              ]
+            }
+            underlineColorAndroid="transparent"
+            value=""
+          />
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#E6E6E6",
+                "height": 1,
+                "marginBottom": 10,
+                "marginTop": 20,
+                "width": "100%",
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Object {
+              "marginTop": 12,
+              "paddingHorizontal": 22,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-start",
+                  "paddingBottom": 0,
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                  "paddingTop": 0,
+                },
+              ]
+            }
+          >
+            <TouchableOpacity
+              activeOpacity={0.7}
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "borderColor": "#E6E6E6",
+                    "borderRadius": 10,
+                    "borderWidth": 1,
+                    "height": 80,
+                    "justifyContent": "center",
+                    "width": 80,
+                  }
+                }
+              >
+                <SvgMock
+                  stroke="#444444"
+                />
+              </View>
+            </TouchableOpacity>
+          </View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "black",
+                  "fontSize": 14,
+                  "marginTop": 18,
+                },
+              ]
+            }
+          >
+            Inappropriate content, such as irrelevant activities or repetition of the same character, may be deleted without prior warning.
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

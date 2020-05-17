@@ -1,0 +1,561 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <SafeAreaView
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#191919",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "justifyContent": "center",
+            },
+          ]
+        }
+      >
+        <ScrollView
+          style={
+            Object {
+              "alignSelf": "stretch",
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "marginBottom": 40,
+                  "marginLeft": 40,
+                  "marginRight": 40,
+                  "marginTop": 40,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "marginBottom": 72,
+                    "marginTop": 224,
+                  },
+                ]
+              }
+            >
+              <TouchableOpacity
+                activeOpacity={0.2}
+                style={
+                  Object {
+                    "width": 124,
+                  }
+                }
+                testID="theme-test"
+              >
+                <Image
+                  source={
+                    Object {
+                      "canInstrument": true,
+                      "createTransformer": [Function],
+                      "getCacheKey": [Function],
+                      "process": [Function],
+                    }
+                  }
+                  style={
+                    Array [
+                      Object {
+                        "height": 170,
+                        "width": 124,
+                      },
+                    ]
+                  }
+                />
+              </TouchableOpacity>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "marginBottom": 24,
+                  },
+                ]
+              }
+            >
+              <TouchableOpacity
+                activeOpacity={0.2}
+                delayPressIn={30}
+                testID="btn-apple"
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "alignSelf": "center",
+                        "borderColor": "blue",
+                        "flexDirection": "row",
+                        "height": 52,
+                        "justifyContent": "center",
+                      },
+                      Object {
+                        "backgroundColor": "#ffffff",
+                        "borderColor": "#151E22",
+                        "borderRadius": 100,
+                        "borderWidth": 1,
+                        "height": 48,
+                        "marginBottom": 12,
+                        "width": "100%",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#069ccd",
+                          "fontSize": 16,
+                        },
+                        Object {
+                          "color": "#151E22",
+                          "fontWeight": "700",
+                        },
+                      ]
+                    }
+                  >
+                    Sign in with Apple
+                  </Text>
+                </View>
+              </TouchableOpacity>
+              <TouchableOpacity
+                activeOpacity={0.2}
+                delayPressIn={30}
+                testID="btn-facebook"
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "alignSelf": "center",
+                        "borderColor": "blue",
+                        "flexDirection": "row",
+                        "height": 52,
+                        "justifyContent": "center",
+                      },
+                      Object {
+                        "backgroundColor": "#345997",
+                        "borderColor": "#345997",
+                        "borderRadius": 100,
+                        "borderWidth": 1,
+                        "height": 48,
+                        "marginBottom": 6,
+                        "width": "100%",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#069ccd",
+                          "fontSize": 16,
+                        },
+                        Object {
+                          "color": "#ffffff",
+                          "fontWeight": "700",
+                        },
+                      ]
+                    }
+                  >
+                    Sign in with Facebook
+                  </Text>
+                </View>
+              </TouchableOpacity>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "justifyContent": "center",
+                    "paddingBottom": 40,
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "paddingTop": 0,
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#777",
+                      "lineHeight": 22,
+                    },
+                  ]
+                }
+              >
+                We consider that you agree with 
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#e2f2ff",
+                      "lineHeight": 22,
+                      "textDecorationLine": "underline",
+                    },
+                  ]
+                }
+                testID="btn-terms"
+              >
+                Terms for Agreement
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#777",
+                      "lineHeight": 22,
+                    },
+                  ]
+                }
+              >
+                 and 
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#e2f2ff",
+                      "lineHeight": 22,
+                      "textDecorationLine": "underline",
+                    },
+                  ]
+                }
+                testID="btn-privacy"
+              >
+                Privacy Policy
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#777",
+                      "lineHeight": 22,
+                    },
+                  ]
+                }
+              >
+                 by going onto next step.
+              </Text>
+            </View>
+          </View>
+        </ScrollView>
+      </SafeAreaView>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`[Intro] screen rendering test should render outer component and snapshot matches 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <SafeAreaView
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <ScrollView
+      style={
+        Object {
+          "alignSelf": "stretch",
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "marginBottom": 40,
+              "marginLeft": 40,
+              "marginRight": 40,
+              "marginTop": 40,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignSelf": "center",
+                "marginBottom": 72,
+                "marginTop": 224,
+              },
+            ]
+          }
+        >
+          <TouchableOpacity
+            activeOpacity={0.2}
+            onPress={[Function]}
+            style={
+              Object {
+                "width": 124,
+              }
+            }
+            testID="theme-test"
+          >
+            <Image
+              source={
+                Object {
+                  "canInstrument": true,
+                  "createTransformer": [Function],
+                  "getCacheKey": [Function],
+                  "process": [Function],
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 170,
+                    "width": 124,
+                  },
+                ]
+              }
+            />
+          </TouchableOpacity>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "marginBottom": 24,
+              },
+            ]
+          }
+        >
+          <TouchableOpacity
+            activeOpacity={0.2}
+            delayPressIn={30}
+            onPress={[Function]}
+            testID="btn-apple"
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "alignSelf": "center",
+                    "borderColor": "blue",
+                    "flexDirection": "row",
+                    "height": 52,
+                    "justifyContent": "center",
+                  },
+                  Object {
+                    "backgroundColor": "#ffffff",
+                    "borderColor": "#151E22",
+                    "borderRadius": 100,
+                    "borderWidth": 1,
+                    "height": 48,
+                    "marginBottom": 12,
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#069ccd",
+                      "fontSize": 16,
+                    },
+                    Object {
+                      "color": "#151E22",
+                      "fontWeight": "700",
+                    },
+                  ]
+                }
+              >
+                Sign in with Apple
+              </Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.2}
+            delayPressIn={30}
+            onPress={[Function]}
+            testID="btn-facebook"
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "alignSelf": "center",
+                    "borderColor": "blue",
+                    "flexDirection": "row",
+                    "height": 52,
+                    "justifyContent": "center",
+                  },
+                  Object {
+                    "backgroundColor": "#345997",
+                    "borderColor": "#345997",
+                    "borderRadius": 100,
+                    "borderWidth": 1,
+                    "height": 48,
+                    "marginBottom": 6,
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#069ccd",
+                      "fontSize": 16,
+                    },
+                    Object {
+                      "color": "#ffffff",
+                      "fontWeight": "700",
+                    },
+                  ]
+                }
+              >
+                Sign in with Facebook
+              </Text>
+            </View>
+          </TouchableOpacity>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "flexDirection": "row",
+                "flexWrap": "wrap",
+                "justifyContent": "center",
+                "paddingBottom": 40,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#777",
+                  "lineHeight": 22,
+                },
+              ]
+            }
+          >
+            We consider that you agree with 
+          </Text>
+          <Text
+            onPress={[Function]}
+            style={
+              Array [
+                Object {
+                  "color": "#1E6EFA",
+                  "lineHeight": 22,
+                  "textDecorationLine": "underline",
+                },
+              ]
+            }
+            testID="btn-terms"
+          >
+            Terms for Agreement
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#777",
+                  "lineHeight": 22,
+                },
+              ]
+            }
+          >
+             and 
+          </Text>
+          <Text
+            onPress={[Function]}
+            style={
+              Array [
+                Object {
+                  "color": "#1E6EFA",
+                  "lineHeight": 22,
+                  "textDecorationLine": "underline",
+                },
+              ]
+            }
+            testID="btn-privacy"
+          >
+            Privacy Policy
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#777",
+                  "lineHeight": 22,
+                },
+              ]
+            }
+          >
+             by going onto next step.
+          </Text>
+        </View>
+      </View>
+    </ScrollView>
+  </SafeAreaView>
+</View>
+`;

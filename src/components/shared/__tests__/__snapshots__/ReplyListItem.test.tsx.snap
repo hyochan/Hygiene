@@ -1,0 +1,303 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Interaction should simulate onClick 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "alignSelf": "stretch",
+              "borderBottomWidth": 1,
+              "borderColor": "#E6E6E6",
+              "flexDirection": "column",
+              "justifyContent": "center",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "alignSelf": "stretch",
+                "flexDirection": "row",
+                "justifyContent": "flex-start",
+                "marginTop": 20,
+                "paddingBottom": 0,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <TouchableOpacity
+            activeOpacity={0.7}
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "canInstrument": true,
+                  "createTransformer": [Function],
+                  "getCacheKey": [Function],
+                  "process": [Function],
+                }
+              }
+              style={
+                Object {
+                  "borderRadius": 18,
+                  "height": 36,
+                  "width": 36,
+                }
+              }
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                  },
+                  Object {
+                    "marginLeft": 6,
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "black",
+                      "fontSize": 14,
+                    },
+                    Object {
+                      "fontWeight": "bold",
+                    },
+                  ]
+                }
+              >
+                unnamed
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "black",
+                      "fontSize": 14,
+                    },
+                    Object {
+                      "color": "#808080",
+                      "fontSize": 12,
+                      "marginTop": 6,
+                    },
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+          </TouchableOpacity>
+        </View>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "black",
+                "fontSize": 14,
+                "paddingBottom": 20,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          string
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Rendering renders without crashing 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "alignSelf": "stretch",
+              "borderBottomWidth": 1,
+              "borderColor": "#E6E6E6",
+              "flexDirection": "column",
+              "justifyContent": "center",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "alignSelf": "stretch",
+                "flexDirection": "row",
+                "justifyContent": "flex-start",
+                "marginTop": 20,
+                "paddingBottom": 0,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <TouchableOpacity
+            activeOpacity={0.7}
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "canInstrument": true,
+                  "createTransformer": [Function],
+                  "getCacheKey": [Function],
+                  "process": [Function],
+                }
+              }
+              style={
+                Object {
+                  "borderRadius": 18,
+                  "height": 36,
+                  "width": 36,
+                }
+              }
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                  },
+                  Object {
+                    "marginLeft": 6,
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "black",
+                      "fontSize": 14,
+                    },
+                    Object {
+                      "fontWeight": "bold",
+                    },
+                  ]
+                }
+              >
+                unnamed
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "black",
+                      "fontSize": 14,
+                    },
+                    Object {
+                      "color": "#808080",
+                      "fontSize": 12,
+                      "marginTop": 6,
+                    },
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+          </TouchableOpacity>
+        </View>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "black",
+                "fontSize": 14,
+                "paddingBottom": 20,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          string
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

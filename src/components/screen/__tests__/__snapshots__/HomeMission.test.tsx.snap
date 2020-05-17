@@ -1,0 +1,1383 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Interaction should simulate onClick 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "backgroundColor": "#ffffff",
+              "flexBasis": 0,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "justifyContent": "center",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "flex-end",
+                "flexDirection": "row",
+                "marginBottom": 22,
+                "marginLeft": 22,
+                "marginRight": 22,
+                "marginTop": 22,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "black",
+                  "fontSize": 24,
+                  "fontWeight": "bold",
+                },
+              ]
+            }
+          >
+            Mission
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#444444",
+                  "fontSize": 12,
+                  "marginBottom": 2,
+                  "marginLeft": 8,
+                },
+              ]
+            }
+          >
+            Protect yourselves from harmful virus!
+          </Text>
+        </View>
+        <ScrollView
+          style={
+            Object {
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 150,
+                },
+              ]
+            }
+          >
+            <ScrollView
+              horizontal={true}
+            >
+              <TouchableOpacity
+                activeOpacity={0.75}
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "column",
+                      "height": 136,
+                      "justifyContent": "center",
+                      "marginLeft": 20,
+                      "width": 96,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "borderColor": "#E6E6E6",
+                        "borderRadius": 16,
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                        "height": 120,
+                        "justifyContent": "center",
+                        "shadowColor": "rgba(0, 0, 0, 0.06)",
+                        "shadowOffset": Object {
+                          "height": 2,
+                          "width": 2,
+                        },
+                        "shadowOpacity": 1,
+                        "shadowRadius": 4,
+                        "width": 96,
+                      },
+                    ]
+                  }
+                >
+                  <SvgMock
+                    fill="black"
+                    height={48}
+                    width={48}
+                  />
+                  <Text
+                    style={
+                      Object {
+                        "color": "#02C7D3",
+                        "fontSize": 18,
+                        "position": "absolute",
+                        "right": 12,
+                        "top": 12,
+                      }
+                    }
+                  >
+                    +
+                    3
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderRadius": 16,
+                        "bottom": 0,
+                        "minHeight": 30,
+                        "minWidth": 57,
+                        "paddingBottom": 0,
+                        "paddingLeft": 8,
+                        "paddingRight": 8,
+                        "paddingTop": 0,
+                        "position": "absolute",
+                      },
+                      Object {
+                        "backgroundColor": "#02C7D3",
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={2}
+                    style={
+                      Object {
+                        "color": "white",
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Washing hands
+                  </Text>
+                </View>
+              </TouchableOpacity>
+              <TouchableOpacity
+                activeOpacity={0.75}
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "column",
+                      "height": 136,
+                      "justifyContent": "center",
+                      "marginLeft": 20,
+                      "width": 96,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "borderColor": "#E6E6E6",
+                        "borderRadius": 16,
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                        "height": 120,
+                        "justifyContent": "center",
+                        "shadowColor": "rgba(0, 0, 0, 0.06)",
+                        "shadowOffset": Object {
+                          "height": 2,
+                          "width": 2,
+                        },
+                        "shadowOpacity": 1,
+                        "shadowRadius": 4,
+                        "width": 96,
+                      },
+                    ]
+                  }
+                >
+                  <SvgMock
+                    fill="black"
+                    height={48}
+                    width={48}
+                  />
+                  <Text
+                    style={
+                      Object {
+                        "color": "#00A8F0",
+                        "fontSize": 18,
+                        "position": "absolute",
+                        "right": 12,
+                        "top": 12,
+                      }
+                    }
+                  >
+                    +
+                    5
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderRadius": 16,
+                        "bottom": 0,
+                        "minHeight": 30,
+                        "minWidth": 57,
+                        "paddingBottom": 0,
+                        "paddingLeft": 8,
+                        "paddingRight": 8,
+                        "paddingTop": 0,
+                        "position": "absolute",
+                      },
+                      Object {
+                        "backgroundColor": "#00A8F0",
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={2}
+                    style={
+                      Object {
+                        "color": "white",
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Wearing a mask
+                  </Text>
+                </View>
+              </TouchableOpacity>
+              <TouchableOpacity
+                activeOpacity={0.75}
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "column",
+                      "height": 136,
+                      "justifyContent": "center",
+                      "marginLeft": 20,
+                      "width": 96,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "borderColor": "#E6E6E6",
+                        "borderRadius": 16,
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                        "height": 120,
+                        "justifyContent": "center",
+                        "shadowColor": "rgba(0, 0, 0, 0.06)",
+                        "shadowOffset": Object {
+                          "height": 2,
+                          "width": 2,
+                        },
+                        "shadowOpacity": 1,
+                        "shadowRadius": 4,
+                        "width": 96,
+                      },
+                    ]
+                  }
+                >
+                  <SvgMock
+                    fill="black"
+                    height={48}
+                    width={48}
+                  />
+                  <Text
+                    style={
+                      Object {
+                        "color": "#1C77FF",
+                        "fontSize": 18,
+                        "position": "absolute",
+                        "right": 12,
+                        "top": 12,
+                      }
+                    }
+                  >
+                    +
+                    10
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderRadius": 16,
+                        "bottom": 0,
+                        "minHeight": 30,
+                        "minWidth": 57,
+                        "paddingBottom": 0,
+                        "paddingLeft": 8,
+                        "paddingRight": 8,
+                        "paddingTop": 0,
+                        "position": "absolute",
+                      },
+                      Object {
+                        "backgroundColor": "#1C77FF",
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={2}
+                    style={
+                      Object {
+                        "color": "white",
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Stay home
+                  </Text>
+                </View>
+              </TouchableOpacity>
+              <TouchableOpacity
+                activeOpacity={0.75}
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "column",
+                      "height": 136,
+                      "justifyContent": "center",
+                      "marginLeft": 20,
+                      "width": 96,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "borderColor": "#E6E6E6",
+                        "borderRadius": 16,
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                        "height": 120,
+                        "justifyContent": "center",
+                        "shadowColor": "rgba(0, 0, 0, 0.06)",
+                        "shadowOffset": Object {
+                          "height": 2,
+                          "width": 2,
+                        },
+                        "shadowOpacity": 1,
+                        "shadowRadius": 4,
+                        "width": 96,
+                      },
+                    ]
+                  }
+                >
+                  <SvgMock
+                    fill="black"
+                    height={48}
+                    width={48}
+                  />
+                  <Text
+                    style={
+                      Object {
+                        "color": "#1363DB",
+                        "fontSize": 18,
+                        "position": "absolute",
+                        "right": 12,
+                        "top": 12,
+                      }
+                    }
+                  >
+                    +
+                    15
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderRadius": 16,
+                        "bottom": 0,
+                        "minHeight": 30,
+                        "minWidth": 57,
+                        "paddingBottom": 0,
+                        "paddingLeft": 8,
+                        "paddingRight": 8,
+                        "paddingTop": 0,
+                        "position": "absolute",
+                      },
+                      Object {
+                        "backgroundColor": "#1363DB",
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={2}
+                    style={
+                      Object {
+                        "color": "white",
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Good consumption
+                  </Text>
+                </View>
+              </TouchableOpacity>
+              <TouchableOpacity
+                activeOpacity={0.75}
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "column",
+                      "height": 136,
+                      "justifyContent": "center",
+                      "marginLeft": 20,
+                      "width": 96,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "borderColor": "#E6E6E6",
+                        "borderRadius": 16,
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                        "height": 120,
+                        "justifyContent": "center",
+                        "shadowColor": "rgba(0, 0, 0, 0.06)",
+                        "shadowOffset": Object {
+                          "height": 2,
+                          "width": 2,
+                        },
+                        "shadowOpacity": 1,
+                        "shadowRadius": 4,
+                        "width": 96,
+                      },
+                    ]
+                  }
+                >
+                  <SvgMock
+                    fill="black"
+                    height={48}
+                    width={48}
+                  />
+                  <Text
+                    style={
+                      Object {
+                        "color": "#444444",
+                        "fontSize": 18,
+                        "position": "absolute",
+                        "right": 12,
+                        "top": 12,
+                      }
+                    }
+                  >
+                    +
+                    1
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderRadius": 16,
+                        "bottom": 0,
+                        "minHeight": 30,
+                        "minWidth": 57,
+                        "paddingBottom": 0,
+                        "paddingLeft": 8,
+                        "paddingRight": 8,
+                        "paddingTop": 0,
+                        "position": "absolute",
+                      },
+                      Object {
+                        "backgroundColor": "#444444",
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={2}
+                    style={
+                      Object {
+                        "color": "white",
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Extras
+                  </Text>
+                </View>
+              </TouchableOpacity>
+              <View
+                style={
+                  Object {
+                    "width": 36,
+                  }
+                }
+              />
+            </ScrollView>
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "width": "100%",
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "marginBottom": 48,
+                  "marginTop": 114,
+                  "transform": Array [
+                    Object {
+                      "translateY": 0,
+                    },
+                  ],
+                }
+              }
+            >
+              <Image
+                source={
+                  Object {
+                    "canInstrument": true,
+                    "createTransformer": [Function],
+                    "getCacheKey": [Function],
+                    "process": [Function],
+                  }
+                }
+                style={
+                  Object {
+                    "height": 114,
+                    "width": 114,
+                  }
+                }
+              />
+            </View>
+            <Image
+              source={
+                Object {
+                  "canInstrument": true,
+                  "createTransformer": [Function],
+                  "getCacheKey": [Function],
+                  "process": [Function],
+                }
+              }
+              style={
+                Object {
+                  "height": 24,
+                  "width": 131,
+                }
+              }
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "borderColor": "#E6E6E6",
+                    "borderRadius": 100,
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                    "flexDirection": "row",
+                    "height": 78,
+                    "justifyContent": "space-around",
+                    "marginTop": 60,
+                    "width": "80%",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "black",
+                      "fontSize": 18,
+                      "fontWeight": "bold",
+                    },
+                  ]
+                }
+              >
+                Score
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#1C77FF",
+                      "fontSize": 42,
+                    },
+                  ]
+                }
+              >
+                0
+                <Text
+                  style={
+                    Object {
+                      "fontSize": 20,
+                    }
+                  }
+                >
+                    
+                  Point
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </ScrollView>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Rendering renders without crashing 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "backgroundColor": "#ffffff",
+              "flexBasis": 0,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "justifyContent": "center",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "flex-end",
+                "flexDirection": "row",
+                "marginBottom": 22,
+                "marginLeft": 22,
+                "marginRight": 22,
+                "marginTop": 22,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "black",
+                  "fontSize": 24,
+                  "fontWeight": "bold",
+                },
+              ]
+            }
+          >
+            Mission
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#444444",
+                  "fontSize": 12,
+                  "marginBottom": 2,
+                  "marginLeft": 8,
+                },
+              ]
+            }
+          >
+            Protect yourselves from harmful virus!
+          </Text>
+        </View>
+        <ScrollView
+          style={
+            Object {
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 150,
+                },
+              ]
+            }
+          >
+            <ScrollView
+              horizontal={true}
+            >
+              <TouchableOpacity
+                activeOpacity={0.75}
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "column",
+                      "height": 136,
+                      "justifyContent": "center",
+                      "marginLeft": 20,
+                      "width": 96,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "borderColor": "#E6E6E6",
+                        "borderRadius": 16,
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                        "height": 120,
+                        "justifyContent": "center",
+                        "shadowColor": "rgba(0, 0, 0, 0.06)",
+                        "shadowOffset": Object {
+                          "height": 2,
+                          "width": 2,
+                        },
+                        "shadowOpacity": 1,
+                        "shadowRadius": 4,
+                        "width": 96,
+                      },
+                    ]
+                  }
+                >
+                  <SvgMock
+                    fill="black"
+                    height={48}
+                    width={48}
+                  />
+                  <Text
+                    style={
+                      Object {
+                        "color": "#02C7D3",
+                        "fontSize": 18,
+                        "position": "absolute",
+                        "right": 12,
+                        "top": 12,
+                      }
+                    }
+                  >
+                    +
+                    3
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderRadius": 16,
+                        "bottom": 0,
+                        "minHeight": 30,
+                        "minWidth": 57,
+                        "paddingBottom": 0,
+                        "paddingLeft": 8,
+                        "paddingRight": 8,
+                        "paddingTop": 0,
+                        "position": "absolute",
+                      },
+                      Object {
+                        "backgroundColor": "#02C7D3",
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={2}
+                    style={
+                      Object {
+                        "color": "white",
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Washing hands
+                  </Text>
+                </View>
+              </TouchableOpacity>
+              <TouchableOpacity
+                activeOpacity={0.75}
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "column",
+                      "height": 136,
+                      "justifyContent": "center",
+                      "marginLeft": 20,
+                      "width": 96,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "borderColor": "#E6E6E6",
+                        "borderRadius": 16,
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                        "height": 120,
+                        "justifyContent": "center",
+                        "shadowColor": "rgba(0, 0, 0, 0.06)",
+                        "shadowOffset": Object {
+                          "height": 2,
+                          "width": 2,
+                        },
+                        "shadowOpacity": 1,
+                        "shadowRadius": 4,
+                        "width": 96,
+                      },
+                    ]
+                  }
+                >
+                  <SvgMock
+                    fill="black"
+                    height={48}
+                    width={48}
+                  />
+                  <Text
+                    style={
+                      Object {
+                        "color": "#00A8F0",
+                        "fontSize": 18,
+                        "position": "absolute",
+                        "right": 12,
+                        "top": 12,
+                      }
+                    }
+                  >
+                    +
+                    5
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderRadius": 16,
+                        "bottom": 0,
+                        "minHeight": 30,
+                        "minWidth": 57,
+                        "paddingBottom": 0,
+                        "paddingLeft": 8,
+                        "paddingRight": 8,
+                        "paddingTop": 0,
+                        "position": "absolute",
+                      },
+                      Object {
+                        "backgroundColor": "#00A8F0",
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={2}
+                    style={
+                      Object {
+                        "color": "white",
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Wearing a mask
+                  </Text>
+                </View>
+              </TouchableOpacity>
+              <TouchableOpacity
+                activeOpacity={0.75}
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "column",
+                      "height": 136,
+                      "justifyContent": "center",
+                      "marginLeft": 20,
+                      "width": 96,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "borderColor": "#E6E6E6",
+                        "borderRadius": 16,
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                        "height": 120,
+                        "justifyContent": "center",
+                        "shadowColor": "rgba(0, 0, 0, 0.06)",
+                        "shadowOffset": Object {
+                          "height": 2,
+                          "width": 2,
+                        },
+                        "shadowOpacity": 1,
+                        "shadowRadius": 4,
+                        "width": 96,
+                      },
+                    ]
+                  }
+                >
+                  <SvgMock
+                    fill="black"
+                    height={48}
+                    width={48}
+                  />
+                  <Text
+                    style={
+                      Object {
+                        "color": "#1C77FF",
+                        "fontSize": 18,
+                        "position": "absolute",
+                        "right": 12,
+                        "top": 12,
+                      }
+                    }
+                  >
+                    +
+                    10
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderRadius": 16,
+                        "bottom": 0,
+                        "minHeight": 30,
+                        "minWidth": 57,
+                        "paddingBottom": 0,
+                        "paddingLeft": 8,
+                        "paddingRight": 8,
+                        "paddingTop": 0,
+                        "position": "absolute",
+                      },
+                      Object {
+                        "backgroundColor": "#1C77FF",
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={2}
+                    style={
+                      Object {
+                        "color": "white",
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Stay home
+                  </Text>
+                </View>
+              </TouchableOpacity>
+              <TouchableOpacity
+                activeOpacity={0.75}
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "column",
+                      "height": 136,
+                      "justifyContent": "center",
+                      "marginLeft": 20,
+                      "width": 96,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "borderColor": "#E6E6E6",
+                        "borderRadius": 16,
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                        "height": 120,
+                        "justifyContent": "center",
+                        "shadowColor": "rgba(0, 0, 0, 0.06)",
+                        "shadowOffset": Object {
+                          "height": 2,
+                          "width": 2,
+                        },
+                        "shadowOpacity": 1,
+                        "shadowRadius": 4,
+                        "width": 96,
+                      },
+                    ]
+                  }
+                >
+                  <SvgMock
+                    fill="black"
+                    height={48}
+                    width={48}
+                  />
+                  <Text
+                    style={
+                      Object {
+                        "color": "#1363DB",
+                        "fontSize": 18,
+                        "position": "absolute",
+                        "right": 12,
+                        "top": 12,
+                      }
+                    }
+                  >
+                    +
+                    15
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderRadius": 16,
+                        "bottom": 0,
+                        "minHeight": 30,
+                        "minWidth": 57,
+                        "paddingBottom": 0,
+                        "paddingLeft": 8,
+                        "paddingRight": 8,
+                        "paddingTop": 0,
+                        "position": "absolute",
+                      },
+                      Object {
+                        "backgroundColor": "#1363DB",
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={2}
+                    style={
+                      Object {
+                        "color": "white",
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Good consumption
+                  </Text>
+                </View>
+              </TouchableOpacity>
+              <TouchableOpacity
+                activeOpacity={0.75}
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "column",
+                      "height": 136,
+                      "justifyContent": "center",
+                      "marginLeft": 20,
+                      "width": 96,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "borderColor": "#E6E6E6",
+                        "borderRadius": 16,
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                        "height": 120,
+                        "justifyContent": "center",
+                        "shadowColor": "rgba(0, 0, 0, 0.06)",
+                        "shadowOffset": Object {
+                          "height": 2,
+                          "width": 2,
+                        },
+                        "shadowOpacity": 1,
+                        "shadowRadius": 4,
+                        "width": 96,
+                      },
+                    ]
+                  }
+                >
+                  <SvgMock
+                    fill="black"
+                    height={48}
+                    width={48}
+                  />
+                  <Text
+                    style={
+                      Object {
+                        "color": "#444444",
+                        "fontSize": 18,
+                        "position": "absolute",
+                        "right": 12,
+                        "top": 12,
+                      }
+                    }
+                  >
+                    +
+                    1
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderRadius": 16,
+                        "bottom": 0,
+                        "minHeight": 30,
+                        "minWidth": 57,
+                        "paddingBottom": 0,
+                        "paddingLeft": 8,
+                        "paddingRight": 8,
+                        "paddingTop": 0,
+                        "position": "absolute",
+                      },
+                      Object {
+                        "backgroundColor": "#444444",
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={2}
+                    style={
+                      Object {
+                        "color": "white",
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Extras
+                  </Text>
+                </View>
+              </TouchableOpacity>
+              <View
+                style={
+                  Object {
+                    "width": 36,
+                  }
+                }
+              />
+            </ScrollView>
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "width": "100%",
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "marginBottom": 48,
+                  "marginTop": 114,
+                  "transform": Array [
+                    Object {
+                      "translateY": 0,
+                    },
+                  ],
+                }
+              }
+            >
+              <Image
+                source={
+                  Object {
+                    "canInstrument": true,
+                    "createTransformer": [Function],
+                    "getCacheKey": [Function],
+                    "process": [Function],
+                  }
+                }
+                style={
+                  Object {
+                    "height": 114,
+                    "width": 114,
+                  }
+                }
+              />
+            </View>
+            <Image
+              source={
+                Object {
+                  "canInstrument": true,
+                  "createTransformer": [Function],
+                  "getCacheKey": [Function],
+                  "process": [Function],
+                }
+              }
+              style={
+                Object {
+                  "height": 24,
+                  "width": 131,
+                }
+              }
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "borderColor": "#E6E6E6",
+                    "borderRadius": 100,
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                    "flexDirection": "row",
+                    "height": 78,
+                    "justifyContent": "space-around",
+                    "marginTop": 60,
+                    "width": "80%",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "black",
+                      "fontSize": 18,
+                      "fontWeight": "bold",
+                    },
+                  ]
+                }
+              >
+                Score
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#1C77FF",
+                      "fontSize": 42,
+                    },
+                  ]
+                }
+              >
+                0
+                <Text
+                  style={
+                    Object {
+                      "fontSize": 20,
+                    }
+                  }
+                >
+                    
+                  Point
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </ScrollView>
+      </View>
+    </View>
+  </View>
+</View>
+`;

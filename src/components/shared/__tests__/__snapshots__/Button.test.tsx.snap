@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Button] should render without crashing 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  delayPressIn={30}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "borderColor": "blue",
+          "flexDirection": "row",
+          "height": 52,
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#069ccd",
+            "fontSize": 16,
+          },
+        ]
+      }
+    />
+  </View>
+</TouchableOpacity>
+`;

@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "scheme": "hygiene",
+    "name": "Hygiene",
+    "slug": "Hygiene",
+    "privacy": "public",
+    "sdkVersion": "37.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "facebookDisplayName": "Hygiene",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.dooboolab.hygiene",
+      "splash": {
+        "resizeMode": "cover",
+        "image": "./assets/splash.png"
+      },
+      "usesAppleSignIn": true,
+      "buildNumber": "1.0.2"
+    },
+    "android": {
+      "package": "com.dooboolab.hygiene",
+      "versionCode": 2
+    },
+    "packagerOpts": {
+      "config": "./metro.config.js",
+      "sourceExts": [
+        "js",
+        "jsx",
+        "ts",
+        "tsx",
+        "expo.ts",
+        "expo.tsx",
+        "expo.js",
+        "expo.jsx",
+        "json",
+        "wasm",
+        "svg"
+      ]
+    },
+    "description": "App to protect from virus by managing hygiene."
+  }
+}
