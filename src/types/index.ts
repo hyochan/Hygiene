@@ -9,10 +9,11 @@ export type User = {
   uid: string;
   displayName: string | null;
   email: string;
-  introduction: string | null;
+  introduction?: string | null;
   point: number;
   photoURL: string | null;
   thumbURL?: string;
+  signInMethod?: string | null;
 }
 
 export type Reply = {

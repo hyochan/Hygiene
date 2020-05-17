@@ -3,22 +3,27 @@ import { Photo, User } from '../types';
 import firebase from 'firebase/app';
 import shortid from 'shortid';
 
-export const createUser = async (credential: firebase.auth.UserCredential): Promise<void> => {
+export const createUser = async (credential: firebase.auth.UserCredential): Promise<User | undefined> => {
   const db = firebase.firestore();
   const user = credential.user;
   if (user) {
     const prevDoc = await db.collection('users').doc(user.uid).get();
 
     if (!prevDoc.exists) {
-      return db.collection('users')
+      const newUser: User = {
+        uid: user.uid,
+        email: user.email as string,
+        displayName: user.displayName,
+        photoURL: user.photoURL,
+        signInMethod: credential.credential?.signInMethod,
+        point: 0,
+      };
+
+      await db.collection('users')
         .doc(user.uid)
-        .set({
-          email: user.email,
-          displayName: user.displayName,
-          photoURL: user.photoURL,
-          signInMethod: credential.credential?.signInMethod,
-          point: 0,
-        }, { merge: true });
+        .set(newUser, { merge: true });
+
+      return newUser;
     }
   }
 };

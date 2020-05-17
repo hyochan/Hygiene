@@ -13,6 +13,7 @@ import { createUser } from '../../services/firebaseService';
 import firebase from 'firebase/app';
 import { getString } from '../../../STRINGS';
 import styled from 'styled-components/native';
+import { useAppContext } from '../../providers/AppProvider';
 import { useThemeContext } from '../../providers/ThemeProvider';
 
 const Container = styled.SafeAreaView`
@@ -60,6 +61,7 @@ const StyledAgreementLinedText = styled.Text`
 
 export default function Intro({ navigation }): ReactElement {
   const { theme, changeThemeType } = useThemeContext();
+  const { setUser } = useAppContext();
 
   const [signingInFacebook, setSigningInFacebook] = useState<boolean>(false);
   const [signingInApple, setSigningInApple] = useState<boolean>(false);
@@ -76,9 +78,6 @@ export default function Intro({ navigation }): ReactElement {
 
   const redirectUri = AuthSession.makeRedirectUri({
     useProxy,
-    // For usage in bare and standalone
-    // Use your FBID here. The path MUST be `authorize`.
-    native: `fb${facebookAppId}://authorize`,
   });
 
   // Request
@@ -136,7 +135,11 @@ export default function Intro({ navigation }): ReactElement {
           rawNonce: nonce, // nonce value from above
         });
         const authResult = await firebase.auth().signInWithCredential(credential);
-        createUser(authResult);
+        const user = await createUser(authResult);
+        if (user) {
+          // ensure update to navigate when this is new user
+          setUser(user);
+        }
       }
     } catch (e) {
       if (e.code === 'ERR_CANCELED') {
@@ -168,7 +171,12 @@ export default function Intro({ navigation }): ReactElement {
       const credential = firebase.auth.FacebookAuthProvider.credential(accessToken);
       // Sign in with credential from the Facebook user.
       const authResult = await firebase.auth().signInWithCredential(credential);
-      createUser(authResult);
+
+      const user = await createUser(authResult);
+      if (user) {
+        // ensure update to navigate when this is new user
+        setUser(user);
+      }
     } catch (err) {
       Alert.alert(`Facebook Login Error: ${err.message}`);
     } finally {
