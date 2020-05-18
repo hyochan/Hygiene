@@ -1,5 +1,5 @@
 import { Activity, CategoryType, Photo, SelectImageActionType, User } from '../../types';
-import { Alert, Text, TouchableOpacity, View } from 'react-native';
+import { Alert, Platform, Text, TouchableOpacity, View } from 'react-native';
 import React, { FC, useLayoutEffect, useState } from 'react';
 import { StackNavigationProps, StackParamList } from '../navigation/MainStackNavigator';
 import { THUMBNAIL_SIZES, launchCameraAsync, launchImageLibraryAsync, resizeImage } from '../../utils/imagePicker';
@@ -72,6 +72,12 @@ const Page: FC<Props> = ({
     if (!currentUser) return;
 
     if (!message) {
+      if (Platform.OS === 'web') {
+        // @ts-ignore
+        alert(getString('PLZ_WRITE_MESSAGE'));
+        return;
+      }
+
       Alert.alert(
         getString('ERROR_INPUT'),
         getString('PLZ_WRITE_MESSAGE'),
@@ -80,6 +86,11 @@ const Page: FC<Props> = ({
     }
 
     if (picture.length === 0) {
+      if (Platform.OS === 'web') {
+        // @ts-ignore
+        alert(getString('PLZ_ADD_PHOTO'));
+        return;
+      }
       Alert.alert(
         getString('ERROR_INPUT'),
         getString('PLZ_ADD_PHOTO'),

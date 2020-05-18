@@ -145,6 +145,11 @@ export default function Intro({ navigation }): ReactElement {
       if (e.code === 'ERR_CANCELED') {
         // handle that the user canceled the sign-in flow
       } else {
+        if (Platform.OS === 'web') {
+          // @ts-ignore
+          alert(`Apple Login Error: ${e.code} - ${e.message}`);
+          return;
+        }
         Alert.alert(`Apple Login Error: ${e.code} - ${e.message}`);
       }
     } finally {
@@ -158,6 +163,11 @@ export default function Intro({ navigation }): ReactElement {
     try {
       const result = await promptAsync({ useProxy });
       if (result.type !== 'success') {
+        if (Platform.OS === 'web') {
+          // @ts-ignore
+          alert(getString('ERROR_UNKNOWN'));
+          return;
+        }
         Alert.alert(getString('ERROR'), getString('ERROR_UNKNOWN'));
         return;
       }
@@ -178,6 +188,11 @@ export default function Intro({ navigation }): ReactElement {
         setUser(user);
       }
     } catch (err) {
+      if (Platform.OS === 'web') {
+        // @ts-ignore
+        alert(`Facebook Login Error: ${err.message}`);
+        return;
+      }
       Alert.alert(`Facebook Login Error: ${err.message}`);
     } finally {
       setSigningInFacebook(false);

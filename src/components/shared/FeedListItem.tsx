@@ -2,6 +2,7 @@ import { Activity, CategoryType, User } from '../../types';
 import {
   Alert,
   Image,
+  Platform,
   ScrollView,
   Share,
   TouchableOpacity,
@@ -278,6 +279,11 @@ const FeedListItem: FC<Props> = ({
         // dismissed
       }
     } catch (error) {
+      if (Platform.OS === 'web') {
+        // @ts-ignore
+        alert(error.message);
+        return;
+      }
       Alert.alert(getString('ERROR'), error.message);
     }
   };
@@ -407,9 +413,7 @@ const FeedListItem: FC<Props> = ({
     <StyledText
       numberOfLines={5}
     >{activity.message}</StyledText>
-    <View style={{
-      width: '100%',
-    }}>
+    <View style={{ width: '100%' }}>
       <ScrollView
         horizontal
         style={{ marginVertical: 10 }}
