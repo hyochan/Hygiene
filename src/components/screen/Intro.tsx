@@ -3,7 +3,7 @@ import * as AuthSession from 'expo-auth-session';
 import * as Crypto from 'expo-crypto';
 import * as WebBrowser from 'expo-web-browser';
 
-import { Alert, Linking, Platform, ScrollView, TouchableOpacity } from 'react-native';
+import { Alert, Linking, Platform, ScrollView, TouchableOpacity, View } from 'react-native';
 import { IC_BOTTLE, SvgApple, SvgFacebook } from '../../utils/Icons';
 import React, { ReactElement, useState } from 'react';
 import { facebookAppId, facebookSecret } from '../../../config';
@@ -226,11 +226,11 @@ export default function Intro({ navigation }): ReactElement {
                     marginBottom: 12,
                     borderRadius: 100,
                   }}
-                  // leftElement={
-                  //   <View style={{ marginRight: 6 }}>
-                  //     <SvgApple width={24} fill={theme.appleIcon}/>
-                  //   </View>
-                  // }
+                  leftElement={
+                    <View style={{ marginRight: 6 }}>
+                      <SvgApple width={18} height={18} fill={theme.appleIcon}/>
+                    </View>
+                  }
                   isLoading={signingInApple}
                   indicatorColor={theme.primary}
                   onPress={appleLogin}
@@ -250,11 +250,11 @@ export default function Intro({ navigation }): ReactElement {
                 marginBottom: 6,
                 borderRadius: 100,
               }}
-              // leftElement={
-              //   <View style={{ marginRight: 6 }}>
-              //     <SvgFacebook width={24} fill={theme.facebookIcon}/>
-              //   </View>
-              // }
+              leftElement={
+                <View style={{ marginRight: 6 }}>
+                  <SvgFacebook width={18} height={18} fill={theme.facebookIcon}/>
+                </View>
+              }
               isLoading={signingInFacebook}
               indicatorColor={theme.primary}
               onPress={facebookLogin}

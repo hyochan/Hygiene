@@ -19,8 +19,11 @@ const RootProvider = ({
   const colorScheme = useColorScheme();
   return (
     <ThemeProvider
-      initialThemeType={colorScheme === 'dark' ? ThemeType.DARK
-        : colorScheme === 'light' ? ThemeType.LIGHT : initialThemeType}
+      initialThemeType={
+        colorScheme === 'dark'
+          ? ThemeType.DARK
+          : colorScheme === 'light'
+            ? ThemeType.LIGHT : initialThemeType}
     >
       <ActionSheetProvider>
         <AppProvider>

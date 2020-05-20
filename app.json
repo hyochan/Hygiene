@@ -1,6 +1,7 @@
 {
   "expo": {
     "scheme": "hygiene",
+    "userInterfaceStyle": "automatic",
     "name": "Hygiene",
     "slug": "Hygiene",
     "privacy": "public",
@@ -10,7 +11,7 @@
       "android",
       "web"
     ],
-    "version": "1.0.1",
+    "version": "1.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -27,17 +28,17 @@
     "facebookDisplayName": "Hygiene",
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.dooboolab.hygiene",
+      "bundleIdentifier": "dev.hygiene",
       "splash": {
         "resizeMode": "cover",
         "image": "./assets/splash.png"
       },
       "usesAppleSignIn": true,
-      "buildNumber": "1.0.2"
+      "buildNumber": "1.1.0"
     },
     "android": {
-      "package": "com.dooboolab.hygiene",
-      "versionCode": 2
+      "package": "dev.hygiene",
+      "versionCode": 4
     },
     "packagerOpts": {
       "config": "./metro.config.js",

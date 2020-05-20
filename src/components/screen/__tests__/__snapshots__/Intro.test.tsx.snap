@@ -134,6 +134,19 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
                     ]
                   }
                 >
+                  <View
+                    style={
+                      Object {
+                        "marginRight": 6,
+                      }
+                    }
+                  >
+                    <SvgMock
+                      fill="#151E22"
+                      height={18}
+                      width={18}
+                    />
+                  </View>
                   <Text
                     style={
                       Array [
@@ -180,6 +193,19 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
                     ]
                   }
                 >
+                  <View
+                    style={
+                      Object {
+                        "marginRight": 6,
+                      }
+                    }
+                  >
+                    <SvgMock
+                      fill="#ffffff"
+                      height={18}
+                      width={18}
+                    />
+                  </View>
                   <Text
                     style={
                       Array [
@@ -406,6 +432,19 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
                 ]
               }
             >
+              <View
+                style={
+                  Object {
+                    "marginRight": 6,
+                  }
+                }
+              >
+                <SvgMock
+                  fill="#151E22"
+                  height={18}
+                  width={18}
+                />
+              </View>
               <Text
                 style={
                   Array [
@@ -453,6 +492,19 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
                 ]
               }
             >
+              <View
+                style={
+                  Object {
+                    "marginRight": 6,
+                  }
+                }
+              >
+                <SvgMock
+                  fill="#ffffff"
+                  height={18}
+                  width={18}
+                />
+              </View>
               <Text
                 style={
                   Array [
