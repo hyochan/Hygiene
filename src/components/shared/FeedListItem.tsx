@@ -312,6 +312,7 @@ const FeedListItem: FC<Props> = ({
     return activity.category === CategoryType.HandWash
       ? <SvgCatHandWash
         width={width}
+        height={width}
         fill={theme.link}
         style={{
           ...defaultStyle,
@@ -321,6 +322,7 @@ const FeedListItem: FC<Props> = ({
       : activity.category === CategoryType.WearMask
         ? <SvgCatMask
           width={width}
+          height={width}
           fill={theme.link}
           style={{
             ...defaultStyle,
@@ -329,6 +331,7 @@ const FeedListItem: FC<Props> = ({
         : activity.category === CategoryType.StayHome
           ? <SvgCatHomeStay
             width={width}
+            height={width}
             fill={theme.link}
             style={{
               ...defaultStyle,
@@ -337,6 +340,7 @@ const FeedListItem: FC<Props> = ({
           : activity.category === CategoryType.GoodConsumption
             ? <SvgCatGoodConsumption
               width={width}
+              height={width}
               fill={theme.link}
               style={{
                 ...defaultStyle,
@@ -344,6 +348,7 @@ const FeedListItem: FC<Props> = ({
               }}/>
             : <SvgCatEtc
               width={width}
+              height={width}
               fill={theme.link}
               style={{
                 ...defaultStyle,

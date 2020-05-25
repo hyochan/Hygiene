@@ -132,6 +132,7 @@ exports[`Interaction should simulate onClick 1`] = `
           </TouchableOpacity>
           <SvgMock
             fill="#1E6EFA"
+            height={24}
             style={
               Object {
                 "position": "absolute",
@@ -664,6 +665,7 @@ exports[`Rendering renders without crashing 1`] = `
           </TouchableOpacity>
           <SvgMock
             fill="#1E6EFA"
+            height={24}
             style={
               Object {
                 "position": "absolute",
