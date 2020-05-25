@@ -2,7 +2,7 @@
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 
-> Hygiene is an app built in univeral [expo](https://expo.io) app that supports `ios`, `android` and `web`. Hygiene aims to lead people the right behaviors to fight such virus like Covid19 when we are in trouble like today. This is a concept application to provide ideas for all organizations.
+> Hygiene is an app built in univeral [expo](https://expo.io) app that supports `ios`, `android` and `web`. Hygiene aims to lead people the right behaviors to fight such virus when we are in trouble like today. This is a concept application to provide ideas for all organizations.
 
 ![ScreenShot](https://cdn-images-1.medium.com/max/1440/1*U8gvjmBk0j8QI5dyiDtxKQ.png)
 

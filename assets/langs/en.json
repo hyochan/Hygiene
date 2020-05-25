@@ -57,7 +57,7 @@
   "MY_FEEDS": "My feeds",
   "LIKES": "Likes",
   "SHARE": "SHARE",
-  "SHARE_FEED": "{imgUrl}}\n{{user}} has shared {{message}} in Hygiene.\n- ios: {{iosUrl}}\n- android: {{androidUrl}}",
+  "SHARE_FEED": "{{imgUrl}}\n{{user}} has shared {{message}} in Hygiene.\n- ios: {{iosUrl}}\n- android: {{androidUrl}}",
   "SELF_INTRODUCTION": "Self introduction",
   "SELF_INTRODUCTION_HINT": "Please introduce yourself"
 }

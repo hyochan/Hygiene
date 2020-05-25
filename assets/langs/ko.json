@@ -57,7 +57,7 @@
   "MY_FEEDS": "나의 피드들",
   "LIKES": "좋아요",
   "SHARE": "공유",
-  "SHARE_FEED": "{imgUrl}}\n{{user}}가 Hygiene 앱 내에서 {{message}}를 공유했습니다.\n- ios: {{iosUrl}}\n- android: {{androidUrl}}",
+  "SHARE_FEED": "{{imgUrl}}\n{{user}}가 Hygiene 앱 내에서 {{message}}를 공유했습니다.\n- ios: {{iosUrl}}\n- android: {{androidUrl}}",
   "SELF_INTRODUCTION": "자기소개",
   "SELF_INTRODUCTION_HINT": "자유롭게 본인을 소개해주세요"
 }
