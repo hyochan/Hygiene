@@ -1,5 +1,7 @@
 # Hygiene
 
+[![CircleCI](https://circleci.com/gh/hyochan/Hygiene.svg?style=shield)](https://circleci.com/gh/hyochan/Hygiene)
+[![codecov](https://codecov.io/gh/hyochan/hygiene/branch/master/graph/badge.svg)](https://codecov.io/gh/hyochan/hygiene)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 
 > Hygiene is an app built in univeral [expo](https://expo.io) app that supports `ios`, `android` and `web`. Hygiene aims to lead people the right behaviors to fight such virus when we are in trouble like today. This is a concept application to provide ideas for all organizations.
@@ -9,9 +11,11 @@
 ### Universl app
 
 * App
+
   <a href=""><img src="https://user-images.githubusercontent.com/27461460/77502559-8c8a8d80-6e9e-11ea-9f8e-0f58c704eed6.png" width="200"/></a> <a href="https://play.google.com/store/apps/details?id=dev.hygiene"><img src="https://user-images.githubusercontent.com/27461460/77502571-90b6ab00-6e9e-11ea-9e93-235a319ebb41.png" width="200"/></a>
 
 * Web
+
   [https://hygiene.dooboolab.com](https://hygiene.dooboolab.com)
 
 ### Project spectification 
