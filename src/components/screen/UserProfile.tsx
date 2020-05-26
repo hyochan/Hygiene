@@ -1,5 +1,13 @@
 import { IC_CAMERA, IC_NO_IMAGE } from '../../utils/Icons';
-import { Image, KeyboardAvoidingView, ScrollView, Text, TouchableOpacity, View } from 'react-native';
+import {
+  Image,
+  ImageSourcePropType,
+  KeyboardAvoidingView,
+  ScrollView,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import React, { FC, useEffect, useLayoutEffect, useState } from 'react';
 import { SelectImageActionType, User } from '../../types';
 import { StackNavigationProps, StackParamList } from '../navigation/MainStackNavigator';
@@ -57,6 +65,7 @@ const Page: FC<Props> = ({
         const data = snap.data();
         setDisplayName(data?.displayName || '');
         setIntroduction(data?.introduction || '');
+        setLocalImage(data?.photoURL || '');
       });
     } else {
       setDisplayName(appUser?.displayName || '');
@@ -120,6 +129,17 @@ const Page: FC<Props> = ({
     }
   }, [navigation, theme, displayName, introduction]);
 
+  const getUserImage = (): ImageSourcePropType => {
+    if (peerUserId) {
+      return { uri: localImage };
+    }
+    return localImage
+      ? { uri: localImage }
+      : !firebase.auth().currentUser?.photoURL
+        ? IC_NO_IMAGE
+        : { uri: `${firebase.auth().currentUser?.photoURL}` };
+  };
+
   const pressImage = async (): Promise<void> => {
     const options = [
       getString('TAKE_A_PICTURE'),
@@ -167,13 +187,7 @@ const Page: FC<Props> = ({
           >
             <View>
               <Image
-                source={
-                  localImage
-                    ? { uri: localImage }
-                    : !firebase.auth().currentUser?.photoURL
-                      ? IC_NO_IMAGE
-                      : { uri: `${firebase.auth().currentUser?.photoURL}` }
-                }
+                source={getUserImage()}
                 style={{
                   width: 70,
                   height: 70,
