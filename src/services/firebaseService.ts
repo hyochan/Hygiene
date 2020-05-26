@@ -1,4 +1,4 @@
-import { Photo, User } from '../types';
+import { Category, CategoryType, Photo, User } from '../types';
 
 import firebase from 'firebase/app';
 import shortid from 'shortid';
@@ -143,4 +143,29 @@ export const uploadOrRemovePhoto = async (
 
     return getUrl(picRef);
   }
+};
+
+export const updateUserPoint = (
+  categoryType: string,
+  currentUser: firebase.User,
+  shouldAdd: boolean): number => {
+  let point = categoryType === CategoryType.HandWash
+    ? 3
+    : categoryType === CategoryType.WearMask
+      ? 5
+      : categoryType === CategoryType.StayHome
+        ? 10
+        : categoryType === CategoryType.GoodConsumption
+          ? 15
+          : 1;
+
+  if (!shouldAdd) {
+    point = -point;
+  }
+
+  const userRef = firebase.firestore().collection('users').doc(currentUser.uid);
+
+  userRef.update('point', firebase.firestore.FieldValue.increment(point));
+
+  return point;
 };

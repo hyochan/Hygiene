@@ -1,8 +1,9 @@
-import { Activity, CategoryType, Photo, SelectImageActionType, User } from '../../types';
+import { Activity, Photo, SelectImageActionType } from '../../types';
 import { Alert, Platform, Text, TouchableOpacity, View } from 'react-native';
 import React, { FC, useLayoutEffect, useState } from 'react';
 import { StackNavigationProps, StackParamList } from '../navigation/MainStackNavigator';
 import { THUMBNAIL_SIZES, launchCameraAsync, launchImageLibraryAsync, resizeImage } from '../../utils/imagePicker';
+import { updateUserPoint, uploadOrRemovePhoto } from '../../services/firebaseService';
 
 import EditText from '../shared/EditText';
 import PictureUploadBox from '../shared/PictureUploadBox';
@@ -10,7 +11,6 @@ import { RouteProp } from '@react-navigation/core';
 import firebase from 'firebase/app';
 import { getString } from '../../../STRINGS';
 import styled from 'styled-components/native';
-import { uploadOrRemovePhoto } from '../../services/firebaseService';
 import { useActionSheet } from '@expo/react-native-action-sheet';
 import { useAppContext } from '../../providers/AppProvider';
 import { useFeedContext } from '../../providers/FeedProvider';
@@ -121,18 +121,7 @@ const Page: FC<Props> = ({
 
       await firebase.firestore().collection('feeds').doc(ref.id).set(data);
 
-      const point = category.type === CategoryType.HandWash
-        ? 3
-        : CategoryType.WearMask
-          ? 5
-          : CategoryType.StayHome
-            ? 10
-            : CategoryType.GoodConsumption
-              ? 15
-              : 1;
-
-      const userRef = firebase.firestore().collection('users').doc(currentUser.uid);
-      userRef.update('point', firebase.firestore.FieldValue.increment(point));
+      const point = updateUserPoint(category.type, currentUser, true);
 
       if (appUser) {
         const updatedPoint = (appUser.point || 0) + point;

@@ -9,6 +9,7 @@ import firebase from 'firebase/app';
 import { getString } from '../../../STRINGS';
 import produce from 'immer';
 import styled from 'styled-components/native';
+import { updateUserPoint } from '../../services/firebaseService';
 import { useActionSheet } from '@expo/react-native-action-sheet';
 import { useAppContext } from '../../providers/AppProvider';
 import { useFeedContext } from '../../providers/FeedProvider';
@@ -28,10 +29,11 @@ interface Props {
 const Page: FC<Props> = ({
   navigation,
 }) => {
+  const currentUser = firebase.auth().currentUser;
   const db = firebase.firestore();
   const { feeds, setFeeds } = useFeedContext();
   const { showActionSheetWithOptions } = useActionSheet();
-  const { state: { user }, setAppLoading } = useAppContext();
+  const { state: { user }, setAppLoading, setUserPoint } = useAppContext();
 
   const [loading, setLoading] = useState<boolean>(true);
 
@@ -136,6 +138,7 @@ const Page: FC<Props> = ({
                   }, async (choice: number) => {
                     if (choice === SelectMyFeedMoreActionType.DELETE) {
                       setAppLoading(true);
+
                       await db.collection('feeds')
                         .doc(item.id)
                         .collection('likes')
@@ -151,6 +154,15 @@ const Page: FC<Props> = ({
                       await db.collection('feeds')
                         .doc(item.id)
                         .delete();
+
+                      if (currentUser) {
+                        const point = updateUserPoint(item.category, currentUser, false);
+                        if (user) {
+                          const updatedPoint = (user.point || 0) + point;
+                          setUserPoint(updatedPoint);
+                        }
+                      }
+
                       setAppLoading(false);
 
                       const index = feeds.findIndex((el) => {
