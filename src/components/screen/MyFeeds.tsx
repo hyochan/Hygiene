@@ -18,7 +18,8 @@ const Container = styled.SafeAreaView`
 
   flex: 1;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
 `;
 
 interface Props {
@@ -97,6 +98,7 @@ const Page: FC<Props> = () => {
     <Container>
       <FlatList
         keyExtractor={(item, i: number): string => i.toString()}
+        style={{ width: '100%' }}
         data={myFeeds}
         refreshing={loading}
         onRefresh={onRefresh}
