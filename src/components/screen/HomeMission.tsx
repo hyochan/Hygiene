@@ -1,5 +1,5 @@
 import { Category, CategoryType } from '../../types';
-import { Image, ScrollView, Text, View } from 'react-native';
+import { Image, Platform, ScrollView, Text, View } from 'react-native';
 import React, { FC } from 'react';
 
 import AnimatedVirus from '../shared/AnimatedVirus';
@@ -54,7 +54,7 @@ const Content = styled.View`
 
 const ScoreView = styled.View`
   width: 80%;
-  margin-top: 60px;
+  margin-top: 48px;
   border-radius: 100px;
   height: 78px;
   border: 1px solid;
@@ -127,7 +127,10 @@ const Page: FC<Props> = ({
         <Content>
           <AnimatedVirus
             style={{
-              marginTop: 114,
+              marginTop: Platform.select({
+                default: 72,
+                web: 130,
+              }),
               marginBottom: 48,
               alignSelf: 'center',
             }}
@@ -149,6 +152,7 @@ const Page: FC<Props> = ({
             </ScoreText>
           </ScoreView>
         </Content>
+        <View style={{ height: 40 }}/>
       </ScrollView>
     </Container>
   );
