@@ -45,8 +45,11 @@ const Page: FC<Props> = ({
   const db = firebase.firestore();
 
   const [users, setUsers] = useState<User[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
 
-  useEffect(() => {
+  const getRank = (): void => {
+    setLoading(true);
+    setUsers([]);
     db
       .collection('users')
       .where('point', '>', 0)
@@ -60,8 +63,17 @@ const Page: FC<Props> = ({
           updates.push(user);
         });
         setUsers(updates);
+        setLoading(false);
       });
+  };
+
+  useEffect(() => {
+    getRank();
   }, []);
+
+  const onRefresh = (): void => {
+    getRank();
+  };
 
   return (
     <Container>
@@ -75,6 +87,8 @@ const Page: FC<Props> = ({
           </Head>
         }
         data={users}
+        refreshing={loading}
+        onRefresh={onRefresh}
         renderItem={({ item, index }): ReactElement =>
           <RankListItem key={index} rank={item} index={index}/>
         }
