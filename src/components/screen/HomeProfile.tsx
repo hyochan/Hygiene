@@ -114,8 +114,10 @@ const Page: FC<Props> = ({
     const [myFeeds, setMyFeeds] = useState<Activity[]>([]);
 
     useEffect(() => {
+      if (!user?.uid) return;
+
       unsubscribe = db.collection('feeds')
-        .where('writerId', '==', user?.uid)
+        .where('writerId', '==', user.uid)
         .orderBy('createdAt', 'desc')
         .limit(20)
         .onSnapshot((snapshot) => {

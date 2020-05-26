@@ -123,10 +123,10 @@ const FeedListItem: FC<Props> = ({
   };
 
   const getData = async (): Promise<void> => {
-    const user = await getUserById(activity.writerId);
-    setUser(user as User);
+    const writer = await getUserById(activity.writerId);
+    setUser(writer as User);
 
-    if (user) {
+    if (writer) {
       replyUnsubscribe = db.collection('feeds')
         .doc(activity.id)
         .collection('replies')
@@ -140,6 +140,18 @@ const FeedListItem: FC<Props> = ({
         .onSnapshot((snap) => {
           setShareCnt(snap.size);
         });
+    }
+
+    if (appUser?.uid) {
+      const likeDoc = await db
+        .collection('feeds')
+        .doc(activity.id)
+        .collection('likes')
+        .doc(appUser.uid)
+        .get();
+
+      const likeData = likeDoc.data();
+      setLikeItem(likeData?.like);
     }
 
     const likes = await db
@@ -159,23 +171,15 @@ const FeedListItem: FC<Props> = ({
       .get();
 
     setDislikeCnt(dislikes.docs.length);
-
-    const likeDoc = await db
-      .collection('feeds')
-      .doc(activity.id)
-      .collection('likes')
-      .doc(activity.writerId)
-      .get();
-
-    const likeData = likeDoc.data();
-    setLikeItem(likeData?.like);
   };
 
   const like = async (): Promise<void> => {
+    if (!appUser?.uid) return;
+
     const prevResult = await db.collection('feeds')
       .doc(activity.id)
       .collection('likes')
-      .doc(activity.writerId)
+      .doc(appUser.uid)
       .get();
 
     const prevData = prevResult.data() as LikeData;
@@ -184,7 +188,7 @@ const FeedListItem: FC<Props> = ({
       await db.collection('feeds')
         .doc(activity.id)
         .collection('likes')
-        .doc(activity.writerId)
+        .doc(appUser.uid)
         .delete();
 
       setLikeItem(undefined);
@@ -199,7 +203,7 @@ const FeedListItem: FC<Props> = ({
     await db.collection('feeds')
       .doc(activity.id)
       .collection('likes')
-      .doc(activity.writerId)
+      .doc(appUser.uid)
       .set(
         { like: true },
         { merge: true },
@@ -210,10 +214,12 @@ const FeedListItem: FC<Props> = ({
   };
 
   const dislike = async (): Promise<void> => {
+    if (!appUser?.uid) return;
+
     const prevResult = await db.collection('feeds')
       .doc(activity.id)
       .collection('likes')
-      .doc(activity.writerId)
+      .doc(appUser.uid)
       .get();
 
     const prevData = prevResult.data() as LikeData;
@@ -222,7 +228,7 @@ const FeedListItem: FC<Props> = ({
       await db.collection('feeds')
         .doc(activity.id)
         .collection('likes')
-        .doc(activity.writerId)
+        .doc(appUser.uid)
         .delete();
 
       setLikeItem(undefined);
@@ -237,7 +243,7 @@ const FeedListItem: FC<Props> = ({
     await db.collection('feeds')
       .doc(activity.id)
       .collection('likes')
-      .doc(activity.writerId)
+      .doc(appUser.uid)
       .set({ like: false }, { merge: true });
 
     setLikeItem(false);
