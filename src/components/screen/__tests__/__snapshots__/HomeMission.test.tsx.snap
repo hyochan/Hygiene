@@ -587,7 +587,7 @@ exports[`Interaction should simulate onClick 1`] = `
                 Object {
                   "alignSelf": "center",
                   "marginBottom": 48,
-                  "marginTop": 114,
+                  "marginTop": 72,
                   "transform": Array [
                     Object {
                       "translateY": 0,
@@ -641,7 +641,7 @@ exports[`Interaction should simulate onClick 1`] = `
                     "flexDirection": "row",
                     "height": 78,
                     "justifyContent": "space-around",
-                    "marginTop": 60,
+                    "marginTop": 48,
                     "width": "80%",
                   },
                 ]
@@ -684,6 +684,13 @@ exports[`Interaction should simulate onClick 1`] = `
               </Text>
             </View>
           </View>
+          <View
+            style={
+              Object {
+                "height": 40,
+              }
+            }
+          />
         </ScrollView>
       </View>
     </View>
@@ -1278,7 +1285,7 @@ exports[`Rendering renders without crashing 1`] = `
                 Object {
                   "alignSelf": "center",
                   "marginBottom": 48,
-                  "marginTop": 114,
+                  "marginTop": 72,
                   "transform": Array [
                     Object {
                       "translateY": 0,
@@ -1332,7 +1339,7 @@ exports[`Rendering renders without crashing 1`] = `
                     "flexDirection": "row",
                     "height": 78,
                     "justifyContent": "space-around",
-                    "marginTop": 60,
+                    "marginTop": 48,
                     "width": "80%",
                   },
                 ]
@@ -1375,6 +1382,13 @@ exports[`Rendering renders without crashing 1`] = `
               </Text>
             </View>
           </View>
+          <View
+            style={
+              Object {
+                "height": 40,
+              }
+            }
+          />
         </ScrollView>
       </View>
     </View>
