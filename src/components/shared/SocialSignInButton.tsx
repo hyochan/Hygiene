@@ -53,6 +53,8 @@ const SignInFacebookButton: FC<Props> = ({
         redirectUri,
         prompt: Prompt.SelectAccount,
         scopes: ['openid', 'profile'],
+        responseType: ResponseType.Token,
+        usePKCE: false,
       }
       : {
         clientId,
@@ -86,12 +88,9 @@ const SignInFacebookButton: FC<Props> = ({
         return;
       }
 
-      console.log('result', result);
-      console.log('response', response);
-
       if (socialProvider === SocialAuthProvider.Google) {
-        const accessToken = result.params.state;
-        const credential = firebase.auth.GoogleAuthProvider.credential(accessToken);
+        const accessToken = result.params.access_token;
+        const credential = firebase.auth.GoogleAuthProvider.credential(null, accessToken);
         const authResult = await firebase.auth().signInWithCredential(credential);
 
         const user = await createUser(authResult);
