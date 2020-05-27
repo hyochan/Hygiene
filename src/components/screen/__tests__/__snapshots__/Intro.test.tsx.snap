@@ -49,10 +49,10 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
             style={
               Array [
                 Object {
-                  "marginBottom": 40,
+                  "marginBottom": 20,
                   "marginLeft": 40,
                   "marginRight": 40,
-                  "marginTop": 40,
+                  "marginTop": 20,
                 },
               ]
             }
@@ -63,7 +63,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
                   Object {
                     "alignSelf": "center",
                     "marginBottom": 72,
-                    "marginTop": 224,
+                    "marginTop": 200,
                   },
                 ]
               }
@@ -187,7 +187,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
                         "borderRadius": 100,
                         "borderWidth": 1,
                         "height": 48,
-                        "marginBottom": 6,
+                        "marginBottom": 12,
                         "width": "100%",
                       },
                     ]
@@ -221,6 +221,65 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
                     }
                   >
                     Sign in with Facebook
+                  </Text>
+                </View>
+              </TouchableOpacity>
+              <TouchableOpacity
+                activeOpacity={0.2}
+                delayPressIn={30}
+                testID="btn-google"
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "alignSelf": "center",
+                        "borderColor": "blue",
+                        "flexDirection": "row",
+                        "height": 52,
+                        "justifyContent": "center",
+                      },
+                      Object {
+                        "backgroundColor": "#E04238",
+                        "borderColor": "#E04238",
+                        "borderRadius": 100,
+                        "borderWidth": 1,
+                        "height": 48,
+                        "marginBottom": 12,
+                        "width": "100%",
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "marginRight": 6,
+                      }
+                    }
+                  >
+                    <SvgMock
+                      fill="#ffffff"
+                      height={20}
+                      width={20}
+                    />
+                  </View>
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#069ccd",
+                          "fontSize": 16,
+                        },
+                        Object {
+                          "color": "#ffffff",
+                          "fontWeight": "700",
+                        },
+                      ]
+                    }
+                  >
+                    Sign in with Google
                   </Text>
                 </View>
               </TouchableOpacity>
@@ -345,10 +404,10 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
         style={
           Array [
             Object {
-              "marginBottom": 40,
+              "marginBottom": 20,
               "marginLeft": 40,
               "marginRight": 40,
-              "marginTop": 40,
+              "marginTop": 20,
             },
           ]
         }
@@ -359,7 +418,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
               Object {
                 "alignSelf": "center",
                 "marginBottom": 72,
-                "marginTop": 224,
+                "marginTop": 200,
               },
             ]
           }
@@ -486,7 +545,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
                     "borderRadius": 100,
                     "borderWidth": 1,
                     "height": 48,
-                    "marginBottom": 6,
+                    "marginBottom": 12,
                     "width": "100%",
                   },
                 ]
@@ -520,6 +579,66 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
                 }
               >
                 Sign in with Facebook
+              </Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.2}
+            delayPressIn={30}
+            onPress={[Function]}
+            testID="btn-google"
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "alignSelf": "center",
+                    "borderColor": "blue",
+                    "flexDirection": "row",
+                    "height": 52,
+                    "justifyContent": "center",
+                  },
+                  Object {
+                    "backgroundColor": "#E04238",
+                    "borderColor": "#E04238",
+                    "borderRadius": 100,
+                    "borderWidth": 1,
+                    "height": 48,
+                    "marginBottom": 12,
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "marginRight": 6,
+                  }
+                }
+              >
+                <SvgMock
+                  fill="#ffffff"
+                  height={20}
+                  width={20}
+                />
+              </View>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#069ccd",
+                      "fontSize": 16,
+                    },
+                    Object {
+                      "color": "#ffffff",
+                      "fontWeight": "700",
+                    },
+                  ]
+                }
+              >
+                Sign in with Google
               </Text>
             </View>
           </TouchableOpacity>

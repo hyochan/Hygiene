@@ -11,3 +11,6 @@ export const firebaseConfig = {
 
 export const facebookAppId = '';
 export const facebookSecret = '';
+
+export const googleClientId = '';
+export const googleSecret = '';

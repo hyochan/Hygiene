@@ -8,6 +8,7 @@
   "FORGOT_PW": "비밀번호를 잊어버리셨나요?",
   "NAVIGATE": "%{name}으로 이동",
   "CHANGE_THEME": "테마 변경",
+  "SIGN_IN_WITH_GOOGLE": "구글 계정으로 로그인",
   "SIGN_IN_WITH_APPLE": "애플 계정으로 로그인",
   "SIGN_IN_WITH_FACEBOOK": "페이스북 계정으로 로그인",
   "AGREEMENT1": "다음 단계로 진행함과 동시에 ",

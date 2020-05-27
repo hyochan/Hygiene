@@ -1,14 +1,15 @@
 import * as AppleAuthentication from 'expo-apple-authentication';
-import * as AuthSession from 'expo-auth-session';
 import * as Crypto from 'expo-crypto';
 import * as WebBrowser from 'expo-web-browser';
 
 import { Alert, Linking, Platform, ScrollView, TouchableOpacity, View } from 'react-native';
-import { IC_BOTTLE, SvgApple, SvgFacebook } from '../../utils/Icons';
+import { IC_BOTTLE, SvgApple, SvgFacebook, SvgGoogle } from '../../utils/Icons';
 import React, { ReactElement, useState } from 'react';
-import { facebookAppId, facebookSecret } from '../../../config';
+import { facebookAppId, facebookSecret, googleClientId, googleSecret } from '../../../config';
 
 import Button from '../shared/Button';
+import { SocialAuthProvider } from '../../types';
+import SocialSignInButton from '../shared/SocialSignInButton';
 import { createUser } from '../../services/firebaseService';
 import firebase from 'firebase/app';
 import { getString } from '../../../STRINGS';
@@ -23,11 +24,11 @@ const Container = styled.SafeAreaView`
 `;
 
 const Wrapper = styled.View`
-  margin: 40px;
+  margin: 20px 40px;
 `;
 
 const LogoWrapper = styled.View`
-  margin-top: 224px;
+  margin-top: 200px;
   margin-bottom: 72px;
   align-self: center;
 `;
@@ -63,49 +64,9 @@ export default function Intro({ navigation }): ReactElement {
   const { theme, changeThemeType } = useThemeContext();
   const { setUser } = useAppContext();
 
-  const [signingInFacebook, setSigningInFacebook] = useState<boolean>(false);
   const [signingInApple, setSigningInApple] = useState<boolean>(false);
 
   WebBrowser.maybeCompleteAuthSession();
-
-  // Endpoint
-  const discovery = {
-    authorizationEndpoint: 'https://www.facebook.com/v6.0/dialog/oauth',
-    tokenEndpoint: 'https://graph.facebook.com/v6.0/oauth/access_token',
-  };
-
-  const useProxy = Platform.select({ web: false, default: true });
-
-  const redirectUri = AuthSession.makeRedirectUri({
-    useProxy,
-  });
-
-  // Request
-  const [request, response, promptAsync] = AuthSession.useAuthRequest(
-    {
-      clientId: facebookAppId,
-      clientSecret: facebookSecret,
-      scopes: ['public_profile, email'],
-      // For usage in managed apps using the proxy
-      redirectUri,
-      extraParams: {
-      // Use `popup` on web for a better experience
-        display: Platform.select({ web: 'popup' }) as string,
-        // Optionally you can use this to rerequest declined permissions
-        // eslint-disable-next-line
-        auth_type: 'rerequest',
-      },
-      // NOTICE: Please do not actually request the token on the client (see:
-      // response_type=token in the authUrl), it is not secure. Request a code
-      // instead, and use this flow:
-      // https://developers.facebook.com/docs/facebook-login/manually-build-a-login-flow/#confirm
-      // The code here is simplified for the sake of demonstration. If you are
-      // just prototyping then you don't need to concern yourself with this and
-      // can copy this example, but be aware that this is not safe in production.
-      responseType: AuthSession.ResponseType.Token,
-    },
-    discovery,
-  );
 
   const goToWebView = (uri: string): void => {
     navigation.navigate('WebView', { uri });
@@ -157,48 +118,6 @@ export default function Intro({ navigation }): ReactElement {
     }
   };
 
-  const facebookLogin = async (): Promise<void> => {
-    setSigningInFacebook(true);
-
-    try {
-      const result = await promptAsync({ useProxy });
-      if (result.type !== 'success') {
-        if (Platform.OS === 'web') {
-          // @ts-ignore
-          alert(getString('ERROR_UNKNOWN'));
-          return;
-        }
-        Alert.alert(getString('ERROR'), getString('ERROR_UNKNOWN'));
-        return;
-      }
-
-      const accessToken = result.params.access_token;
-      // const userInfoResponse = await fetch(
-      //   `https://graph.facebook.com/me?access_token=${accessToken}&fields=id,name,picture.type(large)`,
-      // );
-      // const userInfo = await userInfoResponse.json();
-
-      const credential = firebase.auth.FacebookAuthProvider.credential(accessToken);
-      // Sign in with credential from the Facebook user.
-      const authResult = await firebase.auth().signInWithCredential(credential);
-
-      const user = await createUser(authResult);
-      if (user) {
-        // ensure update to navigate when this is new user
-        setUser(user);
-      }
-    } catch (err) {
-      if (Platform.OS === 'web') {
-        // @ts-ignore
-        alert(`Facebook Login Error: ${err.message}`);
-        return;
-      }
-      Alert.alert(`Facebook Login Error: ${err.message}`);
-    } finally {
-      setSigningInFacebook(false);
-    }
-  };
-
   return (
     <Container>
       <ScrollView style={{ alignSelf: 'stretch' }}>
@@ -239,27 +158,23 @@ export default function Intro({ navigation }): ReactElement {
                 />,
               })
             }
-            <Button
-              testID="btn-facebook"
-              style={{
-                backgroundColor: theme.facebookBackground,
-                borderColor: theme.facebookBackground,
-                borderWidth: 1,
-                width: '100%',
-                height: 48,
-                marginBottom: 6,
-                borderRadius: 100,
+            <SocialSignInButton
+              clientId={facebookAppId}
+              clientSecret={facebookSecret}
+              svgIcon={<SvgFacebook width={18} height={18} fill={theme.facebookIcon}/>}
+              onUserCreated={(user): void => {
+                if (user) setUser(user);
               }}
-              leftElement={
-                <View style={{ marginRight: 6 }}>
-                  <SvgFacebook width={18} height={18} fill={theme.facebookIcon}/>
-                </View>
-              }
-              isLoading={signingInFacebook}
-              indicatorColor={theme.primary}
-              onPress={facebookLogin}
-              text={getString('SIGN_IN_WITH_FACEBOOK')}
-              textStyle={{ fontWeight: '700', color: theme.facebookText }}
+              socialProvider={SocialAuthProvider.Facebook}
+            />
+            <SocialSignInButton
+              clientId={googleClientId}
+              clientSecret={googleSecret}
+              svgIcon={<SvgGoogle width={20} height={20} fill={theme.googleIcon}/>}
+              onUserCreated={(user): void => {
+                if (user) setUser(user);
+              }}
+              socialProvider={SocialAuthProvider.Google}
             />
           </SocialButtonWrapper>
           <StyledAgreementTextWrapper>

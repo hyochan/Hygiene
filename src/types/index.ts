@@ -5,6 +5,12 @@ import firebase from 'firebase/app';
 
 export type FirebaseUser = firebase.User;
 
+export enum SocialAuthProvider {
+  Google = 'google',
+  Facebook = 'facebook',
+  Apple = 'apple',
+};
+
 export type User = {
   uid: string;
   displayName: string | null;
