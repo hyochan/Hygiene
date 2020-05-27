@@ -137,8 +137,8 @@ We've created test examples with jest-ts in `src/components/screen/__tests__` an
 
 ### Localization
 
-We've defined Localization strings in `STRINGS.js` which is in root dir.
-We used [react-native-localization](https://github.com/stefalda/ReactNativeLocalization) pacakage for this one.
+We've defined Localization strings in `STRINGS.ts` which is in root dir.
+We used [i18n-js](https://github.com/fnando/i18n-js) pacakage for this one.
 
 ```
 import * as Localization from 'expo-localization';
