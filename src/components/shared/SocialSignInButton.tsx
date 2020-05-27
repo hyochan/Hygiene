@@ -18,7 +18,7 @@ interface Props {
   onUserCreated?: (user?: User) => void;
 }
 
-const SignInFacebookButton: FC<Props> = ({
+const SocialSignInButton: FC<Props> = ({
   svgIcon,
   clientId,
   clientSecret,
@@ -40,7 +40,7 @@ const SignInFacebookButton: FC<Props> = ({
   const redirectUri = makeRedirectUri(
     socialProvider === SocialAuthProvider.Google
       ? {
-        native: 'com.googleusercontent.apps.GOOGLE_GUID://redirect',
+        // native: 'dev.hygiene',
         useProxy,
       }
       : { useProxy },
@@ -162,4 +162,4 @@ const SignInFacebookButton: FC<Props> = ({
   />;
 };
 
-export default SignInFacebookButton;
+export default SocialSignInButton;
