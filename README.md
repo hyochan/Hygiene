@@ -8,6 +8,10 @@
 
 ![ScreenShot](https://cdn-images-1.medium.com/max/1440/1*U8gvjmBk0j8QI5dyiDtxKQ.png)
 
+### Introduciton
+
+`Hygiene` was built to contribute my skill to be somewhat helpful to `Covid-19` pandemic. However, `Apple` rejected my contribution so this app won't appear in `iOS`.
+
 ### Universl app
 
 * App
