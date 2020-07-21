@@ -16,9 +16,9 @@ export const createTestElement = (
 );
 
 export const createTestProps = (
-  obj?: object,
-  moreScreenProps?: object,
-): object | unknown | any => ({
+  obj?: Record<string, unknown>,
+  moreScreenProps?: Record<string, unknown>,
+): Record<string, unknown> | unknown | any => ({
   navigation: {
     navigate: jest.fn(),
     goBack: jest.fn(),

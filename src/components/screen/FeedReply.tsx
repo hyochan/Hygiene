@@ -154,7 +154,7 @@ const Page: FC<Props> = ({
       <StyledKeyboardAvoidingView
         // keyboardVerticalOffset={92}
         keyboardVerticalOffset={Platform.select({
-          ios: isIphoneX
+          ios: isIphoneX()
             ? Constants.statusBarHeight + 48
             : Constants.statusBarHeight,
           android: Constants.statusBarHeight + 52,

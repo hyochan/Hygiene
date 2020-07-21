@@ -44,7 +44,7 @@ const signInWithRedirect = jest.fn(() => {
 });
 
 const firebase = new MockFirebase(fixtureData);
-const auth = (): object => {
+const auth = (): Record<string, unknown> => {
   return {
     onAuthStateChanged,
     currentUser: {

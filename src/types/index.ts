@@ -9,7 +9,7 @@ export enum SocialAuthProvider {
   Google = 'google',
   Facebook = 'facebook',
   Apple = 'apple',
-};
+}
 
 export type User = {
   uid: string;

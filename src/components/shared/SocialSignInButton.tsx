@@ -64,7 +64,7 @@ const SocialSignInButton: FC<Props> = ({
         prompt: Prompt.SelectAccount,
         extraParams: {
           display: Platform.select({ web: 'popup' }) as string,
-          // eslint-disable-next-line @typescript-eslint/camelcase
+          // eslint-disable-next-line
           auth_type: 'rerequest',
         },
         responseType: ResponseType.Token,

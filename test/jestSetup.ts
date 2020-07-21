@@ -23,7 +23,7 @@ customGlobal.fetch = require('jest-fetch-mock');
 customGlobal.fetchMock = customGlobal.fetch;
 
 // @ts-ignore
-customGlobal.matchMedia = (): object => {
+customGlobal.matchMedia = (): Record<string, unknown> => {
   return {
     matches: true,
   };
