@@ -68,8 +68,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
                 ]
               }
             >
-              <TouchableOpacity
-                activeOpacity={0.2}
+              <
                 style={
                   Object {
                     "width": 124,
@@ -95,7 +94,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
                     ]
                   }
                 />
-              </TouchableOpacity>
+              </>
             </View>
             <View
               style={
@@ -106,8 +105,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
                 ]
               }
             >
-              <TouchableOpacity
-                activeOpacity={0.2}
+              <
                 delayPressIn={30}
                 testID="btn-apple"
               >
@@ -164,9 +162,8 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
                     Sign in with Apple
                   </Text>
                 </View>
-              </TouchableOpacity>
-              <TouchableOpacity
-                activeOpacity={0.2}
+              </>
+              <
                 delayPressIn={30}
                 testID="btn-facebook"
               >
@@ -223,9 +220,8 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
                     Sign in with Facebook
                   </Text>
                 </View>
-              </TouchableOpacity>
-              <TouchableOpacity
-                activeOpacity={0.2}
+              </>
+              <
                 delayPressIn={30}
                 testID="btn-google"
               >
@@ -282,7 +278,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
                     Sign in with Google
                   </Text>
                 </View>
-              </TouchableOpacity>
+              </>
             </View>
             <View
               style={
@@ -423,8 +419,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
             ]
           }
         >
-          <TouchableOpacity
-            activeOpacity={0.2}
+          <
             onPress={[Function]}
             style={
               Object {
@@ -451,7 +446,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
                 ]
               }
             />
-          </TouchableOpacity>
+          </>
         </View>
         <View
           style={
@@ -462,8 +457,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
             ]
           }
         >
-          <TouchableOpacity
-            activeOpacity={0.2}
+          <
             delayPressIn={30}
             onPress={[Function]}
             testID="btn-apple"
@@ -521,9 +515,8 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
                 Sign in with Apple
               </Text>
             </View>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.2}
+          </>
+          <
             delayPressIn={30}
             onPress={[Function]}
             testID="btn-facebook"
@@ -581,9 +574,8 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
                 Sign in with Facebook
               </Text>
             </View>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.2}
+          </>
+          <
             delayPressIn={30}
             onPress={[Function]}
             testID="btn-google"
@@ -641,7 +633,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
                 Sign in with Google
               </Text>
             </View>
-          </TouchableOpacity>
+          </>
         </View>
         <View
           style={

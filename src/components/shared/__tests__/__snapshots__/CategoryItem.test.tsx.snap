@@ -25,7 +25,7 @@ exports[`Interaction should simulate onClick 1`] = `
         }
       }
     >
-      <TouchableOpacity
+      <
         activeOpacity={0.75}
         style={
           Array [
@@ -116,7 +116,7 @@ exports[`Interaction should simulate onClick 1`] = `
             Washing hands
           </Text>
         </View>
-      </TouchableOpacity>
+      </>
     </View>
   </View>
 </View>
@@ -147,7 +147,7 @@ exports[`Rendering renders without crashing 1`] = `
         }
       }
     >
-      <TouchableOpacity
+      <
         activeOpacity={0.75}
         style={
           Array [
@@ -238,7 +238,7 @@ exports[`Rendering renders without crashing 1`] = `
             Washing hands
           </Text>
         </View>
-      </TouchableOpacity>
+      </>
     </View>
   </View>
 </View>

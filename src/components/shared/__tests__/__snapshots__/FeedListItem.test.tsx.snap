@@ -58,7 +58,7 @@ exports[`Interaction should simulate onClick 1`] = `
             ]
           }
         >
-          <TouchableOpacity
+          <
             activeOpacity={0.7}
             style={
               Object {
@@ -129,7 +129,7 @@ exports[`Interaction should simulate onClick 1`] = `
                 
               </Text>
             </View>
-          </TouchableOpacity>
+          </>
           <SvgMock
             fill="#1E6EFA"
             height={24}
@@ -141,7 +141,7 @@ exports[`Interaction should simulate onClick 1`] = `
             }
             width={24}
           />
-          <TouchableOpacity
+          <
             activeOpacity={0.7}
             style={
               Object {
@@ -166,7 +166,7 @@ exports[`Interaction should simulate onClick 1`] = `
                 }
               }
             />
-          </TouchableOpacity>
+          </>
         </View>
         <Text
           numberOfLines={5}
@@ -251,7 +251,7 @@ exports[`Interaction should simulate onClick 1`] = `
               }
             }
           >
-            <TouchableOpacity
+            <
               activeOpacity={0.7}
               style={
                 Object {
@@ -318,8 +318,8 @@ exports[`Interaction should simulate onClick 1`] = `
                   0
                 </Text>
               </View>
-            </TouchableOpacity>
-            <TouchableOpacity
+            </>
+            <
               activeOpacity={0.7}
               style={
                 Object {
@@ -386,7 +386,7 @@ exports[`Interaction should simulate onClick 1`] = `
                   0
                 </Text>
               </View>
-            </TouchableOpacity>
+            </>
           </View>
           <View />
           <View
@@ -396,7 +396,7 @@ exports[`Interaction should simulate onClick 1`] = `
               }
             }
           >
-            <TouchableOpacity
+            <
               activeOpacity={0.7}
               style={
                 Object {
@@ -462,8 +462,8 @@ exports[`Interaction should simulate onClick 1`] = `
                   0
                 </Text>
               </View>
-            </TouchableOpacity>
-            <TouchableOpacity
+            </>
+            <
               activeOpacity={0.7}
             >
               <View
@@ -524,7 +524,7 @@ exports[`Interaction should simulate onClick 1`] = `
                   0
                 </Text>
               </View>
-            </TouchableOpacity>
+            </>
           </View>
         </View>
       </View>
@@ -591,7 +591,7 @@ exports[`Rendering renders without crashing 1`] = `
             ]
           }
         >
-          <TouchableOpacity
+          <
             activeOpacity={0.7}
             style={
               Object {
@@ -662,7 +662,7 @@ exports[`Rendering renders without crashing 1`] = `
                 
               </Text>
             </View>
-          </TouchableOpacity>
+          </>
           <SvgMock
             fill="#1E6EFA"
             height={24}
@@ -674,7 +674,7 @@ exports[`Rendering renders without crashing 1`] = `
             }
             width={24}
           />
-          <TouchableOpacity
+          <
             activeOpacity={0.7}
             style={
               Object {
@@ -699,7 +699,7 @@ exports[`Rendering renders without crashing 1`] = `
                 }
               }
             />
-          </TouchableOpacity>
+          </>
         </View>
         <Text
           numberOfLines={5}
@@ -784,7 +784,7 @@ exports[`Rendering renders without crashing 1`] = `
               }
             }
           >
-            <TouchableOpacity
+            <
               activeOpacity={0.7}
               style={
                 Object {
@@ -851,8 +851,8 @@ exports[`Rendering renders without crashing 1`] = `
                   0
                 </Text>
               </View>
-            </TouchableOpacity>
-            <TouchableOpacity
+            </>
+            <
               activeOpacity={0.7}
               style={
                 Object {
@@ -919,7 +919,7 @@ exports[`Rendering renders without crashing 1`] = `
                   0
                 </Text>
               </View>
-            </TouchableOpacity>
+            </>
           </View>
           <View />
           <View
@@ -929,7 +929,7 @@ exports[`Rendering renders without crashing 1`] = `
               }
             }
           >
-            <TouchableOpacity
+            <
               activeOpacity={0.7}
               style={
                 Object {
@@ -995,8 +995,8 @@ exports[`Rendering renders without crashing 1`] = `
                   0
                 </Text>
               </View>
-            </TouchableOpacity>
-            <TouchableOpacity
+            </>
+            <
               activeOpacity={0.7}
             >
               <View
@@ -1057,7 +1057,7 @@ exports[`Rendering renders without crashing 1`] = `
                   0
                 </Text>
               </View>
-            </TouchableOpacity>
+            </>
           </View>
         </View>
       </View>

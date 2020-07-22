@@ -78,7 +78,6 @@ exports[`Interaction should simulate onClick 1`] = `
             horizontal={false}
             initialNumToRender={10}
             maxToRenderPerBatch={10}
-            numColumns={1}
             onEndReachedThreshold={2}
             removeClippedSubviews={false}
             scrollEventThrottle={50}
@@ -126,7 +125,7 @@ exports[`Interaction should simulate onClick 1`] = `
                     ]
                   }
                 >
-                  <TouchableOpacity
+                  <
                     activeOpacity={0.7}
                     style={
                       Object {
@@ -197,7 +196,7 @@ exports[`Interaction should simulate onClick 1`] = `
                         
                       </Text>
                     </View>
-                  </TouchableOpacity>
+                  </>
                   <SvgMock
                     fill="#1E6EFA"
                     height={24}
@@ -288,8 +287,7 @@ exports[`Interaction should simulate onClick 1`] = `
               underlineColorAndroid="transparent"
               value=""
             />
-            <TouchableOpacity
-              activeOpacity={0.2}
+            <
               style={
                 Object {
                   "paddingHorizontal": 12,
@@ -303,7 +301,7 @@ exports[`Interaction should simulate onClick 1`] = `
                 fill="#1E6EFA"
                 width={26}
               />
-            </TouchableOpacity>
+            </>
           </View>
         </View>
       </SafeAreaView>
@@ -390,7 +388,6 @@ exports[`Rendering renders without crashing 1`] = `
             horizontal={false}
             initialNumToRender={10}
             maxToRenderPerBatch={10}
-            numColumns={1}
             onEndReachedThreshold={2}
             removeClippedSubviews={false}
             scrollEventThrottle={50}
@@ -438,7 +435,7 @@ exports[`Rendering renders without crashing 1`] = `
                     ]
                   }
                 >
-                  <TouchableOpacity
+                  <
                     activeOpacity={0.7}
                     style={
                       Object {
@@ -509,7 +506,7 @@ exports[`Rendering renders without crashing 1`] = `
                         
                       </Text>
                     </View>
-                  </TouchableOpacity>
+                  </>
                   <SvgMock
                     fill="#1E6EFA"
                     height={24}
@@ -600,8 +597,7 @@ exports[`Rendering renders without crashing 1`] = `
               underlineColorAndroid="transparent"
               value=""
             />
-            <TouchableOpacity
-              activeOpacity={0.2}
+            <
               style={
                 Object {
                   "paddingHorizontal": 12,
@@ -615,7 +611,7 @@ exports[`Rendering renders without crashing 1`] = `
                 fill="#1E6EFA"
                 width={26}
               />
-            </TouchableOpacity>
+            </>
           </View>
         </View>
       </SafeAreaView>

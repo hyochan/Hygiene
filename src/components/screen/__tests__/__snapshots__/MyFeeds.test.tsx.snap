@@ -46,7 +46,6 @@ exports[`Interaction should simulate onClick 1`] = `
           horizontal={false}
           initialNumToRender={10}
           maxToRenderPerBatch={10}
-          numColumns={1}
           onEndReachedThreshold={0.1}
           refreshControl={
             <RefreshControl
@@ -119,7 +118,6 @@ exports[`Rendering renders without crashing 1`] = `
           horizontal={false}
           initialNumToRender={10}
           maxToRenderPerBatch={10}
-          numColumns={1}
           onEndReachedThreshold={0.1}
           refreshControl={
             <RefreshControl

@@ -101,7 +101,7 @@ exports[`Interaction should simulate onClick 1`] = `
             <ScrollView
               horizontal={true}
             >
-              <TouchableOpacity
+              <
                 activeOpacity={0.75}
                 style={
                   Array [
@@ -192,8 +192,8 @@ exports[`Interaction should simulate onClick 1`] = `
                     Washing hands
                   </Text>
                 </View>
-              </TouchableOpacity>
-              <TouchableOpacity
+              </>
+              <
                 activeOpacity={0.75}
                 style={
                   Array [
@@ -284,8 +284,8 @@ exports[`Interaction should simulate onClick 1`] = `
                     Wearing a mask
                   </Text>
                 </View>
-              </TouchableOpacity>
-              <TouchableOpacity
+              </>
+              <
                 activeOpacity={0.75}
                 style={
                   Array [
@@ -376,8 +376,8 @@ exports[`Interaction should simulate onClick 1`] = `
                     Stay home
                   </Text>
                 </View>
-              </TouchableOpacity>
-              <TouchableOpacity
+              </>
+              <
                 activeOpacity={0.75}
                 style={
                   Array [
@@ -468,8 +468,8 @@ exports[`Interaction should simulate onClick 1`] = `
                     Good consumption
                   </Text>
                 </View>
-              </TouchableOpacity>
-              <TouchableOpacity
+              </>
+              <
                 activeOpacity={0.75}
                 style={
                   Array [
@@ -560,7 +560,7 @@ exports[`Interaction should simulate onClick 1`] = `
                     Extras
                   </Text>
                 </View>
-              </TouchableOpacity>
+              </>
               <View
                 style={
                   Object {
@@ -799,7 +799,7 @@ exports[`Rendering renders without crashing 1`] = `
             <ScrollView
               horizontal={true}
             >
-              <TouchableOpacity
+              <
                 activeOpacity={0.75}
                 style={
                   Array [
@@ -890,8 +890,8 @@ exports[`Rendering renders without crashing 1`] = `
                     Washing hands
                   </Text>
                 </View>
-              </TouchableOpacity>
-              <TouchableOpacity
+              </>
+              <
                 activeOpacity={0.75}
                 style={
                   Array [
@@ -982,8 +982,8 @@ exports[`Rendering renders without crashing 1`] = `
                     Wearing a mask
                   </Text>
                 </View>
-              </TouchableOpacity>
-              <TouchableOpacity
+              </>
+              <
                 activeOpacity={0.75}
                 style={
                   Array [
@@ -1074,8 +1074,8 @@ exports[`Rendering renders without crashing 1`] = `
                     Stay home
                   </Text>
                 </View>
-              </TouchableOpacity>
-              <TouchableOpacity
+              </>
+              <
                 activeOpacity={0.75}
                 style={
                   Array [
@@ -1166,8 +1166,8 @@ exports[`Rendering renders without crashing 1`] = `
                     Good consumption
                   </Text>
                 </View>
-              </TouchableOpacity>
-              <TouchableOpacity
+              </>
+              <
                 activeOpacity={0.75}
                 style={
                   Array [
@@ -1258,7 +1258,7 @@ exports[`Rendering renders without crashing 1`] = `
                     Extras
                   </Text>
                 </View>
-              </TouchableOpacity>
+              </>
               <View
                 style={
                   Object {

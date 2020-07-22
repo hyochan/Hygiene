@@ -25,7 +25,7 @@ exports[`Interaction should simulate onClick 1`] = `
         }
       }
     >
-      <TouchableOpacity
+      <
         activeOpacity={0.7}
       >
         <View
@@ -93,7 +93,7 @@ exports[`Interaction should simulate onClick 1`] = `
             }
           />
         </View>
-      </TouchableOpacity>
+      </>
     </View>
   </View>
 </View>
@@ -124,7 +124,7 @@ exports[`Rendering renders without crashing 1`] = `
         }
       }
     >
-      <TouchableOpacity
+      <
         activeOpacity={0.7}
       >
         <View
@@ -192,7 +192,7 @@ exports[`Rendering renders without crashing 1`] = `
             }
           />
         </View>
-      </TouchableOpacity>
+      </>
     </View>
   </View>
 </View>
