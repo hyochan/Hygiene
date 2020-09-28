@@ -1,8 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`[Button] should render without crashing 1`] = `
-<
-  delayPressIn={30}
+<View
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
 >
   <View
     style={
@@ -29,5 +42,5 @@ exports[`[Button] should render without crashing 1`] = `
       }
     />
   </View>
-</>
+</View>
 `;

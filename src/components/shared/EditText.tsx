@@ -203,12 +203,14 @@ function EditText(props: Props): ReactElement {
             autoCapitalize={autoCapitalize}
             onFocus={(): void => {
               setFocus(true);
+
               if (onFocus) {
                 onFocus();
               }
             }}
             onBlur={(): void => {
               setFocus(false);
+
               if (onBlur) {
                 onBlur();
               }
@@ -291,12 +293,14 @@ function EditText(props: Props): ReactElement {
               autoCapitalize={autoCapitalize}
               onFocus={(): void => {
                 setFocus(true);
+
                 if (onFocus) {
                   onFocus();
                 }
               }}
               onBlur={(): void => {
                 setFocus(false);
+
                 if (onBlur) {
                   onBlur();
                 }
@@ -348,12 +352,14 @@ function EditText(props: Props): ReactElement {
             autoCapitalize={autoCapitalize}
             onFocus={(): void => {
               setFocus(true);
+
               if (onFocus) {
                 onFocus();
               }
             }}
             onBlur={(): void => {
               setFocus(false);
+
               if (onBlur) {
                 onBlur();
               }
@@ -450,12 +456,14 @@ function EditText(props: Props): ReactElement {
               autoCapitalize={autoCapitalize}
               onFocus={(): void => {
                 setFocus(true);
+
                 if (onFocus) {
                   onFocus();
                 }
               }}
               onBlur={(): void => {
                 setFocus(false);
+
                 if (onBlur) {
                   onBlur();
                 }

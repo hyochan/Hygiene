@@ -2,10 +2,11 @@ import * as React from 'react';
 
 import { Button, View } from 'react-native';
 import { FeedProvider, useFeedContext } from '../FeedProvider';
-import { RenderResult, act, fireEvent, render } from '@testing-library/react-native';
+import { RenderAPI, act, fireEvent, render } from '@testing-library/react-native';
 
 const FakeChild = (): React.ReactElement => {
   const { setFeeds } = useFeedContext();
+
   return (
     <View>
       <Button
@@ -25,10 +26,12 @@ describe('Rendering', () => {
       <FakeChild />
     </FeedProvider>
   );
-  const testingLib: RenderResult = render(component);
+
+  const testingLib: RenderAPI = render(component);
 
   it('component and snapshot matches', () => {
-    const { baseElement } = testingLib;
+    const baseElement = testingLib.toJSON();
+
     expect(baseElement).toMatchSnapshot();
     expect(baseElement).toBeTruthy();
   });
@@ -41,6 +44,7 @@ describe('Interactions', () => {
         <FakeChild />
       </FeedProvider>,
     );
+
     act(() => {
       fireEvent.press(getByTestId('BUTTON'));
     });

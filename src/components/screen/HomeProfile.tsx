@@ -84,6 +84,7 @@ const Page: FC<Props> = ({
 
   const renderTrophyItem = (throphy: Throphy, i: number): ReactElement => {
     const { type, count } = throphy;
+
     return <BadgeCard
       key={i}
     >
@@ -125,6 +126,7 @@ const Page: FC<Props> = ({
 
           snapshot.docChanges().forEach(function(change) {
             const feed = change.doc.data();
+
             feed.id = change.doc.id;
             feed.createdAt = feed.createdAt.toDate();
             feed.updatedAt = feed.updatedAt.toDate();
@@ -135,6 +137,7 @@ const Page: FC<Props> = ({
                 feed as Activity,
               ];
             }
+
             if (change.type === 'modified') {
               const index = feed.findIndex((el) => {
                 return el.id === change.doc.id;
@@ -144,6 +147,7 @@ const Page: FC<Props> = ({
 
               updates[index] = feed as Activity;
             }
+
             if (change.type === 'removed') {
               const index = updates.findIndex((el) => {
                 return el.id === change.doc.id;
@@ -168,6 +172,7 @@ const Page: FC<Props> = ({
             .get().then((snap) => {
               setRank(snap.docs.length + 1);
             });
+
           return;
         }
 
@@ -201,6 +206,7 @@ const Page: FC<Props> = ({
           }
         </BadgesContainer>;
     }
+
     return <View/>;
   };
 
@@ -227,12 +233,14 @@ const Page: FC<Props> = ({
             {
               updateUser: (photoURL: string, displayName: string) => {
                 if (photoURL) setPhotoURL(photoURL);
+
                 if (displayName) setDisplayName(displayName);
               },
             },
           )}
           onLogout={(): void => {
             if (unsubscribe) unsubscribe();
+
             firebase.auth().signOut();
           }}
           missionScore={myTrophies.length}

@@ -2,7 +2,6 @@
 
 exports[`Interaction should simulate onClick 1`] = `
 <View
-  pointerEvents="box-none"
   style={
     Object {
       "flex": 1,
@@ -10,126 +9,123 @@ exports[`Interaction should simulate onClick 1`] = `
   }
 >
   <View
-    collapsable={true}
-    pointerEvents="box-none"
     style={
-      Object {
-        "flex": 1,
-      }
+      Array [
+        Object {
+          "alignItems": "flex-start",
+          "backgroundColor": "#ffffff",
+          "flexBasis": 0,
+          "flexDirection": "column",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+        },
+      ]
     }
   >
-    <View
+    <RCTScrollView
+      ListHeaderComponent={
+        <Styled(View)>
+          <Styled(Text)>
+            Rank
+          </Styled(Text)>
+          <Styled(Text)>
+            Accumulate your score and challenge 1st place
+          </Styled(Text)>
+        </Styled(View)>
+      }
+      data={Array []}
+      disableVirtualization={false}
+      getItem={[Function]}
+      getItemCount={[Function]}
+      horizontal={false}
+      initialNumToRender={10}
+      keyExtractor={[Function]}
+      maxToRenderPerBatch={10}
+      onContentSizeChange={[Function]}
+      onEndReachedThreshold={2}
+      onLayout={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onRefresh={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      refreshControl={
+        <RefreshControlMock
+          onRefresh={[Function]}
+          refreshing={true}
+        />
+      }
+      refreshing={true}
+      removeClippedSubviews={false}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      stickyHeaderIndices={Array []}
       style={
         Object {
-          "flex": 1,
+          "width": "100%",
         }
       }
+      updateCellsBatchingPeriod={50}
+      viewabilityConfigCallbackPairs={Array []}
+      windowSize={21}
     >
-      <View
-        style={
-          Array [
-            Object {
-              "alignItems": "flex-start",
-              "backgroundColor": "#ffffff",
-              "flexBasis": 0,
-              "flexDirection": "column",
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "justifyContent": "center",
-            },
-          ]
-        }
-      >
-        <ScrollView
-          ListHeaderComponent={
-            <Styled(View)>
-              <Styled(Text)>
-                Rank
-              </Styled(Text)>
-              <Styled(Text)>
-                Accumulate your score and challenge 1st place
-              </Styled(Text)>
-            </Styled(View)>
-          }
-          data={Array []}
-          disableVirtualization={false}
-          horizontal={false}
-          initialNumToRender={10}
-          maxToRenderPerBatch={10}
-          onEndReachedThreshold={2}
-          refreshControl={
-            <RefreshControl
-              onRefresh={[Function]}
-              refreshing={true}
-            />
-          }
-          refreshing={true}
-          removeClippedSubviews={false}
-          scrollEventThrottle={50}
-          stickyHeaderIndices={Array []}
-          style={
-            Object {
-              "width": "100%",
-            }
-          }
-          updateCellsBatchingPeriod={50}
-          viewabilityConfigCallbackPairs={Array []}
-          windowSize={21}
+      <RCTRefreshControl />
+      <View>
+        <View
+          onLayout={[Function]}
         >
-          <View>
-            <View
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "flex-end",
+                  "flexDirection": "row",
+                  "marginBottom": 22,
+                  "marginLeft": 22,
+                  "marginRight": 22,
+                  "marginTop": 22,
+                },
+              ]
+            }
+          >
+            <Text
               style={
                 Array [
                   Object {
-                    "alignItems": "flex-end",
-                    "flexDirection": "row",
-                    "marginBottom": 22,
-                    "marginLeft": 22,
-                    "marginRight": 22,
-                    "marginTop": 22,
+                    "color": "black",
+                    "fontSize": 24,
+                    "fontWeight": "bold",
                   },
                 ]
               }
             >
-              <Text
-                style={
-                  Array [
-                    Object {
-                      "color": "black",
-                      "fontSize": 24,
-                      "fontWeight": "bold",
-                    },
-                  ]
-                }
-              >
-                Rank
-              </Text>
-              <Text
-                style={
-                  Array [
-                    Object {
-                      "color": "#444444",
-                      "fontSize": 12,
-                      "marginBottom": 2,
-                      "marginLeft": 8,
-                    },
-                  ]
-                }
-              >
-                Accumulate your score and challenge 1st place
-              </Text>
-            </View>
+              Rank
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#444444",
+                    "fontSize": 12,
+                    "marginBottom": 2,
+                    "marginLeft": 8,
+                  },
+                ]
+              }
+            >
+              Accumulate your score and challenge 1st place
+            </Text>
           </View>
-        </ScrollView>
+        </View>
       </View>
-    </View>
+    </RCTScrollView>
   </View>
 </View>
 `;
 
 exports[`Rendering renders without crashing 1`] = `
 <View
-  pointerEvents="box-none"
   style={
     Object {
       "flex": 1,
@@ -137,119 +133,117 @@ exports[`Rendering renders without crashing 1`] = `
   }
 >
   <View
-    collapsable={true}
-    pointerEvents="box-none"
     style={
-      Object {
-        "flex": 1,
-      }
+      Array [
+        Object {
+          "alignItems": "flex-start",
+          "backgroundColor": "#ffffff",
+          "flexBasis": 0,
+          "flexDirection": "column",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+        },
+      ]
     }
   >
-    <View
+    <RCTScrollView
+      ListHeaderComponent={
+        <Styled(View)>
+          <Styled(Text)>
+            Rank
+          </Styled(Text)>
+          <Styled(Text)>
+            Accumulate your score and challenge 1st place
+          </Styled(Text)>
+        </Styled(View)>
+      }
+      data={Array []}
+      disableVirtualization={false}
+      getItem={[Function]}
+      getItemCount={[Function]}
+      horizontal={false}
+      initialNumToRender={10}
+      keyExtractor={[Function]}
+      maxToRenderPerBatch={10}
+      onContentSizeChange={[Function]}
+      onEndReachedThreshold={2}
+      onLayout={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onRefresh={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      refreshControl={
+        <RefreshControlMock
+          onRefresh={[Function]}
+          refreshing={true}
+        />
+      }
+      refreshing={true}
+      removeClippedSubviews={false}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      stickyHeaderIndices={Array []}
       style={
         Object {
-          "flex": 1,
+          "width": "100%",
         }
       }
+      updateCellsBatchingPeriod={50}
+      viewabilityConfigCallbackPairs={Array []}
+      windowSize={21}
     >
-      <View
-        style={
-          Array [
-            Object {
-              "alignItems": "flex-start",
-              "backgroundColor": "#ffffff",
-              "flexBasis": 0,
-              "flexDirection": "column",
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "justifyContent": "center",
-            },
-          ]
-        }
-      >
-        <ScrollView
-          ListHeaderComponent={
-            <Styled(View)>
-              <Styled(Text)>
-                Rank
-              </Styled(Text)>
-              <Styled(Text)>
-                Accumulate your score and challenge 1st place
-              </Styled(Text)>
-            </Styled(View)>
-          }
-          data={Array []}
-          disableVirtualization={false}
-          horizontal={false}
-          initialNumToRender={10}
-          maxToRenderPerBatch={10}
-          onEndReachedThreshold={2}
-          refreshControl={
-            <RefreshControl
-              onRefresh={[Function]}
-              refreshing={true}
-            />
-          }
-          refreshing={true}
-          removeClippedSubviews={false}
-          scrollEventThrottle={50}
-          stickyHeaderIndices={Array []}
-          style={
-            Object {
-              "width": "100%",
-            }
-          }
-          updateCellsBatchingPeriod={50}
-          viewabilityConfigCallbackPairs={Array []}
-          windowSize={21}
+      <RCTRefreshControl />
+      <View>
+        <View
+          onLayout={[Function]}
         >
-          <View>
-            <View
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "flex-end",
+                  "flexDirection": "row",
+                  "marginBottom": 22,
+                  "marginLeft": 22,
+                  "marginRight": 22,
+                  "marginTop": 22,
+                },
+              ]
+            }
+          >
+            <Text
               style={
                 Array [
                   Object {
-                    "alignItems": "flex-end",
-                    "flexDirection": "row",
-                    "marginBottom": 22,
-                    "marginLeft": 22,
-                    "marginRight": 22,
-                    "marginTop": 22,
+                    "color": "black",
+                    "fontSize": 24,
+                    "fontWeight": "bold",
                   },
                 ]
               }
             >
-              <Text
-                style={
-                  Array [
-                    Object {
-                      "color": "black",
-                      "fontSize": 24,
-                      "fontWeight": "bold",
-                    },
-                  ]
-                }
-              >
-                Rank
-              </Text>
-              <Text
-                style={
-                  Array [
-                    Object {
-                      "color": "#444444",
-                      "fontSize": 12,
-                      "marginBottom": 2,
-                      "marginLeft": 8,
-                    },
-                  ]
-                }
-              >
-                Accumulate your score and challenge 1st place
-              </Text>
-            </View>
+              Rank
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#444444",
+                    "fontSize": 12,
+                    "marginBottom": 2,
+                    "marginLeft": 8,
+                  },
+                ]
+              }
+            >
+              Accumulate your score and challenge 1st place
+            </Text>
           </View>
-        </ScrollView>
+        </View>
       </View>
-    </View>
+    </RCTScrollView>
   </View>
 </View>
 `;

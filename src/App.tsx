@@ -35,6 +35,7 @@ function cacheImages(images: Image[]): Image[] {
 
 const loadAssetsAsync = async (): Promise<void> => {
   const imageAssets = cacheImages(Icons);
+
   await Promise.all([...imageAssets]);
 };
 
@@ -54,6 +55,7 @@ function ProviderWrapper(): React.ReactElement {
       />
     );
   }
+
   return (
     <AppearanceProvider>
       <RootProvider>

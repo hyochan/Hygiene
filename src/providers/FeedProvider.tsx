@@ -7,6 +7,7 @@ interface Context {
   feeds: Activity[];
   setFeeds: React.Dispatch<React.SetStateAction<Activity[]>>;
 }
+
 const [useCtx, Provider] = createCtx<Context>();
 
 interface Props {

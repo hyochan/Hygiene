@@ -17,14 +17,3 @@ jest.mock('@react-navigation/native', () => ({
     goBack: jest.fn(),
   }),
 }));
-
-const customGlobal: GlobalWithFetchMock = global as GlobalWithFetchMock;
-customGlobal.fetch = require('jest-fetch-mock');
-customGlobal.fetchMock = customGlobal.fetch;
-
-// @ts-ignore
-customGlobal.matchMedia = (): Record<string, unknown> => {
-  return {
-    matches: true,
-  };
-};

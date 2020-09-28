@@ -50,6 +50,7 @@ const Page: FC<Props> = ({
   const getRank = (): void => {
     setLoading(true);
     setUsers([]);
+
     db
       .collection('users')
       .where('point', '>', 0)
@@ -57,11 +58,14 @@ const Page: FC<Props> = ({
       .limit(20)
       .get().then((snap) => {
         const updates: User[] = [];
+
         snap.docs.forEach((doc) => {
           const user = doc.data() as User;
+
           user.uid = doc.id;
           updates.push(user);
         });
+
         setUsers(updates);
         setLoading(false);
       });

@@ -17,6 +17,7 @@ const RootProvider = ({
   children,
 }: Props): React.ReactElement => {
   const colorScheme = useColorScheme();
+
   return (
     <ThemeProvider
       initialThemeType={

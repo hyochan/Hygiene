@@ -6,6 +6,7 @@ import shortid from 'shortid';
 export const createUser = async (credential: firebase.auth.UserCredential): Promise<User | undefined> => {
   const db = firebase.firestore();
   const user = credential.user;
+
   if (user) {
     const prevDoc = await db.collection('users').doc(user.uid).get();
 
@@ -32,8 +33,10 @@ export const getUserById = async (userId: string): Promise<User | undefined> => 
   if (!userId) return;
 
   const db = firebase.firestore();
+
   const userDoc = await db.collection('users')
     .doc(userId).get();
+
   return userDoc.data() as User;
 };
 
@@ -42,6 +45,7 @@ export const uploadProfile = async (
   thumbUri?: string,
 ): Promise<void> => {
   const currentUser = firebase.auth().currentUser;
+
   if (!currentUser) return;
 
   if (thumbUri) {
@@ -52,6 +56,7 @@ export const uploadProfile = async (
     thumbRef.on('state_changed',
       (snapshot) => {
         const progress = Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
+
         console.log(progress);
       },
       (error) => {
@@ -64,6 +69,7 @@ export const uploadProfile = async (
             .update({
               thumbURL: url,
             });
+
           currentUser.updateProfile({
             photoURL: url,
           });
@@ -79,6 +85,7 @@ export const uploadProfile = async (
   picRef.on('state_changed',
     (snapshot) => {
       const progress = Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
+
       console.log(progress);
     },
     (error) => {
@@ -109,6 +116,7 @@ export const uploadOrRemovePhoto = async (
       picRef.on('state_changed',
         (snapshot) => {
           const progress = Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
+
           console.log(progress);
         },
         (error) => {
@@ -136,6 +144,7 @@ export const uploadOrRemovePhoto = async (
   } else if (added) {
     const picRes = await fetch(uri);
     const picBlob = await picRes.blob();
+
     const picRef = firebase.storage().ref()
       .child(`${dir}/${refId}`)
       .child(id)

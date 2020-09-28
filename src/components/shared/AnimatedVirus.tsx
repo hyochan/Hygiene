@@ -43,6 +43,7 @@ const AnimatedVirus: FC<Props> = ({
       ]),
     ).start();
   });
+
   return <Animated.View
     style={{
       transform: [{

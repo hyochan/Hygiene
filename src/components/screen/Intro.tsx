@@ -74,11 +74,14 @@ export default function Intro({ navigation }): ReactElement {
 
   const appleLogin = async (): Promise<void> => {
     setSigningInApple(true);
+
     try {
       const csrf = Math.random().toString(36).substring(2, 15);
       const nonce = Math.random().toString(36).substring(2, 10);
+
       const hashedNonce = await Crypto.digestStringAsync(
         Crypto.CryptoDigestAlgorithm.SHA256, nonce);
+
       const appleCredential = await AppleAuthentication.signInAsync({
         requestedScopes: [
           AppleAuthentication.AppleAuthenticationScope.FULL_NAME,
@@ -87,16 +90,20 @@ export default function Intro({ navigation }): ReactElement {
         state: csrf,
         nonce: hashedNonce,
       });
+
       const { identityToken, email, state } = appleCredential;
 
       if (identityToken) {
         const provider = new firebase.auth.OAuthProvider('apple.com');
+
         const credential = provider.credential({
           idToken: identityToken,
           rawNonce: nonce, // nonce value from above
         });
+
         const authResult = await firebase.auth().signInWithCredential(credential);
         const user = await createUser(authResult);
+
         if (user) {
           // ensure update to navigate when this is new user
           setUser(user);
@@ -109,8 +116,10 @@ export default function Intro({ navigation }): ReactElement {
         if (Platform.OS === 'web') {
           // @ts-ignore
           alert(`Apple Login Error: ${e.code} - ${e.message}`);
+
           return;
         }
+
         Alert.alert(`Apple Login Error: ${e.code} - ${e.message}`);
       }
     } finally {
@@ -183,10 +192,13 @@ export default function Intro({ navigation }): ReactElement {
               testID="btn-terms"
               onPress={(): void => {
                 const url = 'https://dooboolab.com/termsofservice';
+
                 if (Platform.OS === 'web') {
                   Linking.openURL(url);
+
                   return;
                 }
+
                 goToWebView(url);
               }}
             >
@@ -197,10 +209,13 @@ export default function Intro({ navigation }): ReactElement {
               testID="btn-privacy"
               onPress={(): void => {
                 const url = 'https://dooboolab.com/privacyandpolicy';
+
                 if (Platform.OS === 'web') {
                   Linking.openURL(url);
+
                   return;
                 }
+
                 goToWebView(url);
               }}
             >

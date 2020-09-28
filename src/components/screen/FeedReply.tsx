@@ -77,8 +77,10 @@ const Page: FC<Props> = ({
       .orderBy('createdAt', 'asc')
       .onSnapshot((snapshot) => {
         const updates: Reply[] = [];
+
         snapshot.docChanges().forEach(function(change) {
           const reply = change.doc.data();
+
           reply.id = change.doc.id;
           reply.createdAt = reply.createdAt.toDate();
           reply.updatedAt = reply.updatedAt.toDate();
@@ -86,6 +88,7 @@ const Page: FC<Props> = ({
           if (change.type === 'added') {
             updates.unshift(reply as Reply);
           }
+
           if (change.type === 'modified') {
             const index = replies.findIndex((el) => {
               return el.id === change.doc.id;
@@ -95,6 +98,7 @@ const Page: FC<Props> = ({
 
             updates[index] = reply as Reply;
           }
+
           if (change.type === 'removed') {
             const index = replies.findIndex((el) => {
               return el.id === change.doc.id;
@@ -105,6 +109,7 @@ const Page: FC<Props> = ({
             updates.splice(index, 1);
           }
         });
+
         setReplies(updates);
       });
 

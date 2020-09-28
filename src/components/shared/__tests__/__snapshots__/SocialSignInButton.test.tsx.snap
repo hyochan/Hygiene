@@ -2,7 +2,6 @@
 
 exports[`Interaction should simulate onClick 1`] = `
 <View
-  pointerEvents="box-none"
   style={
     Object {
       "flex": 1,
@@ -10,73 +9,68 @@ exports[`Interaction should simulate onClick 1`] = `
   }
 >
   <View
-    collapsable={true}
-    pointerEvents="box-none"
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "flex": 1,
+        "opacity": 1,
       }
     }
+    testID="btn-facebook"
   >
     <View
       style={
-        Object {
-          "flex": 1,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "borderColor": "blue",
+            "flexDirection": "row",
+            "height": 52,
+            "justifyContent": "center",
+          },
+          Object {
+            "backgroundColor": "#345997",
+            "borderColor": "#345997",
+            "borderRadius": 100,
+            "borderWidth": 1,
+            "height": 48,
+            "marginBottom": 12,
+            "width": "100%",
+          },
+        ]
       }
     >
-      <
-        delayPressIn={30}
-        testID="btn-facebook"
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "alignSelf": "center",
-                "borderColor": "blue",
-                "flexDirection": "row",
-                "height": 52,
-                "justifyContent": "center",
-              },
-              Object {
-                "backgroundColor": "#345997",
-                "borderColor": "#345997",
-                "borderRadius": 100,
-                "borderWidth": 1,
-                "height": 48,
-                "marginBottom": 12,
-                "width": "100%",
-              },
-            ]
+      <View
+        style={
+          Object {
+            "marginRight": 6,
           }
-        >
-          <View
-            style={
-              Object {
-                "marginRight": 6,
-              }
-            }
-          />
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#069ccd",
-                  "fontSize": 16,
-                },
-                Object {
-                  "color": "#ffffff",
-                  "fontWeight": "700",
-                },
-              ]
-            }
-          >
-            Sign in with Facebook
-          </Text>
-        </View>
-      </>
+        }
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#069ccd",
+              "fontSize": 16,
+            },
+            Object {
+              "color": "#ffffff",
+              "fontWeight": "700",
+            },
+          ]
+        }
+      >
+        Sign in with Facebook
+      </Text>
     </View>
   </View>
 </View>
@@ -84,7 +78,6 @@ exports[`Interaction should simulate onClick 1`] = `
 
 exports[`Rendering renders without crashing 1`] = `
 <View
-  pointerEvents="box-none"
   style={
     Object {
       "flex": 1,
@@ -92,73 +85,68 @@ exports[`Rendering renders without crashing 1`] = `
   }
 >
   <View
-    collapsable={true}
-    pointerEvents="box-none"
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "flex": 1,
+        "opacity": 1,
       }
     }
+    testID="btn-facebook"
   >
     <View
       style={
-        Object {
-          "flex": 1,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "borderColor": "blue",
+            "flexDirection": "row",
+            "height": 52,
+            "justifyContent": "center",
+          },
+          Object {
+            "backgroundColor": "#345997",
+            "borderColor": "#345997",
+            "borderRadius": 100,
+            "borderWidth": 1,
+            "height": 48,
+            "marginBottom": 12,
+            "width": "100%",
+          },
+        ]
       }
     >
-      <
-        delayPressIn={30}
-        testID="btn-facebook"
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "alignSelf": "center",
-                "borderColor": "blue",
-                "flexDirection": "row",
-                "height": 52,
-                "justifyContent": "center",
-              },
-              Object {
-                "backgroundColor": "#345997",
-                "borderColor": "#345997",
-                "borderRadius": 100,
-                "borderWidth": 1,
-                "height": 48,
-                "marginBottom": 12,
-                "width": "100%",
-              },
-            ]
+      <View
+        style={
+          Object {
+            "marginRight": 6,
           }
-        >
-          <View
-            style={
-              Object {
-                "marginRight": 6,
-              }
-            }
-          />
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#069ccd",
-                  "fontSize": 16,
-                },
-                Object {
-                  "color": "#ffffff",
-                  "fontWeight": "700",
-                },
-              ]
-            }
-          >
-            Sign in with Facebook
-          </Text>
-        </View>
-      </>
+        }
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#069ccd",
+              "fontSize": 16,
+            },
+            Object {
+              "color": "#ffffff",
+              "fontWeight": "700",
+            },
+          ]
+        }
+      >
+        Sign in with Facebook
+      </Text>
     </View>
   </View>
 </View>

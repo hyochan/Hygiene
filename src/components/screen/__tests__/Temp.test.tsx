@@ -2,7 +2,7 @@ import 'react-native';
 
 import React, { ReactElement } from 'react';
 import {
-  RenderResult,
+  RenderAPI,
   act,
   fireEvent,
   render,
@@ -15,7 +15,7 @@ import { ThemeType } from '../../../providers/ThemeProvider';
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 let props: any;
 let component: ReactElement;
-let testingLib: RenderResult;
+let testingLib: RenderAPI;
 
 describe('[Temp] render', () => {
   props = createTestProps({
@@ -25,11 +25,14 @@ describe('[Temp] render', () => {
       },
     },
   });
+
   component = createTestElement(<Temp {...props} />);
 
   it('renders without crashing', () => {
     testingLib = render(component);
-    const { baseElement } = testingLib;
+
+    const baseElement = testingLib.toJSON();
+
     expect(baseElement).toMatchSnapshot();
     expect(baseElement).toBeTruthy();
   });
@@ -42,23 +45,27 @@ describe('[Temp] render', () => {
         },
       },
     });
+
     component = createTestElement(<Temp {...props} />, ThemeType.DARK);
     testingLib = render(component);
-    const { baseElement } = testingLib;
+
+    const baseElement = testingLib.toJSON();
+
     expect(baseElement).toMatchSnapshot();
     expect(baseElement).toBeTruthy();
   });
 });
 
 describe('[Temp] Interaction', () => {
-  let renderResult: RenderResult;
+  let RenderAPI: RenderAPI;
 
   beforeEach(() => {
-    renderResult = render(component);
+    RenderAPI = render(component);
   });
 
   it('should simulate [onPress] when button has been clicked', () => {
-    const btnInstance = renderResult.getByTestId('btn-back');
+    const btnInstance = RenderAPI.getByTestId('btn-back');
+
     act(() => {
       fireEvent.press(btnInstance);
     });

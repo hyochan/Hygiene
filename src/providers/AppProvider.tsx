@@ -11,6 +11,7 @@ interface Context {
   resetUser: () => void;
   callDefault: () => void;
 }
+
 const [useCtx, Provider] = createCtx<Context>();
 
 export enum ActionType {
@@ -110,6 +111,7 @@ const reducer: Reducer = (state = initialState, action) => {
       if (!state.user) {
         return state;
       }
+
       return {
         ...state,
         user: {

@@ -2,7 +2,6 @@
 
 exports[`Interaction should simulate onClick 1`] = `
 <View
-  pointerEvents="box-none"
   style={
     Object {
       "flex": 1,
@@ -10,57 +9,38 @@ exports[`Interaction should simulate onClick 1`] = `
   }
 >
   <View
-    collapsable={true}
-    pointerEvents="box-none"
     style={
       Object {
-        "flex": 1,
+        "transform": Array [
+          Object {
+            "translateY": 0,
+          },
+        ],
       }
     }
   >
-    <View
-      style={
+    <Image
+      source={
         Object {
-          "flex": 1,
+          "canInstrument": true,
+          "createTransformer": [Function],
+          "getCacheKey": [Function],
+          "process": [Function],
         }
       }
-    >
-      <View
-        style={
-          Object {
-            "transform": Array [
-              Object {
-                "translateY": 0,
-              },
-            ],
-          }
+      style={
+        Object {
+          "height": 114,
+          "width": 114,
         }
-      >
-        <Image
-          source={
-            Object {
-              "canInstrument": true,
-              "createTransformer": [Function],
-              "getCacheKey": [Function],
-              "process": [Function],
-            }
-          }
-          style={
-            Object {
-              "height": 114,
-              "width": 114,
-            }
-          }
-        />
-      </View>
-    </View>
+      }
+    />
   </View>
 </View>
 `;
 
 exports[`Rendering renders without crashing 1`] = `
 <View
-  pointerEvents="box-none"
   style={
     Object {
       "flex": 1,
@@ -68,50 +48,32 @@ exports[`Rendering renders without crashing 1`] = `
   }
 >
   <View
-    collapsable={true}
-    pointerEvents="box-none"
     style={
       Object {
-        "flex": 1,
+        "transform": Array [
+          Object {
+            "translateY": 0,
+          },
+        ],
       }
     }
   >
-    <View
-      style={
+    <Image
+      source={
         Object {
-          "flex": 1,
+          "canInstrument": true,
+          "createTransformer": [Function],
+          "getCacheKey": [Function],
+          "process": [Function],
         }
       }
-    >
-      <View
-        style={
-          Object {
-            "transform": Array [
-              Object {
-                "translateY": 0,
-              },
-            ],
-          }
+      style={
+        Object {
+          "height": 114,
+          "width": 114,
         }
-      >
-        <Image
-          source={
-            Object {
-              "canInstrument": true,
-              "createTransformer": [Function],
-              "getCacheKey": [Function],
-              "process": [Function],
-            }
-          }
-          style={
-            Object {
-              "height": 114,
-              "width": 114,
-            }
-          }
-        />
-      </View>
-    </View>
+      }
+    />
   </View>
 </View>
 `;

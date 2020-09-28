@@ -2,7 +2,6 @@
 
 exports[`Interaction should simulate onClick 1`] = `
 <View
-  pointerEvents="box-none"
   style={
     Object {
       "flex": 1,
@@ -10,113 +9,102 @@ exports[`Interaction should simulate onClick 1`] = `
   }
 >
   <View
-    collapsable={true}
-    pointerEvents="box-none"
+    accessible={true}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "flex": 1,
+        "alignItems": "center",
+        "flexDirection": "column",
+        "height": 136,
+        "justifyContent": "center",
+        "marginLeft": 20,
+        "opacity": 1,
+        "width": 96,
       }
     }
   >
     <View
       style={
-        Object {
-          "flex": 1,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderColor": "#E6E6E6",
+            "borderRadius": 16,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "height": 120,
+            "justifyContent": "center",
+            "shadowColor": "rgba(0, 0, 0, 0.06)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 2,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 4,
+            "width": 96,
+          },
+        ]
       }
     >
-      <
-        activeOpacity={0.75}
+      <SvgMock
+        fill="black"
+        height={48}
+        width={48}
+      />
+      <Text
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flexDirection": "column",
-              "height": 136,
-              "justifyContent": "center",
-              "marginLeft": 20,
-              "width": 96,
-            },
-          ]
+          Object {
+            "color": "#02C7D3",
+            "fontSize": 18,
+            "position": "absolute",
+            "right": 12,
+            "top": 12,
+          }
         }
       >
-        <View
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "borderColor": "#E6E6E6",
-                "borderRadius": 16,
-                "borderStyle": "solid",
-                "borderWidth": 1,
-                "height": 120,
-                "justifyContent": "center",
-                "shadowColor": "rgba(0, 0, 0, 0.06)",
-                "shadowOffset": Object {
-                  "height": 2,
-                  "width": 2,
-                },
-                "shadowOpacity": 1,
-                "shadowRadius": 4,
-                "width": 96,
-              },
-            ]
+        +
+        3
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "borderRadius": 16,
+            "bottom": 0,
+            "minHeight": 30,
+            "minWidth": 57,
+            "paddingBottom": 0,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 0,
+            "position": "absolute",
+          },
+          Object {
+            "backgroundColor": "#02C7D3",
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <Text
+        numberOfLines={2}
+        style={
+          Object {
+            "color": "white",
+            "textAlign": "center",
           }
-        >
-          <SvgMock
-            fill="black"
-            height={48}
-            width={48}
-          />
-          <Text
-            style={
-              Object {
-                "color": "#02C7D3",
-                "fontSize": 18,
-                "position": "absolute",
-                "right": 12,
-                "top": 12,
-              }
-            }
-          >
-            +
-            3
-          </Text>
-        </View>
-        <View
-          style={
-            Array [
-              Object {
-                "borderRadius": 16,
-                "bottom": 0,
-                "minHeight": 30,
-                "minWidth": 57,
-                "paddingBottom": 0,
-                "paddingLeft": 8,
-                "paddingRight": 8,
-                "paddingTop": 0,
-                "position": "absolute",
-              },
-              Object {
-                "backgroundColor": "#02C7D3",
-                "justifyContent": "center",
-              },
-            ]
-          }
-        >
-          <Text
-            numberOfLines={2}
-            style={
-              Object {
-                "color": "white",
-                "textAlign": "center",
-              }
-            }
-          >
-            Washing hands
-          </Text>
-        </View>
-      </>
+        }
+      >
+        Washing hands
+      </Text>
     </View>
   </View>
 </View>
@@ -124,7 +112,6 @@ exports[`Interaction should simulate onClick 1`] = `
 
 exports[`Rendering renders without crashing 1`] = `
 <View
-  pointerEvents="box-none"
   style={
     Object {
       "flex": 1,
@@ -132,113 +119,102 @@ exports[`Rendering renders without crashing 1`] = `
   }
 >
   <View
-    collapsable={true}
-    pointerEvents="box-none"
+    accessible={true}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "flex": 1,
+        "alignItems": "center",
+        "flexDirection": "column",
+        "height": 136,
+        "justifyContent": "center",
+        "marginLeft": 20,
+        "opacity": 1,
+        "width": 96,
       }
     }
   >
     <View
       style={
-        Object {
-          "flex": 1,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderColor": "#E6E6E6",
+            "borderRadius": 16,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "height": 120,
+            "justifyContent": "center",
+            "shadowColor": "rgba(0, 0, 0, 0.06)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 2,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 4,
+            "width": 96,
+          },
+        ]
       }
     >
-      <
-        activeOpacity={0.75}
+      <SvgMock
+        fill="black"
+        height={48}
+        width={48}
+      />
+      <Text
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flexDirection": "column",
-              "height": 136,
-              "justifyContent": "center",
-              "marginLeft": 20,
-              "width": 96,
-            },
-          ]
+          Object {
+            "color": "#02C7D3",
+            "fontSize": 18,
+            "position": "absolute",
+            "right": 12,
+            "top": 12,
+          }
         }
       >
-        <View
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "borderColor": "#E6E6E6",
-                "borderRadius": 16,
-                "borderStyle": "solid",
-                "borderWidth": 1,
-                "height": 120,
-                "justifyContent": "center",
-                "shadowColor": "rgba(0, 0, 0, 0.06)",
-                "shadowOffset": Object {
-                  "height": 2,
-                  "width": 2,
-                },
-                "shadowOpacity": 1,
-                "shadowRadius": 4,
-                "width": 96,
-              },
-            ]
+        +
+        3
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "borderRadius": 16,
+            "bottom": 0,
+            "minHeight": 30,
+            "minWidth": 57,
+            "paddingBottom": 0,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 0,
+            "position": "absolute",
+          },
+          Object {
+            "backgroundColor": "#02C7D3",
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <Text
+        numberOfLines={2}
+        style={
+          Object {
+            "color": "white",
+            "textAlign": "center",
           }
-        >
-          <SvgMock
-            fill="black"
-            height={48}
-            width={48}
-          />
-          <Text
-            style={
-              Object {
-                "color": "#02C7D3",
-                "fontSize": 18,
-                "position": "absolute",
-                "right": 12,
-                "top": 12,
-              }
-            }
-          >
-            +
-            3
-          </Text>
-        </View>
-        <View
-          style={
-            Array [
-              Object {
-                "borderRadius": 16,
-                "bottom": 0,
-                "minHeight": 30,
-                "minWidth": 57,
-                "paddingBottom": 0,
-                "paddingLeft": 8,
-                "paddingRight": 8,
-                "paddingTop": 0,
-                "position": "absolute",
-              },
-              Object {
-                "backgroundColor": "#02C7D3",
-                "justifyContent": "center",
-              },
-            ]
-          }
-        >
-          <Text
-            numberOfLines={2}
-            style={
-              Object {
-                "color": "white",
-                "textAlign": "center",
-              }
-            }
-          >
-            Washing hands
-          </Text>
-        </View>
-      </>
+        }
+      >
+        Washing hands
+      </Text>
     </View>
   </View>
 </View>

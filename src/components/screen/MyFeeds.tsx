@@ -40,7 +40,9 @@ const Page: FC<Props> = () => {
 
   const fetchMyFeeds = (): void => {
     if (loading) return;
+
     setLoading(true);
+
     db.collection('feeds')
       .where('writerId', '==', user?.uid)
       .orderBy('createdAt', 'desc')
@@ -48,14 +50,17 @@ const Page: FC<Props> = () => {
       .get()
       .then((snap) => {
         const feeds: Activity[] = [];
+
         for (const doc of snap.docs) {
           const feed = doc.data();
+
           feed.id = doc.id;
           feed.createdAt = feed.createdAt.toDate();
           feed.updatedAt = feed.updatedAt.toDate();
 
           feeds.push(feed as Activity);
         }
+
         setMyFeeds(feeds);
         setLoading(false);
       });
@@ -72,7 +77,9 @@ const Page: FC<Props> = () => {
 
   const onEndReached = (): void => {
     if (loading) return;
+
     setLoading(true);
+
     db.collection('feeds')
       .where('writerId', '==', user?.uid)
       .orderBy('createdAt', 'desc')
@@ -81,14 +88,17 @@ const Page: FC<Props> = () => {
       .get()
       .then((snap) => {
         const feeds: Activity[] = myFeeds;
+
         for (const doc of snap.docs) {
           const feed = doc.data();
+
           feed.id = doc.id;
           feed.createdAt = feed.createdAt.toDate();
           feed.updatedAt = feed.updatedAt.toDate();
 
           feeds.push(feed as Activity);
         }
+
         setMyFeeds(feeds);
         setLoading(false);
       });
@@ -111,6 +121,7 @@ const Page: FC<Props> = () => {
             activity={item}
             onMorePressed={(): void => {
               const feed = item;
+
               const options = [
                 getString('DELETE'),
                 getString('CANCEL'),
@@ -123,6 +134,7 @@ const Page: FC<Props> = () => {
                 }, async (choice: number) => {
                   if (choice === SelectMyFeedMoreActionType.DELETE) {
                     setAppLoading(true);
+
                     await db.collection('feeds')
                       .doc(feed.id)
                       .collection('likes')
@@ -141,8 +153,10 @@ const Page: FC<Props> = () => {
 
                     if (currentUser) {
                       const point = updateUserPoint(item.category, currentUser, false);
+
                       if (user) {
                         const updatedPoint = (user.point || 0) + point;
+
                         setUserPoint(updatedPoint);
                       }
                     }
@@ -156,6 +170,7 @@ const Page: FC<Props> = () => {
                     const update = produce(myFeeds, (draftState): void => {
                       if (draftState) draftState.splice(index, 1);
                     });
+
                     setMyFeeds(update);
                   }
                 },

@@ -1,7 +1,7 @@
 import 'react-native';
 
 import React, { ReactElement } from 'react';
-import { RenderResult, render } from '@testing-library/react-native';
+import { RenderAPI, render } from '@testing-library/react-native';
 import { createTestElement, createTestProps } from '../../../../test/testUtils';
 
 import Screen from '../HomeRank';
@@ -9,7 +9,7 @@ import Screen from '../HomeRank';
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 let props: any;
 let component: ReactElement;
-let testingLib: RenderResult;
+let testingLib: RenderAPI;
 
 describe('Rendering', () => {
   beforeEach(() => {
@@ -19,7 +19,8 @@ describe('Rendering', () => {
   });
 
   it('renders without crashing', () => {
-    const { baseElement } = testingLib;
+    const baseElement = testingLib.toJSON();
+
     expect(baseElement).toMatchSnapshot();
     expect(baseElement).toBeTruthy();
   });
@@ -33,7 +34,9 @@ describe('Interaction', () => {
   });
 
   it('should simulate onClick', () => {
-    expect(testingLib.baseElement).toMatchSnapshot();
+    const baseElement = testingLib.toJSON();
+
+    expect(baseElement).toMatchSnapshot();
     // const btn = testingLib.queryByTestId('btn');
     // act(() => {
     //   fireEvent.press(btn);

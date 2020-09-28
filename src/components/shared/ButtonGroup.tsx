@@ -37,6 +37,7 @@ function Shared(props: Props): React.ReactElement {
     data,
     onPress,
   } = props;
+
   const [selectedOption, setSelectedOption] = useState(initialIndex);
 
   return (
@@ -49,6 +50,7 @@ function Shared(props: Props): React.ReactElement {
             style={{ flex: 1 }}
             onPress={(): void => {
               setSelectedOption(i);
+
               if (onPress) {
                 onPress(i);
               }

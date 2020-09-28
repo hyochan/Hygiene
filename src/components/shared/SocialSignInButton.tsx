@@ -37,6 +37,7 @@ const SocialSignInButton: FC<Props> = ({
     };
 
   const useProxy = Platform.select({ web: false, default: true });
+
   const redirectUri = makeRedirectUri(
     socialProvider === SocialAuthProvider.Google
       ? {
@@ -78,13 +79,17 @@ const SocialSignInButton: FC<Props> = ({
 
     try {
       const result = await promptAsync({ useProxy });
+
       if (result.type !== 'success') {
         if (Platform.OS === 'web') {
           // @ts-ignore
           alert(getString('ERROR_UNKNOWN'));
+
           return;
         }
+
         Alert.alert(getString('ERROR'), getString('ERROR_UNKNOWN'));
+
         return;
       }
 
@@ -96,6 +101,7 @@ const SocialSignInButton: FC<Props> = ({
         const user = await createUser(authResult);
 
         if (onUserCreated) onUserCreated(user);
+
         return;
       }
 
@@ -110,8 +116,10 @@ const SocialSignInButton: FC<Props> = ({
       if (Platform.OS === 'web') {
         // @ts-ignore
         alert(`Login Error: ${err.message}`);
+
         return;
       }
+
       Alert.alert(`Login Error: ${err.message}`);
     } finally {
       setSigningIn(false);
@@ -140,6 +148,7 @@ const SocialSignInButton: FC<Props> = ({
       textStyle={{ fontWeight: '700', color: theme.googleText }}
     />;
   }
+
   return <Button
     testID="btn-facebook"
     style={{

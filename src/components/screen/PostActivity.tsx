@@ -75,6 +75,7 @@ const Page: FC<Props> = ({
       if (Platform.OS === 'web') {
         // @ts-ignore
         alert(getString('PLZ_WRITE_MESSAGE'));
+
         return;
       }
 
@@ -82,6 +83,7 @@ const Page: FC<Props> = ({
         getString('ERROR_INPUT'),
         getString('PLZ_WRITE_MESSAGE'),
       );
+
       return;
     }
 
@@ -89,12 +91,15 @@ const Page: FC<Props> = ({
       if (Platform.OS === 'web') {
         // @ts-ignore
         alert(getString('PLZ_ADD_PHOTO'));
+
         return;
       }
+
       Alert.alert(
         getString('ERROR_INPUT'),
         getString('PLZ_ADD_PHOTO'),
       );
+
       return;
     }
 
@@ -125,6 +130,7 @@ const Page: FC<Props> = ({
 
       if (appUser) {
         const updatedPoint = (appUser.point || 0) + point;
+
         setUserPoint(updatedPoint);
       }
 

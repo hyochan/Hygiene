@@ -65,6 +65,7 @@ const RankListItem: FC<Props> = ({
 
   const getData = async (): Promise<void> => {
     const user = await getUserById(rank.uid);
+
     setUser(user as User);
   };
 

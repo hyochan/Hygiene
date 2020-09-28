@@ -60,9 +60,11 @@ const Page: FC<Props> = ({
 
   useEffect(() => {
     const db = firebase.firestore();
+
     if (peerUserId) {
       db.collection('users').doc(peerUserId).get().then((snap) => {
         const data = snap.data();
+
         setDisplayName(data?.displayName || '');
         setIntroduction(data?.introduction || '');
         setLocalImage(data?.photoURL || '');
@@ -95,6 +97,7 @@ const Page: FC<Props> = ({
         introduction,
       },
     };
+
     setUser(updateUser as User);
   };
 
@@ -110,8 +113,11 @@ const Page: FC<Props> = ({
             onPress={async (): Promise<void> => {
               if (currentUser) {
                 setAppLoading(true);
+
                 if (imageUri) await uploadProfile(imageUri, thumbUri);
+
                 if (displayName) await updateProfile(currentUser);
+
                 updateUser(thumbUri, displayName);
                 setAppLoading(false);
                 navigation.pop();
@@ -133,6 +139,7 @@ const Page: FC<Props> = ({
     if (peerUserId) {
       return { uri: localImage };
     }
+
     return localImage
       ? { uri: localImage }
       : !firebase.auth().currentUser?.photoURL
@@ -165,6 +172,7 @@ const Page: FC<Props> = ({
             maxWidth: THUMBNAIL_SIZES.MAX_WIDTH,
             maxHeight: THUMBNAIL_SIZES.MAX_HEIGHT,
           });
+
           imageUri = image.uri;
           thumbUri = thumbImage.uri;
           setLocalImage(thumbImage.uri);

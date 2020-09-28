@@ -2,15 +2,16 @@ import 'react-native';
 
 import * as React from 'react';
 
+import { RenderAPI, render, waitFor } from '@testing-library/react-native';
 import { createTestElement, createTestProps } from '../../../../test/testUtils';
-import { render, wait } from '@testing-library/react-native';
 
 import StatusBar from '../StatusBar';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 let props: any;
 let component: React.ReactElement;
-// let testingLib: RenderResult;
+let testingLib: RenderAPI;
+// let testingLib: RenderAPI;
 
 describe('[StatusBar] render', () => {
   beforeEach(() => {
@@ -19,8 +20,11 @@ describe('[StatusBar] render', () => {
   });
 
   it('renders without crashing', async () => {
-    const { baseElement } = render(component);
-    await wait(() => {
+    testingLib = render(component);
+
+    const baseElement = testingLib.toJSON();
+
+    await waitFor(() => {
       expect(baseElement).toMatchSnapshot();
       expect(baseElement).toBeTruthy();
     });

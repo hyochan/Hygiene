@@ -85,6 +85,7 @@ function Button(props: Props): React.ReactElement {
       </StyledDisabled>
     );
   }
+
   if (isLoading) {
     return (
       <StyledButton testID={testID} style={[
@@ -98,6 +99,7 @@ function Button(props: Props): React.ReactElement {
       </StyledButton>
     );
   }
+
   return (
     <TouchableOpacity
       testID={testID}

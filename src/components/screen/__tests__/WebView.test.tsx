@@ -3,7 +3,7 @@ import 'react-native';
 import * as React from 'react';
 
 import {
-  RenderResult,
+  RenderAPI,
   render,
 } from '@testing-library/react-native';
 import { createTestElement, createTestProps } from '../../../../test/testUtils';
@@ -15,7 +15,7 @@ jest.useFakeTimers();
 // eslint-disable-next-line
 let props: any;
 let component: React.ReactElement;
-let testingLib: RenderResult;
+let testingLib: RenderAPI;
 
 describe('[WebView] screen', () => {
   beforeEach(() => {
@@ -26,11 +26,14 @@ describe('[WebView] screen', () => {
         },
       },
     });
+
     component = createTestElement(<WebView {...props} />);
     testingLib = render(component);
   });
 
   it('renders without crashing', () => {
-    expect(testingLib.baseElement).toMatchSnapshot();
+    const baseElement = testingLib.toJSON();
+
+    expect(baseElement).toMatchSnapshot();
   });
 });

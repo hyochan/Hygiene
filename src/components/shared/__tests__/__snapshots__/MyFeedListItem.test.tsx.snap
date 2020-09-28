@@ -2,7 +2,6 @@
 
 exports[`Interaction should simulate onClick 1`] = `
 <View
-  pointerEvents="box-none"
   style={
     Object {
       "flex": 1,
@@ -10,90 +9,85 @@ exports[`Interaction should simulate onClick 1`] = `
   }
 >
   <View
-    collapsable={true}
-    pointerEvents="box-none"
+    accessible={true}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "flex": 1,
+        "opacity": 1,
       }
     }
   >
     <View
       style={
-        Object {
-          "flex": 1,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#ffffff",
+            "borderRadius": 16,
+            "flexDirection": "row",
+            "height": 112,
+            "justifyContent": "space-between",
+            "marginTop": 10,
+            "paddingBottom": 0,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 0,
+            "shadowColor": "rgba(0, 0, 0, 0.12)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 6,
+            "width": 332,
+          },
+        ]
       }
     >
-      <
-        activeOpacity={0.7}
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "flexDirection": "column",
+              "justifyContent": "flex-start",
+            },
+          ]
+        }
       >
-        <View
+        <Text
           style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#ffffff",
-                "borderRadius": 16,
-                "flexDirection": "row",
-                "height": 112,
-                "justifyContent": "space-between",
-                "marginTop": 10,
-                "paddingBottom": 0,
-                "paddingLeft": 20,
-                "paddingRight": 20,
-                "paddingTop": 0,
-                "shadowColor": "rgba(0, 0, 0, 0.12)",
-                "shadowOffset": Object {
-                  "height": 2,
-                  "width": 0,
-                },
-                "shadowOpacity": 1,
-                "shadowRadius": 6,
-                "width": 332,
-              },
-            ]
+            Object {
+              "color": "black",
+              "fontSize": 14,
+              "marginBottom": 6,
+              "width": 180,
+            }
           }
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "alignItems": "flex-start",
-                  "flexDirection": "column",
-                  "justifyContent": "flex-start",
-                },
-              ]
-            }
-          >
-            <Text
-              style={
-                Object {
-                  "color": "black",
-                  "fontSize": 14,
-                  "marginBottom": 6,
-                  "width": 180,
-                }
-              }
-            />
-          </View>
-          <Image
-            resizeMethod="resize"
-            source={
-              Object {
-                "uri": undefined,
-              }
-            }
-            style={
-              Object {
-                "borderRadius": 16,
-                "height": 80,
-                "width": 80,
-              }
-            }
-          />
-        </View>
-      </>
+        />
+      </View>
+      <Image
+        resizeMethod="resize"
+        source={
+          Object {
+            "uri": undefined,
+          }
+        }
+        style={
+          Object {
+            "borderRadius": 16,
+            "height": 80,
+            "width": 80,
+          }
+        }
+      />
     </View>
   </View>
 </View>
@@ -101,7 +95,6 @@ exports[`Interaction should simulate onClick 1`] = `
 
 exports[`Rendering renders without crashing 1`] = `
 <View
-  pointerEvents="box-none"
   style={
     Object {
       "flex": 1,
@@ -109,90 +102,85 @@ exports[`Rendering renders without crashing 1`] = `
   }
 >
   <View
-    collapsable={true}
-    pointerEvents="box-none"
+    accessible={true}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "flex": 1,
+        "opacity": 1,
       }
     }
   >
     <View
       style={
-        Object {
-          "flex": 1,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#ffffff",
+            "borderRadius": 16,
+            "flexDirection": "row",
+            "height": 112,
+            "justifyContent": "space-between",
+            "marginTop": 10,
+            "paddingBottom": 0,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 0,
+            "shadowColor": "rgba(0, 0, 0, 0.12)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 6,
+            "width": 332,
+          },
+        ]
       }
     >
-      <
-        activeOpacity={0.7}
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "flexDirection": "column",
+              "justifyContent": "flex-start",
+            },
+          ]
+        }
       >
-        <View
+        <Text
           style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#ffffff",
-                "borderRadius": 16,
-                "flexDirection": "row",
-                "height": 112,
-                "justifyContent": "space-between",
-                "marginTop": 10,
-                "paddingBottom": 0,
-                "paddingLeft": 20,
-                "paddingRight": 20,
-                "paddingTop": 0,
-                "shadowColor": "rgba(0, 0, 0, 0.12)",
-                "shadowOffset": Object {
-                  "height": 2,
-                  "width": 0,
-                },
-                "shadowOpacity": 1,
-                "shadowRadius": 6,
-                "width": 332,
-              },
-            ]
+            Object {
+              "color": "black",
+              "fontSize": 14,
+              "marginBottom": 6,
+              "width": 180,
+            }
           }
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "alignItems": "flex-start",
-                  "flexDirection": "column",
-                  "justifyContent": "flex-start",
-                },
-              ]
-            }
-          >
-            <Text
-              style={
-                Object {
-                  "color": "black",
-                  "fontSize": 14,
-                  "marginBottom": 6,
-                  "width": 180,
-                }
-              }
-            />
-          </View>
-          <Image
-            resizeMethod="resize"
-            source={
-              Object {
-                "uri": undefined,
-              }
-            }
-            style={
-              Object {
-                "borderRadius": 16,
-                "height": 80,
-                "width": 80,
-              }
-            }
-          />
-        </View>
-      </>
+        />
+      </View>
+      <Image
+        resizeMethod="resize"
+        source={
+          Object {
+            "uri": undefined,
+          }
+        }
+        style={
+          Object {
+            "borderRadius": 16,
+            "height": 80,
+            "width": 80,
+          }
+        }
+      />
     </View>
   </View>
 </View>

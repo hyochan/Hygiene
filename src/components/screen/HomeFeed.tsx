@@ -48,8 +48,10 @@ const Page: FC<Props> = ({
       .get();
 
     const data: Activity[] = [];
+
     feedCollection.docs.forEach((doc) => {
       const feed = doc.data();
+
       feed.id = doc.id;
       feed.createdAt = feed.createdAt.toDate();
       feed.updatedAt = feed.updatedAt.toDate();
@@ -82,8 +84,10 @@ const Page: FC<Props> = ({
       .get();
 
     const data: Activity[] = feeds;
+
     feedCollection.docs.forEach((doc) => {
       const feed = doc.data();
+
       feed.id = doc.id;
       feed.createdAt = feed.createdAt.toDate();
       feed.updatedAt = feed.updatedAt.toDate();
@@ -157,8 +161,10 @@ const Page: FC<Props> = ({
 
                       if (currentUser) {
                         const point = updateUserPoint(item.category, currentUser, false);
+
                         if (user) {
                           const updatedPoint = (user.point || 0) + point;
+
                           setUserPoint(updatedPoint);
                         }
                       }
@@ -172,6 +178,7 @@ const Page: FC<Props> = ({
                       const update = produce(feeds, (draftState): void => {
                         if (draftState) draftState.splice(index, 1);
                       });
+
                       setFeeds(update);
                     }
                   },

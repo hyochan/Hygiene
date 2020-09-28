@@ -2,7 +2,6 @@
 
 exports[`Interaction should simulate onClick 1`] = `
 <View
-  pointerEvents="box-none"
   style={
     Object {
       "flex": 1,
@@ -10,60 +9,293 @@ exports[`Interaction should simulate onClick 1`] = `
   }
 >
   <View
-    collapsable={true}
-    pointerEvents="box-none"
     style={
-      Object {
-        "flex": 1,
-      }
+      Array [
+        Object {
+          "alignItems": "flex-start",
+          "borderBottomColor": "#E6E6E6",
+          "borderBottomWidth": 1,
+          "flexDirection": "column",
+          "flexWrap": "wrap",
+          "justifyContent": "flex-start",
+          "minHeight": 360,
+          "paddingBottom": 0,
+          "paddingLeft": 22,
+          "paddingRight": 22,
+          "paddingTop": 0,
+          "width": "100%",
+        },
+      ]
     }
   >
     <View
       style={
-        Object {
-          "flex": 1,
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 68,
+            "justifyContent": "flex-start",
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "opacity": 1,
+          }
         }
+      >
+        <Image
+          source={
+            Object {
+              "canInstrument": true,
+              "createTransformer": [Function],
+              "getCacheKey": [Function],
+              "process": [Function],
+            }
+          }
+          style={
+            Object {
+              "borderRadius": 18,
+              "height": 36,
+              "width": 36,
+            }
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "flexDirection": "column",
+                "justifyContent": "center",
+              },
+              Object {
+                "marginLeft": 6,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "black",
+                  "fontSize": 14,
+                },
+                Object {
+                  "fontWeight": "bold",
+                },
+              ]
+            }
+          >
+            unnamed
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "black",
+                  "fontSize": 14,
+                },
+                Object {
+                  "color": "#808080",
+                  "fontSize": 12,
+                  "marginTop": 6,
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+      <SvgMock
+        fill="#1E6EFA"
+        height={24}
+        style={
+          Object {
+            "position": "absolute",
+            "right": 36,
+          }
+        }
+        width={24}
+      />
+      <View
+        accessible={true}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+            "position": "absolute",
+            "right": 0,
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "canInstrument": true,
+              "createTransformer": [Function],
+              "getCacheKey": [Function],
+              "process": [Function],
+            }
+          }
+          style={
+            Object {
+              "height": 24,
+              "width": 24,
+            }
+          }
+        />
+      </View>
+    </View>
+    <Text
+      numberOfLines={5}
+      style={
+        Array [
+          Object {
+            "color": "black",
+            "fontSize": 14,
+          },
+        ]
+      }
+    >
+      string
+    </Text>
+    <View
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    >
+      <RCTScrollView
+        horizontal={true}
+        style={
+          Object {
+            "marginVertical": 10,
+          }
+        }
+      >
+        <View>
+          <Image
+            source={
+              Object {
+                "uri": "url1",
+              }
+            }
+            style={
+              Object {
+                "borderRadius": 16,
+                "height": 240,
+                "marginRight": 10,
+                "width": 331,
+              }
+            }
+          />
+          <Image
+            source={
+              Object {
+                "uri": "url2",
+              }
+            }
+            style={
+              Object {
+                "borderRadius": 16,
+                "height": 240,
+                "marginRight": 10,
+                "width": 331,
+              }
+            }
+          />
+        </View>
+      </RCTScrollView>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+          },
+          Object {
+            "alignSelf": "stretch",
+            "justifyContent": "space-between",
+            "marginBottom": 16,
+            "marginTop": 12,
+          },
+        ]
       }
     >
       <View
         style={
-          Array [
-            Object {
-              "alignItems": "flex-start",
-              "borderBottomColor": "#E6E6E6",
-              "borderBottomWidth": 1,
-              "flexDirection": "column",
-              "flexWrap": "wrap",
-              "justifyContent": "flex-start",
-              "minHeight": 360,
-              "paddingBottom": 0,
-              "paddingLeft": 22,
-              "paddingRight": 22,
-              "paddingTop": 0,
-              "width": "100%",
-            },
-          ]
+          Object {
+            "flexDirection": "row",
+          }
         }
       >
         <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "height": 68,
-                "justifyContent": "flex-start",
-                "width": "100%",
-              },
-            ]
+            Object {
+              "marginRight": 10,
+              "opacity": 1,
+            }
           }
         >
-          <
-            activeOpacity={0.7}
+          <View
             style={
-              Object {
-                "flexDirection": "row",
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "borderColor": "#E6E6E6",
+                  "borderRadius": 100,
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "paddingBottom": 11,
+                  "paddingLeft": 11,
+                  "paddingRight": 11,
+                  "paddingTop": 11,
+                  "shadowColor": "rgba(0, 0, 0, 0.06)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 2,
+                  },
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                },
+                null,
+              ]
             }
           >
             <Image
@@ -77,77 +309,70 @@ exports[`Interaction should simulate onClick 1`] = `
               }
               style={
                 Object {
-                  "borderRadius": 18,
-                  "height": 36,
-                  "width": 36,
+                  "height": 18,
+                  "width": 18,
                 }
               }
             />
-            <View
+            <Text
               style={
                 Array [
                   Object {
-                    "flexDirection": "column",
-                    "justifyContent": "center",
+                    "color": "black",
+                    "fontSize": 14,
                   },
                   Object {
-                    "marginLeft": 6,
+                    "marginLeft": 3,
                   },
                 ]
               }
             >
-              <Text
-                style={
-                  Array [
-                    Object {
-                      "color": "black",
-                      "fontSize": 14,
-                    },
-                    Object {
-                      "fontWeight": "bold",
-                    },
-                  ]
-                }
-              >
-                unnamed
-              </Text>
-              <Text
-                style={
-                  Array [
-                    Object {
-                      "color": "black",
-                      "fontSize": 14,
-                    },
-                    Object {
-                      "color": "#808080",
-                      "fontSize": 12,
-                      "marginTop": 6,
-                    },
-                  ]
-                }
-              >
-                
-              </Text>
-            </View>
-          </>
-          <SvgMock
-            fill="#1E6EFA"
-            height={24}
-            style={
-              Object {
-                "position": "absolute",
-                "right": 36,
-              }
+              0
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "marginRight": 10,
+              "opacity": 1,
             }
-            width={24}
-          />
-          <
-            activeOpacity={0.7}
+          }
+        >
+          <View
             style={
-              Object {
-                "position": "absolute",
-                "right": 0,
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "borderColor": "#E6E6E6",
+                  "borderRadius": 100,
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "paddingBottom": 11,
+                  "paddingLeft": 11,
+                  "paddingRight": 11,
+                  "paddingTop": 11,
+                  "shadowColor": "rgba(0, 0, 0, 0.06)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 2,
+                  },
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                },
+                null,
+              ]
             }
           >
             <Image
@@ -161,370 +386,186 @@ exports[`Interaction should simulate onClick 1`] = `
               }
               style={
                 Object {
-                  "height": 24,
-                  "width": 24,
+                  "height": 18,
+                  "width": 18,
                 }
               }
             />
-          </>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "black",
+                    "fontSize": 14,
+                  },
+                  Object {
+                    "marginLeft": 3,
+                  },
+                ]
+              }
+            >
+              0
+            </Text>
+          </View>
         </View>
-        <Text
-          numberOfLines={5}
-          style={
-            Array [
-              Object {
-                "color": "black",
-                "fontSize": 14,
-              },
-            ]
+      </View>
+      <View />
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
           }
-        >
-          string
-        </Text>
+        }
+      >
         <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
             Object {
-              "width": "100%",
+              "marginRight": 10,
+              "opacity": 1,
             }
           }
         >
-          <ScrollView
-            horizontal={true}
+          <View
             style={
-              Object {
-                "marginVertical": 10,
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "borderColor": "#E6E6E6",
+                  "borderRadius": 100,
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "paddingBottom": 11,
+                  "paddingLeft": 11,
+                  "paddingRight": 11,
+                  "paddingTop": 11,
+                  "shadowColor": "rgba(0, 0, 0, 0.06)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 2,
+                  },
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                },
+              ]
             }
           >
             <Image
               source={
                 Object {
-                  "uri": "url1",
+                  "canInstrument": true,
+                  "createTransformer": [Function],
+                  "getCacheKey": [Function],
+                  "process": [Function],
                 }
               }
               style={
                 Object {
-                  "borderRadius": 16,
-                  "height": 240,
-                  "marginRight": 10,
-                  "width": 331,
+                  "height": 18,
+                  "width": 18,
                 }
               }
             />
-            <Image
-              source={
-                Object {
-                  "uri": "url2",
-                }
-              }
+            <Text
               style={
-                Object {
-                  "borderRadius": 16,
-                  "height": 240,
-                  "marginRight": 10,
-                  "width": 331,
-                }
+                Array [
+                  Object {
+                    "color": "black",
+                    "fontSize": 14,
+                  },
+                  Object {
+                    "marginLeft": 3,
+                  },
+                ]
               }
-            />
-          </ScrollView>
+            >
+              0
+            </Text>
+          </View>
         </View>
         <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "flexDirection": "row",
-              },
-              Object {
-                "alignSelf": "stretch",
-                "justifyContent": "space-between",
-                "marginBottom": 16,
-                "marginTop": 12,
-              },
-            ]
+            Object {
+              "opacity": 1,
+            }
           }
         >
           <View
             style={
-              Object {
-                "flexDirection": "row",
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "borderColor": "#E6E6E6",
+                  "borderRadius": 100,
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "paddingBottom": 11,
+                  "paddingLeft": 11,
+                  "paddingRight": 11,
+                  "paddingTop": 11,
+                  "shadowColor": "rgba(0, 0, 0, 0.06)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 2,
+                  },
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                },
+              ]
             }
           >
-            <
-              activeOpacity={0.7}
+            <Image
+              source={
+                Object {
+                  "canInstrument": true,
+                  "createTransformer": [Function],
+                  "getCacheKey": [Function],
+                  "process": [Function],
+                }
+              }
               style={
                 Object {
-                  "marginRight": 10,
+                  "height": 18,
+                  "width": 18,
                 }
               }
-            >
-              <View
-                style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "borderColor": "#E6E6E6",
-                      "borderRadius": 100,
-                      "borderStyle": "solid",
-                      "borderWidth": 1,
-                      "flexDirection": "row",
-                      "justifyContent": "center",
-                      "paddingBottom": 11,
-                      "paddingLeft": 11,
-                      "paddingRight": 11,
-                      "paddingTop": 11,
-                      "shadowColor": "rgba(0, 0, 0, 0.06)",
-                      "shadowOffset": Object {
-                        "height": 2,
-                        "width": 2,
-                      },
-                      "shadowOpacity": 1,
-                      "shadowRadius": 4,
-                    },
-                    null,
-                  ]
-                }
-              >
-                <Image
-                  source={
-                    Object {
-                      "canInstrument": true,
-                      "createTransformer": [Function],
-                      "getCacheKey": [Function],
-                      "process": [Function],
-                    }
-                  }
-                  style={
-                    Object {
-                      "height": 18,
-                      "width": 18,
-                    }
-                  }
-                />
-                <Text
-                  style={
-                    Array [
-                      Object {
-                        "color": "black",
-                        "fontSize": 14,
-                      },
-                      Object {
-                        "marginLeft": 3,
-                      },
-                    ]
-                  }
-                >
-                  0
-                </Text>
-              </View>
-            </>
-            <
-              activeOpacity={0.7}
+            />
+            <Text
               style={
-                Object {
-                  "marginRight": 10,
-                }
+                Array [
+                  Object {
+                    "color": "black",
+                    "fontSize": 14,
+                  },
+                  Object {
+                    "marginLeft": 3,
+                  },
+                ]
               }
             >
-              <View
-                style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "borderColor": "#E6E6E6",
-                      "borderRadius": 100,
-                      "borderStyle": "solid",
-                      "borderWidth": 1,
-                      "flexDirection": "row",
-                      "justifyContent": "center",
-                      "paddingBottom": 11,
-                      "paddingLeft": 11,
-                      "paddingRight": 11,
-                      "paddingTop": 11,
-                      "shadowColor": "rgba(0, 0, 0, 0.06)",
-                      "shadowOffset": Object {
-                        "height": 2,
-                        "width": 2,
-                      },
-                      "shadowOpacity": 1,
-                      "shadowRadius": 4,
-                    },
-                    null,
-                  ]
-                }
-              >
-                <Image
-                  source={
-                    Object {
-                      "canInstrument": true,
-                      "createTransformer": [Function],
-                      "getCacheKey": [Function],
-                      "process": [Function],
-                    }
-                  }
-                  style={
-                    Object {
-                      "height": 18,
-                      "width": 18,
-                    }
-                  }
-                />
-                <Text
-                  style={
-                    Array [
-                      Object {
-                        "color": "black",
-                        "fontSize": 14,
-                      },
-                      Object {
-                        "marginLeft": 3,
-                      },
-                    ]
-                  }
-                >
-                  0
-                </Text>
-              </View>
-            </>
-          </View>
-          <View />
-          <View
-            style={
-              Object {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <
-              activeOpacity={0.7}
-              style={
-                Object {
-                  "marginRight": 10,
-                }
-              }
-            >
-              <View
-                style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "borderColor": "#E6E6E6",
-                      "borderRadius": 100,
-                      "borderStyle": "solid",
-                      "borderWidth": 1,
-                      "flexDirection": "row",
-                      "justifyContent": "center",
-                      "paddingBottom": 11,
-                      "paddingLeft": 11,
-                      "paddingRight": 11,
-                      "paddingTop": 11,
-                      "shadowColor": "rgba(0, 0, 0, 0.06)",
-                      "shadowOffset": Object {
-                        "height": 2,
-                        "width": 2,
-                      },
-                      "shadowOpacity": 1,
-                      "shadowRadius": 4,
-                    },
-                  ]
-                }
-              >
-                <Image
-                  source={
-                    Object {
-                      "canInstrument": true,
-                      "createTransformer": [Function],
-                      "getCacheKey": [Function],
-                      "process": [Function],
-                    }
-                  }
-                  style={
-                    Object {
-                      "height": 18,
-                      "width": 18,
-                    }
-                  }
-                />
-                <Text
-                  style={
-                    Array [
-                      Object {
-                        "color": "black",
-                        "fontSize": 14,
-                      },
-                      Object {
-                        "marginLeft": 3,
-                      },
-                    ]
-                  }
-                >
-                  0
-                </Text>
-              </View>
-            </>
-            <
-              activeOpacity={0.7}
-            >
-              <View
-                style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "borderColor": "#E6E6E6",
-                      "borderRadius": 100,
-                      "borderStyle": "solid",
-                      "borderWidth": 1,
-                      "flexDirection": "row",
-                      "justifyContent": "center",
-                      "paddingBottom": 11,
-                      "paddingLeft": 11,
-                      "paddingRight": 11,
-                      "paddingTop": 11,
-                      "shadowColor": "rgba(0, 0, 0, 0.06)",
-                      "shadowOffset": Object {
-                        "height": 2,
-                        "width": 2,
-                      },
-                      "shadowOpacity": 1,
-                      "shadowRadius": 4,
-                    },
-                  ]
-                }
-              >
-                <Image
-                  source={
-                    Object {
-                      "canInstrument": true,
-                      "createTransformer": [Function],
-                      "getCacheKey": [Function],
-                      "process": [Function],
-                    }
-                  }
-                  style={
-                    Object {
-                      "height": 18,
-                      "width": 18,
-                    }
-                  }
-                />
-                <Text
-                  style={
-                    Array [
-                      Object {
-                        "color": "black",
-                        "fontSize": 14,
-                      },
-                      Object {
-                        "marginLeft": 3,
-                      },
-                    ]
-                  }
-                >
-                  0
-                </Text>
-              </View>
-            </>
+              0
+            </Text>
           </View>
         </View>
       </View>
@@ -535,7 +576,6 @@ exports[`Interaction should simulate onClick 1`] = `
 
 exports[`Rendering renders without crashing 1`] = `
 <View
-  pointerEvents="box-none"
   style={
     Object {
       "flex": 1,
@@ -543,60 +583,293 @@ exports[`Rendering renders without crashing 1`] = `
   }
 >
   <View
-    collapsable={true}
-    pointerEvents="box-none"
     style={
-      Object {
-        "flex": 1,
-      }
+      Array [
+        Object {
+          "alignItems": "flex-start",
+          "borderBottomColor": "#E6E6E6",
+          "borderBottomWidth": 1,
+          "flexDirection": "column",
+          "flexWrap": "wrap",
+          "justifyContent": "flex-start",
+          "minHeight": 360,
+          "paddingBottom": 0,
+          "paddingLeft": 22,
+          "paddingRight": 22,
+          "paddingTop": 0,
+          "width": "100%",
+        },
+      ]
     }
   >
     <View
       style={
-        Object {
-          "flex": 1,
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 68,
+            "justifyContent": "flex-start",
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "opacity": 1,
+          }
         }
+      >
+        <Image
+          source={
+            Object {
+              "canInstrument": true,
+              "createTransformer": [Function],
+              "getCacheKey": [Function],
+              "process": [Function],
+            }
+          }
+          style={
+            Object {
+              "borderRadius": 18,
+              "height": 36,
+              "width": 36,
+            }
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "flexDirection": "column",
+                "justifyContent": "center",
+              },
+              Object {
+                "marginLeft": 6,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "black",
+                  "fontSize": 14,
+                },
+                Object {
+                  "fontWeight": "bold",
+                },
+              ]
+            }
+          >
+            unnamed
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "black",
+                  "fontSize": 14,
+                },
+                Object {
+                  "color": "#808080",
+                  "fontSize": 12,
+                  "marginTop": 6,
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+      <SvgMock
+        fill="#1E6EFA"
+        height={24}
+        style={
+          Object {
+            "position": "absolute",
+            "right": 36,
+          }
+        }
+        width={24}
+      />
+      <View
+        accessible={true}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+            "position": "absolute",
+            "right": 0,
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "canInstrument": true,
+              "createTransformer": [Function],
+              "getCacheKey": [Function],
+              "process": [Function],
+            }
+          }
+          style={
+            Object {
+              "height": 24,
+              "width": 24,
+            }
+          }
+        />
+      </View>
+    </View>
+    <Text
+      numberOfLines={5}
+      style={
+        Array [
+          Object {
+            "color": "black",
+            "fontSize": 14,
+          },
+        ]
+      }
+    >
+      string
+    </Text>
+    <View
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    >
+      <RCTScrollView
+        horizontal={true}
+        style={
+          Object {
+            "marginVertical": 10,
+          }
+        }
+      >
+        <View>
+          <Image
+            source={
+              Object {
+                "uri": "url1",
+              }
+            }
+            style={
+              Object {
+                "borderRadius": 16,
+                "height": 240,
+                "marginRight": 10,
+                "width": 331,
+              }
+            }
+          />
+          <Image
+            source={
+              Object {
+                "uri": "url2",
+              }
+            }
+            style={
+              Object {
+                "borderRadius": 16,
+                "height": 240,
+                "marginRight": 10,
+                "width": 331,
+              }
+            }
+          />
+        </View>
+      </RCTScrollView>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+          },
+          Object {
+            "alignSelf": "stretch",
+            "justifyContent": "space-between",
+            "marginBottom": 16,
+            "marginTop": 12,
+          },
+        ]
       }
     >
       <View
         style={
-          Array [
-            Object {
-              "alignItems": "flex-start",
-              "borderBottomColor": "#E6E6E6",
-              "borderBottomWidth": 1,
-              "flexDirection": "column",
-              "flexWrap": "wrap",
-              "justifyContent": "flex-start",
-              "minHeight": 360,
-              "paddingBottom": 0,
-              "paddingLeft": 22,
-              "paddingRight": 22,
-              "paddingTop": 0,
-              "width": "100%",
-            },
-          ]
+          Object {
+            "flexDirection": "row",
+          }
         }
       >
         <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "height": 68,
-                "justifyContent": "flex-start",
-                "width": "100%",
-              },
-            ]
+            Object {
+              "marginRight": 10,
+              "opacity": 1,
+            }
           }
         >
-          <
-            activeOpacity={0.7}
+          <View
             style={
-              Object {
-                "flexDirection": "row",
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "borderColor": "#E6E6E6",
+                  "borderRadius": 100,
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "paddingBottom": 11,
+                  "paddingLeft": 11,
+                  "paddingRight": 11,
+                  "paddingTop": 11,
+                  "shadowColor": "rgba(0, 0, 0, 0.06)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 2,
+                  },
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                },
+                null,
+              ]
             }
           >
             <Image
@@ -610,77 +883,70 @@ exports[`Rendering renders without crashing 1`] = `
               }
               style={
                 Object {
-                  "borderRadius": 18,
-                  "height": 36,
-                  "width": 36,
+                  "height": 18,
+                  "width": 18,
                 }
               }
             />
-            <View
+            <Text
               style={
                 Array [
                   Object {
-                    "flexDirection": "column",
-                    "justifyContent": "center",
+                    "color": "black",
+                    "fontSize": 14,
                   },
                   Object {
-                    "marginLeft": 6,
+                    "marginLeft": 3,
                   },
                 ]
               }
             >
-              <Text
-                style={
-                  Array [
-                    Object {
-                      "color": "black",
-                      "fontSize": 14,
-                    },
-                    Object {
-                      "fontWeight": "bold",
-                    },
-                  ]
-                }
-              >
-                unnamed
-              </Text>
-              <Text
-                style={
-                  Array [
-                    Object {
-                      "color": "black",
-                      "fontSize": 14,
-                    },
-                    Object {
-                      "color": "#808080",
-                      "fontSize": 12,
-                      "marginTop": 6,
-                    },
-                  ]
-                }
-              >
-                
-              </Text>
-            </View>
-          </>
-          <SvgMock
-            fill="#1E6EFA"
-            height={24}
-            style={
-              Object {
-                "position": "absolute",
-                "right": 36,
-              }
+              0
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "marginRight": 10,
+              "opacity": 1,
             }
-            width={24}
-          />
-          <
-            activeOpacity={0.7}
+          }
+        >
+          <View
             style={
-              Object {
-                "position": "absolute",
-                "right": 0,
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "borderColor": "#E6E6E6",
+                  "borderRadius": 100,
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "paddingBottom": 11,
+                  "paddingLeft": 11,
+                  "paddingRight": 11,
+                  "paddingTop": 11,
+                  "shadowColor": "rgba(0, 0, 0, 0.06)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 2,
+                  },
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                },
+                null,
+              ]
             }
           >
             <Image
@@ -694,370 +960,186 @@ exports[`Rendering renders without crashing 1`] = `
               }
               style={
                 Object {
-                  "height": 24,
-                  "width": 24,
+                  "height": 18,
+                  "width": 18,
                 }
               }
             />
-          </>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "black",
+                    "fontSize": 14,
+                  },
+                  Object {
+                    "marginLeft": 3,
+                  },
+                ]
+              }
+            >
+              0
+            </Text>
+          </View>
         </View>
-        <Text
-          numberOfLines={5}
-          style={
-            Array [
-              Object {
-                "color": "black",
-                "fontSize": 14,
-              },
-            ]
+      </View>
+      <View />
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
           }
-        >
-          string
-        </Text>
+        }
+      >
         <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
             Object {
-              "width": "100%",
+              "marginRight": 10,
+              "opacity": 1,
             }
           }
         >
-          <ScrollView
-            horizontal={true}
+          <View
             style={
-              Object {
-                "marginVertical": 10,
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "borderColor": "#E6E6E6",
+                  "borderRadius": 100,
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "paddingBottom": 11,
+                  "paddingLeft": 11,
+                  "paddingRight": 11,
+                  "paddingTop": 11,
+                  "shadowColor": "rgba(0, 0, 0, 0.06)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 2,
+                  },
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                },
+              ]
             }
           >
             <Image
               source={
                 Object {
-                  "uri": "url1",
+                  "canInstrument": true,
+                  "createTransformer": [Function],
+                  "getCacheKey": [Function],
+                  "process": [Function],
                 }
               }
               style={
                 Object {
-                  "borderRadius": 16,
-                  "height": 240,
-                  "marginRight": 10,
-                  "width": 331,
+                  "height": 18,
+                  "width": 18,
                 }
               }
             />
-            <Image
-              source={
-                Object {
-                  "uri": "url2",
-                }
-              }
+            <Text
               style={
-                Object {
-                  "borderRadius": 16,
-                  "height": 240,
-                  "marginRight": 10,
-                  "width": 331,
-                }
+                Array [
+                  Object {
+                    "color": "black",
+                    "fontSize": 14,
+                  },
+                  Object {
+                    "marginLeft": 3,
+                  },
+                ]
               }
-            />
-          </ScrollView>
+            >
+              0
+            </Text>
+          </View>
         </View>
         <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "flexDirection": "row",
-              },
-              Object {
-                "alignSelf": "stretch",
-                "justifyContent": "space-between",
-                "marginBottom": 16,
-                "marginTop": 12,
-              },
-            ]
+            Object {
+              "opacity": 1,
+            }
           }
         >
           <View
             style={
-              Object {
-                "flexDirection": "row",
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "borderColor": "#E6E6E6",
+                  "borderRadius": 100,
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "paddingBottom": 11,
+                  "paddingLeft": 11,
+                  "paddingRight": 11,
+                  "paddingTop": 11,
+                  "shadowColor": "rgba(0, 0, 0, 0.06)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 2,
+                  },
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                },
+              ]
             }
           >
-            <
-              activeOpacity={0.7}
+            <Image
+              source={
+                Object {
+                  "canInstrument": true,
+                  "createTransformer": [Function],
+                  "getCacheKey": [Function],
+                  "process": [Function],
+                }
+              }
               style={
                 Object {
-                  "marginRight": 10,
+                  "height": 18,
+                  "width": 18,
                 }
               }
-            >
-              <View
-                style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "borderColor": "#E6E6E6",
-                      "borderRadius": 100,
-                      "borderStyle": "solid",
-                      "borderWidth": 1,
-                      "flexDirection": "row",
-                      "justifyContent": "center",
-                      "paddingBottom": 11,
-                      "paddingLeft": 11,
-                      "paddingRight": 11,
-                      "paddingTop": 11,
-                      "shadowColor": "rgba(0, 0, 0, 0.06)",
-                      "shadowOffset": Object {
-                        "height": 2,
-                        "width": 2,
-                      },
-                      "shadowOpacity": 1,
-                      "shadowRadius": 4,
-                    },
-                    null,
-                  ]
-                }
-              >
-                <Image
-                  source={
-                    Object {
-                      "canInstrument": true,
-                      "createTransformer": [Function],
-                      "getCacheKey": [Function],
-                      "process": [Function],
-                    }
-                  }
-                  style={
-                    Object {
-                      "height": 18,
-                      "width": 18,
-                    }
-                  }
-                />
-                <Text
-                  style={
-                    Array [
-                      Object {
-                        "color": "black",
-                        "fontSize": 14,
-                      },
-                      Object {
-                        "marginLeft": 3,
-                      },
-                    ]
-                  }
-                >
-                  0
-                </Text>
-              </View>
-            </>
-            <
-              activeOpacity={0.7}
+            />
+            <Text
               style={
-                Object {
-                  "marginRight": 10,
-                }
+                Array [
+                  Object {
+                    "color": "black",
+                    "fontSize": 14,
+                  },
+                  Object {
+                    "marginLeft": 3,
+                  },
+                ]
               }
             >
-              <View
-                style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "borderColor": "#E6E6E6",
-                      "borderRadius": 100,
-                      "borderStyle": "solid",
-                      "borderWidth": 1,
-                      "flexDirection": "row",
-                      "justifyContent": "center",
-                      "paddingBottom": 11,
-                      "paddingLeft": 11,
-                      "paddingRight": 11,
-                      "paddingTop": 11,
-                      "shadowColor": "rgba(0, 0, 0, 0.06)",
-                      "shadowOffset": Object {
-                        "height": 2,
-                        "width": 2,
-                      },
-                      "shadowOpacity": 1,
-                      "shadowRadius": 4,
-                    },
-                    null,
-                  ]
-                }
-              >
-                <Image
-                  source={
-                    Object {
-                      "canInstrument": true,
-                      "createTransformer": [Function],
-                      "getCacheKey": [Function],
-                      "process": [Function],
-                    }
-                  }
-                  style={
-                    Object {
-                      "height": 18,
-                      "width": 18,
-                    }
-                  }
-                />
-                <Text
-                  style={
-                    Array [
-                      Object {
-                        "color": "black",
-                        "fontSize": 14,
-                      },
-                      Object {
-                        "marginLeft": 3,
-                      },
-                    ]
-                  }
-                >
-                  0
-                </Text>
-              </View>
-            </>
-          </View>
-          <View />
-          <View
-            style={
-              Object {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <
-              activeOpacity={0.7}
-              style={
-                Object {
-                  "marginRight": 10,
-                }
-              }
-            >
-              <View
-                style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "borderColor": "#E6E6E6",
-                      "borderRadius": 100,
-                      "borderStyle": "solid",
-                      "borderWidth": 1,
-                      "flexDirection": "row",
-                      "justifyContent": "center",
-                      "paddingBottom": 11,
-                      "paddingLeft": 11,
-                      "paddingRight": 11,
-                      "paddingTop": 11,
-                      "shadowColor": "rgba(0, 0, 0, 0.06)",
-                      "shadowOffset": Object {
-                        "height": 2,
-                        "width": 2,
-                      },
-                      "shadowOpacity": 1,
-                      "shadowRadius": 4,
-                    },
-                  ]
-                }
-              >
-                <Image
-                  source={
-                    Object {
-                      "canInstrument": true,
-                      "createTransformer": [Function],
-                      "getCacheKey": [Function],
-                      "process": [Function],
-                    }
-                  }
-                  style={
-                    Object {
-                      "height": 18,
-                      "width": 18,
-                    }
-                  }
-                />
-                <Text
-                  style={
-                    Array [
-                      Object {
-                        "color": "black",
-                        "fontSize": 14,
-                      },
-                      Object {
-                        "marginLeft": 3,
-                      },
-                    ]
-                  }
-                >
-                  0
-                </Text>
-              </View>
-            </>
-            <
-              activeOpacity={0.7}
-            >
-              <View
-                style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "borderColor": "#E6E6E6",
-                      "borderRadius": 100,
-                      "borderStyle": "solid",
-                      "borderWidth": 1,
-                      "flexDirection": "row",
-                      "justifyContent": "center",
-                      "paddingBottom": 11,
-                      "paddingLeft": 11,
-                      "paddingRight": 11,
-                      "paddingTop": 11,
-                      "shadowColor": "rgba(0, 0, 0, 0.06)",
-                      "shadowOffset": Object {
-                        "height": 2,
-                        "width": 2,
-                      },
-                      "shadowOpacity": 1,
-                      "shadowRadius": 4,
-                    },
-                  ]
-                }
-              >
-                <Image
-                  source={
-                    Object {
-                      "canInstrument": true,
-                      "createTransformer": [Function],
-                      "getCacheKey": [Function],
-                      "process": [Function],
-                    }
-                  }
-                  style={
-                    Object {
-                      "height": 18,
-                      "width": 18,
-                    }
-                  }
-                />
-                <Text
-                  style={
-                    Array [
-                      Object {
-                        "color": "black",
-                        "fontSize": 14,
-                      },
-                      Object {
-                        "marginLeft": 3,
-                      },
-                    ]
-                  }
-                >
-                  0
-                </Text>
-              </View>
-            </>
+              0
+            </Text>
           </View>
         </View>
       </View>

@@ -2,7 +2,6 @@
 
 exports[`Interaction should simulate onClick 1`] = `
 <View
-  pointerEvents="box-none"
   style={
     Object {
       "flex": 1,
@@ -10,266 +9,265 @@ exports[`Interaction should simulate onClick 1`] = `
   }
 >
   <View
-    collapsable={true}
-    pointerEvents="box-none"
+    onLayout={[Function]}
     style={
-      Object {
-        "flex": 1,
-      }
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+        },
+        Object {
+          "paddingBottom": 0,
+        },
+      ]
     }
   >
-    <View
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#ffffff",
-              "flex": 1,
-              "flexDirection": "column",
-              "justifyContent": "center",
-            },
-            Object {
-              "paddingBottom": 0,
-            },
-          ]
-        }
-      >
-        <ScrollView>
+    <RCTScrollView>
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#ffffff",
+                "flexDirection": "column",
+                "justifyContent": "flex-start",
+              },
+            ]
+          }
+        >
           <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "#ffffff",
-                  "flexDirection": "column",
-                  "justifyContent": "flex-start",
-                },
-              ]
+              Object {
+                "marginTop": 40,
+                "opacity": 1,
+              }
             }
           >
-            <
-              activeOpacity={0.7}
-              style={
-                Object {
-                  "marginTop": 40,
-                }
-              }
-            >
-              <View>
-                <Image
-                  source={
-                    Object {
-                      "canInstrument": true,
-                      "createTransformer": [Function],
-                      "getCacheKey": [Function],
-                      "process": [Function],
-                    }
-                  }
-                  style={
-                    Object {
-                      "borderRadius": 35,
-                      "height": 70,
-                      "width": 70,
-                    }
-                  }
-                />
-                <Image
-                  source={
-                    Object {
-                      "canInstrument": true,
-                      "createTransformer": [Function],
-                      "getCacheKey": [Function],
-                      "process": [Function],
-                    }
-                  }
-                  style={
-                    Object {
-                      "bottom": 0,
-                      "height": 26,
-                      "position": "absolute",
-                      "right": 0,
-                      "width": 26,
-                    }
-                  }
-                />
-              </View>
-            </>
-            <View
-              style={
-                Array [
+            <View>
+              <Image
+                source={
                   Object {
-                    "alignSelf": "stretch",
-                    "flexDirection": "column",
-                  },
+                    "canInstrument": true,
+                    "createTransformer": [Function],
+                    "getCacheKey": [Function],
+                    "process": [Function],
+                  }
+                }
+                style={
                   Object {
-                    "marginHorizontal": 22,
-                    "marginTop": 40,
-                  },
-                ]
-              }
-            >
-              <Text
-                style={
-                  Array [
-                    Object {
-                      "color": "#b9b9c4",
-                      "fontSize": 14,
-                      "fontWeight": "500",
-                      "marginBottom": 5,
-                    },
-                    Object {
-                      "color": "black",
-                      "fontSize": 14,
-                      "fontWeight": "bold",
-                    },
-                    null,
-                  ]
-                }
-              >
-                Display name
-              </Text>
-              <TextInput
-                allowFontScaling={true}
-                autoCapitalize="none"
-                editable={true}
-                multiline={false}
-                placeholder="Please write your display name"
-                placeholderTextColor="#808080"
-                rejectResponderTermination={true}
-                style={
-                  Array [
-                    Object {
-                      "fontSize": 15,
-                      "fontWeight": "500",
-                      "paddingBottom": 15,
-                      "paddingTop": 15,
-                    },
-                    Object {
-                      "color": "black",
-                      "fontSize": 16,
-                    },
-                  ]
-                }
-                underlineColorAndroid="transparent"
-                value=""
-              />
-              <View
-                style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "flexDirection": "row",
-                      "justifyContent": "space-between",
-                      "width": "100%",
-                    },
-                    undefined,
-                    Object {
-                      "borderBottomWidth": 0.6,
-                      "borderColor": "#eaeaf9",
-                    },
-                    null,
-                  ]
+                    "borderRadius": 35,
+                    "height": 70,
+                    "width": 70,
+                  }
                 }
               />
-            </View>
-            <View
-              style={
-                Array [
+              <Image
+                source={
                   Object {
-                    "alignSelf": "stretch",
-                    "flexDirection": "column",
-                  },
+                    "canInstrument": true,
+                    "createTransformer": [Function],
+                    "getCacheKey": [Function],
+                    "process": [Function],
+                  }
+                }
+                style={
                   Object {
-                    "marginBottom": 40,
-                    "marginHorizontal": 22,
-                    "marginTop": 28,
-                  },
-                ]
-              }
-            >
-              <Text
-                style={
-                  Array [
-                    Object {
-                      "color": "#b9b9c4",
-                      "fontSize": 14,
-                      "fontWeight": "500",
-                      "marginBottom": 5,
-                    },
-                    Object {
-                      "color": "black",
-                      "fontSize": 14,
-                      "fontWeight": "bold",
-                    },
-                    null,
-                  ]
-                }
-              >
-                Self introduction
-              </Text>
-              <TextInput
-                allowFontScaling={true}
-                autoCapitalize="none"
-                editable={true}
-                multiline={true}
-                numberOfLines={5}
-                placeholder="Please introduce yourself"
-                placeholderTextColor="#808080"
-                rejectResponderTermination={true}
-                style={
-                  Array [
-                    Object {
-                      "fontSize": 15,
-                      "fontWeight": "500",
-                      "paddingBottom": 15,
-                      "paddingTop": 15,
-                    },
-                    Object {
-                      "color": "black",
-                      "fontSize": 16,
-                      "height": 200,
-                    },
-                  ]
-                }
-                underlineColorAndroid="transparent"
-                value=""
-              />
-              <View
-                style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "flexDirection": "row",
-                      "justifyContent": "space-between",
-                      "width": "100%",
-                    },
-                    undefined,
-                    Object {
-                      "borderBottomWidth": 0.6,
-                      "borderColor": "#eaeaf9",
-                    },
-                    null,
-                  ]
+                    "bottom": 0,
+                    "height": 26,
+                    "position": "absolute",
+                    "right": 0,
+                    "width": 26,
+                  }
                 }
               />
             </View>
           </View>
-        </ScrollView>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignSelf": "stretch",
+                  "flexDirection": "column",
+                },
+                Object {
+                  "marginHorizontal": 22,
+                  "marginTop": 40,
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#b9b9c4",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "marginBottom": 5,
+                  },
+                  Object {
+                    "color": "black",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                  },
+                  null,
+                ]
+              }
+            >
+              Display name
+            </Text>
+            <TextInput
+              allowFontScaling={true}
+              autoCapitalize="none"
+              editable={true}
+              multiline={false}
+              onBlur={[Function]}
+              onChangeText={[Function]}
+              onFocus={[Function]}
+              placeholder="Please write your display name"
+              placeholderTextColor="#808080"
+              rejectResponderTermination={true}
+              style={
+                Array [
+                  Object {
+                    "fontSize": 15,
+                    "fontWeight": "500",
+                    "paddingBottom": 15,
+                    "paddingTop": 15,
+                  },
+                  Object {
+                    "color": "black",
+                    "fontSize": 16,
+                  },
+                ]
+              }
+              underlineColorAndroid="transparent"
+              value=""
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "width": "100%",
+                  },
+                  undefined,
+                  Object {
+                    "borderBottomWidth": 0.6,
+                    "borderColor": "#eaeaf9",
+                  },
+                  null,
+                ]
+              }
+            />
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignSelf": "stretch",
+                  "flexDirection": "column",
+                },
+                Object {
+                  "marginBottom": 40,
+                  "marginHorizontal": 22,
+                  "marginTop": 28,
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#b9b9c4",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "marginBottom": 5,
+                  },
+                  Object {
+                    "color": "black",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                  },
+                  null,
+                ]
+              }
+            >
+              Self introduction
+            </Text>
+            <TextInput
+              allowFontScaling={true}
+              autoCapitalize="none"
+              editable={true}
+              multiline={true}
+              numberOfLines={5}
+              onBlur={[Function]}
+              onChangeText={[Function]}
+              onFocus={[Function]}
+              placeholder="Please introduce yourself"
+              placeholderTextColor="#808080"
+              rejectResponderTermination={true}
+              style={
+                Array [
+                  Object {
+                    "fontSize": 15,
+                    "fontWeight": "500",
+                    "paddingBottom": 15,
+                    "paddingTop": 15,
+                  },
+                  Object {
+                    "color": "black",
+                    "fontSize": 16,
+                    "height": 200,
+                  },
+                ]
+              }
+              underlineColorAndroid="transparent"
+              value=""
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "width": "100%",
+                  },
+                  undefined,
+                  Object {
+                    "borderBottomWidth": 0.6,
+                    "borderColor": "#eaeaf9",
+                  },
+                  null,
+                ]
+              }
+            />
+          </View>
+        </View>
       </View>
-    </View>
+    </RCTScrollView>
   </View>
 </View>
 `;
 
 exports[`Rendering renders without crashing 1`] = `
 <View
-  pointerEvents="box-none"
   style={
     Object {
       "flex": 1,
@@ -277,259 +275,259 @@ exports[`Rendering renders without crashing 1`] = `
   }
 >
   <View
-    collapsable={true}
-    pointerEvents="box-none"
+    onLayout={[Function]}
     style={
-      Object {
-        "flex": 1,
-      }
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+        },
+        Object {
+          "paddingBottom": 0,
+        },
+      ]
     }
   >
-    <View
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#ffffff",
-              "flex": 1,
-              "flexDirection": "column",
-              "justifyContent": "center",
-            },
-            Object {
-              "paddingBottom": 0,
-            },
-          ]
-        }
-      >
-        <ScrollView>
+    <RCTScrollView>
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#ffffff",
+                "flexDirection": "column",
+                "justifyContent": "flex-start",
+              },
+            ]
+          }
+        >
           <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "#ffffff",
-                  "flexDirection": "column",
-                  "justifyContent": "flex-start",
-                },
-              ]
+              Object {
+                "marginTop": 40,
+                "opacity": 1,
+              }
             }
           >
-            <
-              activeOpacity={0.7}
-              style={
-                Object {
-                  "marginTop": 40,
-                }
-              }
-            >
-              <View>
-                <Image
-                  source={
-                    Object {
-                      "canInstrument": true,
-                      "createTransformer": [Function],
-                      "getCacheKey": [Function],
-                      "process": [Function],
-                    }
-                  }
-                  style={
-                    Object {
-                      "borderRadius": 35,
-                      "height": 70,
-                      "width": 70,
-                    }
-                  }
-                />
-                <Image
-                  source={
-                    Object {
-                      "canInstrument": true,
-                      "createTransformer": [Function],
-                      "getCacheKey": [Function],
-                      "process": [Function],
-                    }
-                  }
-                  style={
-                    Object {
-                      "bottom": 0,
-                      "height": 26,
-                      "position": "absolute",
-                      "right": 0,
-                      "width": 26,
-                    }
-                  }
-                />
-              </View>
-            </>
-            <View
-              style={
-                Array [
+            <View>
+              <Image
+                source={
                   Object {
-                    "alignSelf": "stretch",
-                    "flexDirection": "column",
-                  },
+                    "canInstrument": true,
+                    "createTransformer": [Function],
+                    "getCacheKey": [Function],
+                    "process": [Function],
+                  }
+                }
+                style={
                   Object {
-                    "marginHorizontal": 22,
-                    "marginTop": 40,
-                  },
-                ]
-              }
-            >
-              <Text
-                style={
-                  Array [
-                    Object {
-                      "color": "#b9b9c4",
-                      "fontSize": 14,
-                      "fontWeight": "500",
-                      "marginBottom": 5,
-                    },
-                    Object {
-                      "color": "black",
-                      "fontSize": 14,
-                      "fontWeight": "bold",
-                    },
-                    null,
-                  ]
-                }
-              >
-                Display name
-              </Text>
-              <TextInput
-                allowFontScaling={true}
-                autoCapitalize="none"
-                editable={true}
-                multiline={false}
-                placeholder="Please write your display name"
-                placeholderTextColor="#808080"
-                rejectResponderTermination={true}
-                style={
-                  Array [
-                    Object {
-                      "fontSize": 15,
-                      "fontWeight": "500",
-                      "paddingBottom": 15,
-                      "paddingTop": 15,
-                    },
-                    Object {
-                      "color": "black",
-                      "fontSize": 16,
-                    },
-                  ]
-                }
-                underlineColorAndroid="transparent"
-                value=""
-              />
-              <View
-                style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "flexDirection": "row",
-                      "justifyContent": "space-between",
-                      "width": "100%",
-                    },
-                    undefined,
-                    Object {
-                      "borderBottomWidth": 0.6,
-                      "borderColor": "#eaeaf9",
-                    },
-                    null,
-                  ]
+                    "borderRadius": 35,
+                    "height": 70,
+                    "width": 70,
+                  }
                 }
               />
-            </View>
-            <View
-              style={
-                Array [
+              <Image
+                source={
                   Object {
-                    "alignSelf": "stretch",
-                    "flexDirection": "column",
-                  },
+                    "canInstrument": true,
+                    "createTransformer": [Function],
+                    "getCacheKey": [Function],
+                    "process": [Function],
+                  }
+                }
+                style={
                   Object {
-                    "marginBottom": 40,
-                    "marginHorizontal": 22,
-                    "marginTop": 28,
-                  },
-                ]
-              }
-            >
-              <Text
-                style={
-                  Array [
-                    Object {
-                      "color": "#b9b9c4",
-                      "fontSize": 14,
-                      "fontWeight": "500",
-                      "marginBottom": 5,
-                    },
-                    Object {
-                      "color": "black",
-                      "fontSize": 14,
-                      "fontWeight": "bold",
-                    },
-                    null,
-                  ]
-                }
-              >
-                Self introduction
-              </Text>
-              <TextInput
-                allowFontScaling={true}
-                autoCapitalize="none"
-                editable={true}
-                multiline={true}
-                numberOfLines={5}
-                placeholder="Please introduce yourself"
-                placeholderTextColor="#808080"
-                rejectResponderTermination={true}
-                style={
-                  Array [
-                    Object {
-                      "fontSize": 15,
-                      "fontWeight": "500",
-                      "paddingBottom": 15,
-                      "paddingTop": 15,
-                    },
-                    Object {
-                      "color": "black",
-                      "fontSize": 16,
-                      "height": 200,
-                    },
-                  ]
-                }
-                underlineColorAndroid="transparent"
-                value=""
-              />
-              <View
-                style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "flexDirection": "row",
-                      "justifyContent": "space-between",
-                      "width": "100%",
-                    },
-                    undefined,
-                    Object {
-                      "borderBottomWidth": 0.6,
-                      "borderColor": "#eaeaf9",
-                    },
-                    null,
-                  ]
+                    "bottom": 0,
+                    "height": 26,
+                    "position": "absolute",
+                    "right": 0,
+                    "width": 26,
+                  }
                 }
               />
             </View>
           </View>
-        </ScrollView>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignSelf": "stretch",
+                  "flexDirection": "column",
+                },
+                Object {
+                  "marginHorizontal": 22,
+                  "marginTop": 40,
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#b9b9c4",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "marginBottom": 5,
+                  },
+                  Object {
+                    "color": "black",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                  },
+                  null,
+                ]
+              }
+            >
+              Display name
+            </Text>
+            <TextInput
+              allowFontScaling={true}
+              autoCapitalize="none"
+              editable={true}
+              multiline={false}
+              onBlur={[Function]}
+              onChangeText={[Function]}
+              onFocus={[Function]}
+              placeholder="Please write your display name"
+              placeholderTextColor="#808080"
+              rejectResponderTermination={true}
+              style={
+                Array [
+                  Object {
+                    "fontSize": 15,
+                    "fontWeight": "500",
+                    "paddingBottom": 15,
+                    "paddingTop": 15,
+                  },
+                  Object {
+                    "color": "black",
+                    "fontSize": 16,
+                  },
+                ]
+              }
+              underlineColorAndroid="transparent"
+              value=""
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "width": "100%",
+                  },
+                  undefined,
+                  Object {
+                    "borderBottomWidth": 0.6,
+                    "borderColor": "#eaeaf9",
+                  },
+                  null,
+                ]
+              }
+            />
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignSelf": "stretch",
+                  "flexDirection": "column",
+                },
+                Object {
+                  "marginBottom": 40,
+                  "marginHorizontal": 22,
+                  "marginTop": 28,
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#b9b9c4",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "marginBottom": 5,
+                  },
+                  Object {
+                    "color": "black",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                  },
+                  null,
+                ]
+              }
+            >
+              Self introduction
+            </Text>
+            <TextInput
+              allowFontScaling={true}
+              autoCapitalize="none"
+              editable={true}
+              multiline={true}
+              numberOfLines={5}
+              onBlur={[Function]}
+              onChangeText={[Function]}
+              onFocus={[Function]}
+              placeholder="Please introduce yourself"
+              placeholderTextColor="#808080"
+              rejectResponderTermination={true}
+              style={
+                Array [
+                  Object {
+                    "fontSize": 15,
+                    "fontWeight": "500",
+                    "paddingBottom": 15,
+                    "paddingTop": 15,
+                  },
+                  Object {
+                    "color": "black",
+                    "fontSize": 16,
+                    "height": 200,
+                  },
+                ]
+              }
+              underlineColorAndroid="transparent"
+              value=""
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "width": "100%",
+                  },
+                  undefined,
+                  Object {
+                    "borderBottomWidth": 0.6,
+                    "borderColor": "#eaeaf9",
+                  },
+                  null,
+                ]
+              }
+            />
+          </View>
+        </View>
       </View>
-    </View>
+    </RCTScrollView>
   </View>
 </View>
 `;

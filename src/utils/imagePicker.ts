@@ -102,17 +102,22 @@ const requestPermissions = async (
 ): Promise<Permissions.PermissionStatus> => {
   if (type === 'photo') {
     const { status } = await Permissions.askAsync(Permissions.CAMERA_ROLL);
+
     return status;
   }
+
   const { status } = await Permissions.askAsync(Permissions.CAMERA);
+
   return status;
 };
 
 export const launchCameraAsync = async (): Promise<ImagePicker.ImagePickerResult | null> => {
   const permissionStatus = await requestPermissions('camera');
+
   if (permissionStatus === PermissionStatus.GRANTED) {
     return ImagePicker.launchCameraAsync(photoOptions);
   }
+
   return null;
 };
 
@@ -120,9 +125,12 @@ export const launchImageLibraryAsync = async (): Promise<ImagePicker.ImagePicker
   if (Platform.OS === 'web') {
     return ImagePicker.launchImageLibraryAsync(photoOptions);
   }
+
   const permissionStatus = await requestPermissions('photo');
+
   if (permissionStatus === PermissionStatus.GRANTED) {
     return ImagePicker.launchImageLibraryAsync(photoOptions);
   }
+
   return null;
 };

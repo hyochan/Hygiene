@@ -2,7 +2,6 @@
 
 exports[`Interaction should simulate onClick 1`] = `
 <View
-  pointerEvents="box-none"
   style={
     Object {
       "flex": 1,
@@ -10,285 +9,292 @@ exports[`Interaction should simulate onClick 1`] = `
   }
 >
   <View
-    collapsable={true}
-    pointerEvents="box-none"
     style={
-      Object {
-        "flex": 1,
-      }
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "borderColor": "#E6E6E6",
+          "borderRadius": 12,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "flexDirection": "column",
+          "height": 212,
+          "paddingBottom": 24,
+          "paddingLeft": 30,
+          "paddingRight": 30,
+          "paddingTop": 24,
+          "width": 329,
+        },
+      ]
     }
   >
     <View
       style={
-        Object {
-          "flex": 1,
+        Array [
+          Object {
+            "flexDirection": "row",
+          },
+        ]
+      }
+    >
+      <Image
+        resizeMethod="resize"
+        source={
+          Object {
+            "canInstrument": true,
+            "createTransformer": [Function],
+            "getCacheKey": [Function],
+            "process": [Function],
+          }
         }
+        style={
+          Array [
+            Object {
+              "borderRadius": 35,
+              "height": 70,
+              "width": 70,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "flexDirection": "column",
+              "justifyContent": "center",
+            },
+            Object {
+              "marginLeft": 15,
+            },
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "black",
+                    "fontSize": 24,
+                  },
+                  Object {
+                    "marginRight": 4.5,
+                  },
+                ]
+              }
+            />
+            <SvgMock
+              fill="black"
+            />
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "marginTop": 2,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#808080",
+                "fontSize": 12,
+              }
+            }
+          >
+            Logout
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginTop": 18,
+          },
+        ]
       }
     >
       <View
         style={
           Array [
             Object {
-              "backgroundColor": "#ffffff",
-              "borderColor": "#E6E6E6",
-              "borderRadius": 12,
-              "borderStyle": "solid",
-              "borderWidth": 1,
+              "alignItems": "center",
               "flexDirection": "column",
-              "height": 212,
-              "paddingBottom": 24,
-              "paddingLeft": 30,
-              "paddingRight": 30,
-              "paddingTop": 24,
-              "width": 329,
+              "justifyContent": "center",
+              "width": 82,
             },
           ]
         }
       >
-        <View
+        <Text
+          numberOfLines={1}
           style={
             Array [
               Object {
-                "flexDirection": "row",
+                "color": "#444444",
+                "fontSize": 14,
+                "fontWeight": "bold",
               },
             ]
           }
         >
-          <Image
-            resizeMethod="resize"
-            source={
-              Object {
-                "canInstrument": true,
-                "createTransformer": [Function],
-                "getCacheKey": [Function],
-                "process": [Function],
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "borderRadius": 35,
-                  "height": 70,
-                  "width": 70,
-                },
-              ]
-            }
-          />
-          <View
-            style={
-              Array [
-                Object {
-                  "alignItems": "flex-start",
-                  "flexDirection": "column",
-                  "justifyContent": "center",
-                },
-                Object {
-                  "marginLeft": 15,
-                },
-              ]
-            }
-          >
-            <>
-              <View
-                style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "flexDirection": "row",
-                    },
-                  ]
-                }
-              >
-                <Text
-                  style={
-                    Array [
-                      Object {
-                        "color": "black",
-                        "fontSize": 24,
-                      },
-                      Object {
-                        "marginRight": 4.5,
-                      },
-                    ]
-                  }
-                />
-                <SvgMock
-                  fill="black"
-                />
-              </View>
-            </>
-            <
-              style={
-                Object {
-                  "marginTop": 2,
-                }
-              }
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#808080",
-                    "fontSize": 12,
-                  }
-                }
-              >
-                Logout
-              </Text>
-            </>
-          </View>
-        </View>
-        <View
+          Mission
+        </Text>
+        <Text
+          numberOfLines={1}
           style={
             Array [
               Object {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "justifyContent": "space-between",
-                "marginTop": 18,
+                "color": "#444444",
+                "fontSize": 24,
+                "marginTop": 8,
+              },
+            ]
+          }
+        />
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#E6E6E6",
+              "height": 32,
+              "width": 1,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "column",
+              "justifyContent": "center",
+              "width": 82,
+            },
+          ]
+        }
+      >
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "#444444",
+                "fontSize": 14,
+                "fontWeight": "bold",
               },
             ]
           }
         >
-          <View
-            style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "column",
-                  "justifyContent": "center",
-                  "width": 82,
-                },
-              ]
-            }
-          >
-            <Text
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "color": "#444444",
-                    "fontSize": 14,
-                    "fontWeight": "bold",
-                  },
-                ]
-              }
-            >
-              Mission
-            </Text>
-            <Text
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "color": "#444444",
-                    "fontSize": 24,
-                    "marginTop": 8,
-                  },
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "backgroundColor": "#E6E6E6",
-                  "height": 32,
-                  "width": 1,
-                },
-              ]
-            }
-          />
-          <View
-            style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "column",
-                  "justifyContent": "center",
-                  "width": 82,
-                },
-              ]
-            }
-          >
-            <Text
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "color": "#444444",
-                    "fontSize": 14,
-                    "fontWeight": "bold",
-                  },
-                ]
-              }
-            >
-              Rank
-            </Text>
-            <Text
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "color": "#444444",
-                    "fontSize": 24,
-                    "marginTop": 8,
-                  },
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "backgroundColor": "#E6E6E6",
-                  "height": 32,
-                  "width": 1,
-                },
-              ]
-            }
-          />
-          <View
-            style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "column",
-                  "justifyContent": "center",
-                  "width": 82,
-                },
-              ]
-            }
-          >
-            <Text
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "color": "#444444",
-                    "fontSize": 14,
-                    "fontWeight": "bold",
-                  },
-                ]
-              }
-            >
-              Feed
-            </Text>
-            <Text
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "color": "#444444",
-                    "fontSize": 24,
-                    "marginTop": 8,
-                  },
-                ]
-              }
-            />
-          </View>
-        </View>
+          Rank
+        </Text>
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "#444444",
+                "fontSize": 24,
+                "marginTop": 8,
+              },
+            ]
+          }
+        />
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#E6E6E6",
+              "height": 32,
+              "width": 1,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "column",
+              "justifyContent": "center",
+              "width": 82,
+            },
+          ]
+        }
+      >
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "#444444",
+                "fontSize": 14,
+                "fontWeight": "bold",
+              },
+            ]
+          }
+        >
+          Feed
+        </Text>
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "#444444",
+                "fontSize": 24,
+                "marginTop": 8,
+              },
+            ]
+          }
+        />
       </View>
     </View>
   </View>
@@ -297,7 +303,6 @@ exports[`Interaction should simulate onClick 1`] = `
 
 exports[`Rendering renders without crashing 1`] = `
 <View
-  pointerEvents="box-none"
   style={
     Object {
       "flex": 1,
@@ -305,285 +310,292 @@ exports[`Rendering renders without crashing 1`] = `
   }
 >
   <View
-    collapsable={true}
-    pointerEvents="box-none"
     style={
-      Object {
-        "flex": 1,
-      }
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "borderColor": "#E6E6E6",
+          "borderRadius": 12,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "flexDirection": "column",
+          "height": 212,
+          "paddingBottom": 24,
+          "paddingLeft": 30,
+          "paddingRight": 30,
+          "paddingTop": 24,
+          "width": 329,
+        },
+      ]
     }
   >
     <View
       style={
-        Object {
-          "flex": 1,
+        Array [
+          Object {
+            "flexDirection": "row",
+          },
+        ]
+      }
+    >
+      <Image
+        resizeMethod="resize"
+        source={
+          Object {
+            "canInstrument": true,
+            "createTransformer": [Function],
+            "getCacheKey": [Function],
+            "process": [Function],
+          }
         }
+        style={
+          Array [
+            Object {
+              "borderRadius": 35,
+              "height": 70,
+              "width": 70,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "flexDirection": "column",
+              "justifyContent": "center",
+            },
+            Object {
+              "marginLeft": 15,
+            },
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "black",
+                    "fontSize": 24,
+                  },
+                  Object {
+                    "marginRight": 4.5,
+                  },
+                ]
+              }
+            />
+            <SvgMock
+              fill="black"
+            />
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "marginTop": 2,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#808080",
+                "fontSize": 12,
+              }
+            }
+          >
+            Logout
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginTop": 18,
+          },
+        ]
       }
     >
       <View
         style={
           Array [
             Object {
-              "backgroundColor": "#ffffff",
-              "borderColor": "#E6E6E6",
-              "borderRadius": 12,
-              "borderStyle": "solid",
-              "borderWidth": 1,
+              "alignItems": "center",
               "flexDirection": "column",
-              "height": 212,
-              "paddingBottom": 24,
-              "paddingLeft": 30,
-              "paddingRight": 30,
-              "paddingTop": 24,
-              "width": 329,
+              "justifyContent": "center",
+              "width": 82,
             },
           ]
         }
       >
-        <View
+        <Text
+          numberOfLines={1}
           style={
             Array [
               Object {
-                "flexDirection": "row",
+                "color": "#444444",
+                "fontSize": 14,
+                "fontWeight": "bold",
               },
             ]
           }
         >
-          <Image
-            resizeMethod="resize"
-            source={
-              Object {
-                "canInstrument": true,
-                "createTransformer": [Function],
-                "getCacheKey": [Function],
-                "process": [Function],
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "borderRadius": 35,
-                  "height": 70,
-                  "width": 70,
-                },
-              ]
-            }
-          />
-          <View
-            style={
-              Array [
-                Object {
-                  "alignItems": "flex-start",
-                  "flexDirection": "column",
-                  "justifyContent": "center",
-                },
-                Object {
-                  "marginLeft": 15,
-                },
-              ]
-            }
-          >
-            <>
-              <View
-                style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "flexDirection": "row",
-                    },
-                  ]
-                }
-              >
-                <Text
-                  style={
-                    Array [
-                      Object {
-                        "color": "black",
-                        "fontSize": 24,
-                      },
-                      Object {
-                        "marginRight": 4.5,
-                      },
-                    ]
-                  }
-                />
-                <SvgMock
-                  fill="black"
-                />
-              </View>
-            </>
-            <
-              style={
-                Object {
-                  "marginTop": 2,
-                }
-              }
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#808080",
-                    "fontSize": 12,
-                  }
-                }
-              >
-                Logout
-              </Text>
-            </>
-          </View>
-        </View>
-        <View
+          Mission
+        </Text>
+        <Text
+          numberOfLines={1}
           style={
             Array [
               Object {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "justifyContent": "space-between",
-                "marginTop": 18,
+                "color": "#444444",
+                "fontSize": 24,
+                "marginTop": 8,
+              },
+            ]
+          }
+        />
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#E6E6E6",
+              "height": 32,
+              "width": 1,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "column",
+              "justifyContent": "center",
+              "width": 82,
+            },
+          ]
+        }
+      >
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "#444444",
+                "fontSize": 14,
+                "fontWeight": "bold",
               },
             ]
           }
         >
-          <View
-            style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "column",
-                  "justifyContent": "center",
-                  "width": 82,
-                },
-              ]
-            }
-          >
-            <Text
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "color": "#444444",
-                    "fontSize": 14,
-                    "fontWeight": "bold",
-                  },
-                ]
-              }
-            >
-              Mission
-            </Text>
-            <Text
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "color": "#444444",
-                    "fontSize": 24,
-                    "marginTop": 8,
-                  },
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "backgroundColor": "#E6E6E6",
-                  "height": 32,
-                  "width": 1,
-                },
-              ]
-            }
-          />
-          <View
-            style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "column",
-                  "justifyContent": "center",
-                  "width": 82,
-                },
-              ]
-            }
-          >
-            <Text
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "color": "#444444",
-                    "fontSize": 14,
-                    "fontWeight": "bold",
-                  },
-                ]
-              }
-            >
-              Rank
-            </Text>
-            <Text
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "color": "#444444",
-                    "fontSize": 24,
-                    "marginTop": 8,
-                  },
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "backgroundColor": "#E6E6E6",
-                  "height": 32,
-                  "width": 1,
-                },
-              ]
-            }
-          />
-          <View
-            style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "column",
-                  "justifyContent": "center",
-                  "width": 82,
-                },
-              ]
-            }
-          >
-            <Text
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "color": "#444444",
-                    "fontSize": 14,
-                    "fontWeight": "bold",
-                  },
-                ]
-              }
-            >
-              Feed
-            </Text>
-            <Text
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "color": "#444444",
-                    "fontSize": 24,
-                    "marginTop": 8,
-                  },
-                ]
-              }
-            />
-          </View>
-        </View>
+          Rank
+        </Text>
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "#444444",
+                "fontSize": 24,
+                "marginTop": 8,
+              },
+            ]
+          }
+        />
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#E6E6E6",
+              "height": 32,
+              "width": 1,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "column",
+              "justifyContent": "center",
+              "width": 82,
+            },
+          ]
+        }
+      >
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "#444444",
+                "fontSize": 14,
+                "fontWeight": "bold",
+              },
+            ]
+          }
+        >
+          Feed
+        </Text>
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "#444444",
+                "fontSize": 24,
+                "marginTop": 8,
+              },
+            ]
+          }
+        />
       </View>
     </View>
   </View>

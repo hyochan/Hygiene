@@ -35,6 +35,7 @@ const Stack = createStackNavigator<StackParamList>();
 
 function MainNavigator(): React.ReactElement {
   const { theme, changeThemeType } = useThemeContext();
+
   return (
     <Stack.Navigator
       screenOptions={{

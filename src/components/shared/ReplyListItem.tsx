@@ -64,6 +64,7 @@ const ReplyListItem: FC<Props> = ({
 
   const getData = async (): Promise<void> => {
     const user = await getUserById(reply.writerId);
+
     setUser(user as User);
   };
 

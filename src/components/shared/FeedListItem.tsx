@@ -124,6 +124,7 @@ const FeedListItem: FC<Props> = ({
 
   const getData = async (): Promise<void> => {
     const writer = await getUserById(activity.writerId);
+
     setUser(writer as User);
 
     if (writer) {
@@ -151,6 +152,7 @@ const FeedListItem: FC<Props> = ({
         .get();
 
       const likeData = likeDoc.data();
+
       setLikeItem(likeData?.like);
     }
 
@@ -193,6 +195,7 @@ const FeedListItem: FC<Props> = ({
 
       setLikeItem(undefined);
       setLikeCnt(likeCnt - 1);
+
       return;
     }
 
@@ -233,6 +236,7 @@ const FeedListItem: FC<Props> = ({
 
       setLikeItem(undefined);
       setDislikeCnt(dislikeCnt - 1);
+
       return;
     }
 
@@ -288,8 +292,10 @@ const FeedListItem: FC<Props> = ({
       if (Platform.OS === 'web') {
         // @ts-ignore
         alert(error.message);
+
         return;
       }
+
       Alert.alert(getString('ERROR'), error.message);
     }
   };
@@ -303,6 +309,7 @@ const FeedListItem: FC<Props> = ({
 
     return function cleanup(): void {
       if (replyUnsubscribe) replyUnsubscribe();
+
       if (shareUnsubscribe) shareUnsubscribe();
     };
   }, []);
@@ -315,6 +322,7 @@ const FeedListItem: FC<Props> = ({
       : {
         right: 0,
       };
+
     return activity.category === CategoryType.HandWash
       ? <SvgCatHandWash
         width={width}

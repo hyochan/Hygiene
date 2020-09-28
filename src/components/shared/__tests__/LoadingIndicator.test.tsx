@@ -25,6 +25,7 @@ describe('[LoadingIndicator] render', () => {
     const rendered: renderer.ReactTestRendererJSON = renderer
       .create(component)
       .toJSON();
+
     expect(rendered).toMatchSnapshot();
     expect(rendered).toBeTruthy();
   });
@@ -34,10 +35,13 @@ describe('[LoadingIndicator] render', () => {
       // eslint-disable-next-line
       customElement: (): React.ReactElement => <View/>,
     });
+
     component = <LoadingIndicator {...props} />;
+
     const rendered: renderer.ReactTestRendererJSON = renderer
       .create(component)
       .toJSON();
+
     expect(rendered).toMatchSnapshot();
     expect(rendered).toBeTruthy();
   });
@@ -46,10 +50,13 @@ describe('[LoadingIndicator] render', () => {
     props = createTestProps({
       imgSource: 'http',
     });
+
     component = <LoadingIndicator {...props} />;
+
     const rendered: renderer.ReactTestRendererJSON = renderer
       .create(component)
       .toJSON();
+
     expect(rendered).toMatchSnapshot();
     expect(rendered).toBeTruthy();
   });
@@ -59,10 +66,13 @@ describe('[LoadingIndicator] render', () => {
       imgSource: 'http',
       size: 'small',
     });
+
     component = <LoadingIndicator {...props} />;
+
     const rendered: renderer.ReactTestRendererJSON = renderer
       .create(component)
       .toJSON();
+
     expect(rendered).toMatchSnapshot();
     expect(rendered).toBeTruthy();
   });
@@ -72,10 +82,13 @@ describe('[LoadingIndicator] render', () => {
       imgSource: 'http',
       size: undefined,
     });
+
     component = <LoadingIndicator {...props} />;
+
     const rendered: renderer.ReactTestRendererJSON = renderer
       .create(component)
       .toJSON();
+
     expect(rendered).toMatchSnapshot();
     expect(rendered).toBeTruthy();
   });
@@ -85,10 +98,13 @@ describe('[LoadingIndicator] render', () => {
       imgSource: 10,
       size: null,
     });
+
     component = <LoadingIndicator {...props} />;
+
     const rendered: renderer.ReactTestRendererJSON = renderer
       .create(component)
       .toJSON();
+
     expect(rendered).toMatchSnapshot();
     expect(rendered).toBeTruthy();
   });
@@ -98,10 +114,13 @@ describe('[LoadingIndicator] render', () => {
       imgSource: 'test',
       size: null,
     });
+
     component = <LoadingIndicator {...props} />;
+
     const rendered: renderer.ReactTestRendererJSON = renderer
       .create(component)
       .toJSON();
+
     expect(rendered).toMatchSnapshot();
     expect(rendered).toBeTruthy();
   });
@@ -111,10 +130,13 @@ describe('[LoadingIndicator] render', () => {
       imgSource: 10,
       size: 'test',
     });
+
     component = <LoadingIndicator {...props} />;
+
     const rendered: renderer.ReactTestRendererJSON = renderer
       .create(component)
       .toJSON();
+
     expect(rendered).toMatchSnapshot();
     expect(rendered).toBeTruthy();
   });

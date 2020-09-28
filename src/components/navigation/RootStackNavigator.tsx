@@ -46,13 +46,17 @@ function RootNavigator(): React.ReactElement {
     }
 
     setAuthInitiated(true);
+
     firebase.auth().onAuthStateChanged(function(fireUser) {
       if (!fireUser) {
         resetUser();
+
         return;
       }
+
       db.collection('users').doc(fireUser.uid).get().then((snap) => {
         const data = snap.data();
+
         if (data) {
           data.uid = fireUser.uid;
           setUser(data as User);

@@ -2,7 +2,6 @@
 
 exports[`Interaction should simulate onClick 1`] = `
 <View
-  pointerEvents="box-none"
   style={
     Object {
       "flex": 1,
@@ -10,150 +9,141 @@ exports[`Interaction should simulate onClick 1`] = `
   }
 >
   <View
-    collapsable={true}
-    pointerEvents="box-none"
     style={
-      Object {
-        "flex": 1,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "flexDirection": "row",
+          "height": 80,
+          "justifyContent": "flex-start",
+          "paddingBottom": 0,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 0,
+        },
+      ]
     }
   >
     <View
       style={
         Object {
-          "flex": 1,
+          "alignItems": "center",
+          "height": 24,
+          "justifyContent": "center",
+          "width": 24,
         }
       }
     >
-      <View
+      <Image
+        source={
+          Object {
+            "canInstrument": true,
+            "createTransformer": [Function],
+            "getCacheKey": [Function],
+            "process": [Function],
+          }
+        }
+        style={
+          Object {
+            "height": 24,
+            "width": 24,
+          }
+        }
+      />
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginLeft": 7,
+          "opacity": 1,
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "canInstrument": true,
+            "createTransformer": [Function],
+            "getCacheKey": [Function],
+            "process": [Function],
+          }
+        }
+        style={
+          Object {
+            "borderRadius": 21,
+            "height": 42,
+            "width": 42,
+          }
+        }
+      />
+    </View>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "black",
+            "fontSize": 14,
+          },
+          Object {
+            "fontWeight": "bold",
+            "marginLeft": 7,
+          },
+        ]
+      }
+    >
+      unnamed
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "flexDirection": "row",
+          "position": "absolute",
+          "right": 24,
+        }
+      }
+    >
+      <Text
+        index={0}
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "alignSelf": "stretch",
-              "flexDirection": "row",
-              "height": 80,
-              "justifyContent": "flex-start",
-              "paddingBottom": 0,
-              "paddingLeft": 16,
-              "paddingRight": 16,
-              "paddingTop": 0,
+              "color": "#00A8F0",
+            },
+            Object {
+              "fontSize": 24,
             },
           ]
         }
       >
-        <View
-          style={
+        0
+      </Text>
+      <Text
+        index={0}
+        style={
+          Array [
             Object {
-              "alignItems": "center",
-              "height": 24,
-              "justifyContent": "center",
-              "width": 24,
-            }
-          }
-        >
-          <Image
-            source={
-              Object {
-                "canInstrument": true,
-                "createTransformer": [Function],
-                "getCacheKey": [Function],
-                "process": [Function],
-              }
-            }
-            style={
-              Object {
-                "height": 24,
-                "width": 24,
-              }
-            }
-          />
-        </View>
-        <
-          activeOpacity={0.7}
-          style={
+              "color": "#00A8F0",
+            },
             Object {
-              "flexDirection": "row",
-              "marginLeft": 7,
-            }
-          }
-        >
-          <Image
-            source={
-              Object {
-                "canInstrument": true,
-                "createTransformer": [Function],
-                "getCacheKey": [Function],
-                "process": [Function],
-              }
-            }
-            style={
-              Object {
-                "borderRadius": 21,
-                "height": 42,
-                "width": 42,
-              }
-            }
-          />
-        </>
-        <Text
-          style={
-            Array [
-              Object {
-                "color": "black",
-                "fontSize": 14,
-              },
-              Object {
-                "fontWeight": "bold",
-                "marginLeft": 7,
-              },
-            ]
-          }
-        >
-          unnamed
-        </Text>
-        <View
-          style={
-            Object {
-              "alignItems": "flex-end",
-              "flexDirection": "row",
-              "position": "absolute",
-              "right": 24,
-            }
-          }
-        >
-          <Text
-            index={0}
-            style={
-              Array [
-                Object {
-                  "color": "#00A8F0",
-                },
-                Object {
-                  "fontSize": 24,
-                },
-              ]
-            }
-          >
-            0
-          </Text>
-          <Text
-            index={0}
-            style={
-              Array [
-                Object {
-                  "color": "#00A8F0",
-                },
-                Object {
-                  "fontSize": 18,
-                },
-              ]
-            }
-          >
-            P
-          </Text>
-        </View>
-      </View>
+              "fontSize": 18,
+            },
+          ]
+        }
+      >
+        P
+      </Text>
     </View>
   </View>
 </View>
@@ -161,7 +151,6 @@ exports[`Interaction should simulate onClick 1`] = `
 
 exports[`Rendering renders without crashing 1`] = `
 <View
-  pointerEvents="box-none"
   style={
     Object {
       "flex": 1,
@@ -169,150 +158,141 @@ exports[`Rendering renders without crashing 1`] = `
   }
 >
   <View
-    collapsable={true}
-    pointerEvents="box-none"
     style={
-      Object {
-        "flex": 1,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "flexDirection": "row",
+          "height": 80,
+          "justifyContent": "flex-start",
+          "paddingBottom": 0,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 0,
+        },
+      ]
     }
   >
     <View
       style={
         Object {
-          "flex": 1,
+          "alignItems": "center",
+          "height": 24,
+          "justifyContent": "center",
+          "width": 24,
         }
       }
     >
-      <View
+      <Image
+        source={
+          Object {
+            "canInstrument": true,
+            "createTransformer": [Function],
+            "getCacheKey": [Function],
+            "process": [Function],
+          }
+        }
+        style={
+          Object {
+            "height": 24,
+            "width": 24,
+          }
+        }
+      />
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginLeft": 7,
+          "opacity": 1,
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "canInstrument": true,
+            "createTransformer": [Function],
+            "getCacheKey": [Function],
+            "process": [Function],
+          }
+        }
+        style={
+          Object {
+            "borderRadius": 21,
+            "height": 42,
+            "width": 42,
+          }
+        }
+      />
+    </View>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "black",
+            "fontSize": 14,
+          },
+          Object {
+            "fontWeight": "bold",
+            "marginLeft": 7,
+          },
+        ]
+      }
+    >
+      unnamed
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "flexDirection": "row",
+          "position": "absolute",
+          "right": 24,
+        }
+      }
+    >
+      <Text
+        index={0}
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "alignSelf": "stretch",
-              "flexDirection": "row",
-              "height": 80,
-              "justifyContent": "flex-start",
-              "paddingBottom": 0,
-              "paddingLeft": 16,
-              "paddingRight": 16,
-              "paddingTop": 0,
+              "color": "#00A8F0",
+            },
+            Object {
+              "fontSize": 24,
             },
           ]
         }
       >
-        <View
-          style={
+        0
+      </Text>
+      <Text
+        index={0}
+        style={
+          Array [
             Object {
-              "alignItems": "center",
-              "height": 24,
-              "justifyContent": "center",
-              "width": 24,
-            }
-          }
-        >
-          <Image
-            source={
-              Object {
-                "canInstrument": true,
-                "createTransformer": [Function],
-                "getCacheKey": [Function],
-                "process": [Function],
-              }
-            }
-            style={
-              Object {
-                "height": 24,
-                "width": 24,
-              }
-            }
-          />
-        </View>
-        <
-          activeOpacity={0.7}
-          style={
+              "color": "#00A8F0",
+            },
             Object {
-              "flexDirection": "row",
-              "marginLeft": 7,
-            }
-          }
-        >
-          <Image
-            source={
-              Object {
-                "canInstrument": true,
-                "createTransformer": [Function],
-                "getCacheKey": [Function],
-                "process": [Function],
-              }
-            }
-            style={
-              Object {
-                "borderRadius": 21,
-                "height": 42,
-                "width": 42,
-              }
-            }
-          />
-        </>
-        <Text
-          style={
-            Array [
-              Object {
-                "color": "black",
-                "fontSize": 14,
-              },
-              Object {
-                "fontWeight": "bold",
-                "marginLeft": 7,
-              },
-            ]
-          }
-        >
-          unnamed
-        </Text>
-        <View
-          style={
-            Object {
-              "alignItems": "flex-end",
-              "flexDirection": "row",
-              "position": "absolute",
-              "right": 24,
-            }
-          }
-        >
-          <Text
-            index={0}
-            style={
-              Array [
-                Object {
-                  "color": "#00A8F0",
-                },
-                Object {
-                  "fontSize": 24,
-                },
-              ]
-            }
-          >
-            0
-          </Text>
-          <Text
-            index={0}
-            style={
-              Array [
-                Object {
-                  "color": "#00A8F0",
-                },
-                Object {
-                  "fontSize": 18,
-                },
-              ]
-            }
-          >
-            P
-          </Text>
-        </View>
-      </View>
+              "fontSize": 18,
+            },
+          ]
+        }
+      >
+        P
+      </Text>
     </View>
   </View>
 </View>

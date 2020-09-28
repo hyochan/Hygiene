@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const expoPreset = require('jest-expo/jest-preset');
-const jestPreset = require('@testing-library/react-native/jest-preset');
 /* eslint-enable @typescript-eslint/no-var-requires */
 
 module.exports = {
-  preset: '@testing-library/react-native',
+  preset: 'react-native',
+  automock: false,
   transform: {
     '^.+\\.js$': 'babel-jest',
     '^.+\\.tsx?$': 'ts-jest',
@@ -33,7 +33,6 @@ module.exports = {
   },
   setupFiles: [
     ...expoPreset.setupFiles,
-    ...jestPreset.setupFiles,
     '<rootDir>/test/jestSetup.ts',
   ],
   /* eslint-disable */
