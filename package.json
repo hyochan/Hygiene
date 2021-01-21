@@ -41,7 +41,7 @@
     "expo-web-browser": "^8.5.0",
     "firebase": "7.9.0",
     "i18n-js": "^3.7.1",
-    "immer": "^7.0.9",
+    "immer": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.0.tar.gz",
